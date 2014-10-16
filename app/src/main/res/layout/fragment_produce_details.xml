@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	     >
+
+	    <ImageView
+	        android:id="@+id/ad"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/ad_portrait_all"
+	        android:adjustViewBounds="true"
+			android:scaleType="centerCrop" 
+			android:paddingBottom="5dp"/>
+	    
+        <TextView
+	        android:id="@+id/details_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Large Text"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="8dp"
+	        android:text="@string/details_approx_dates"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold" />
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/start_date"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/details_start"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textSize="14sp"
+	            android:textStyle="bold" />
+
+	        <TextView
+	            android:id="@+id/details_start_date"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Medium Text"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textSize="14sp" />
+
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/end_date"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/details_end"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textSize="14sp"
+	            android:textStyle="bold" />
+
+	        <TextView
+	            android:id="@+id/details_end_date"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Medium Text"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textSize="14sp" />
+
+	    </LinearLayout>
+	
+	    <TextView
+	        android:id="@+id/prepared"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/start_date"
+	        android:layout_below="@+id/start_date"
+	        android:paddingTop="8dp"
+	        android:text="@string/details_prepared"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:id="@+id/details_prepared"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Medium Text"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="14sp" />
+	    
+	    <TextView
+	        android:id="@+id/peeled"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:paddingTop="8dp"
+	        android:text="@string/details_peeled"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:id="@+id/details_peeled"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Medium Text"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="14sp" />
+	    
+	    <TextView
+	        android:id="@+id/pits"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="8dp"
+	        android:text="@string/details_pits"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:id="@+id/details_pits"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Medium Text"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="14sp" />
+	    
+	    <TextView
+	        android:id="@+id/peel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="8dp"
+	        android:text="@string/details_peel"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:id="@+id/details_peel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Medium Text"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="14sp" />
+	    
+	    <TextView
+	        android:id="@+id/mashed"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="8dp"
+	        android:text="@string/details_mashed"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:id="@+id/details_mashed"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Medium Text"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="14sp" />
+	    
+	    <TextView
+	        android:id="@+id/comments"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="8dp"
+	        android:text="@string/details_comments"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:id="@+id/details_comments"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Medium Text"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="14sp" />
+	</LinearLayout>
+	
+</ScrollView>

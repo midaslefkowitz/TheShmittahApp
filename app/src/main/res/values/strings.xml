@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Fruit Strings -->
+    <string name="apple">Apple</string>
+    <string name="apricot">Apricot</string>
+    <string name="avocado">Avocado</string>
+    <string name="banana">Banana</string>
+    <string name="beet">Beet</string>
+    <string name="cabbage">Cabbage</string>
+    <string name="carrot">Carrot</string>
+    <string name="celery">Celery</string>
+    <string name="cherries">Cherries</string>
+    <string name="cucumber">Cucumber</string>
+    <string name="date">Date</string>
+    <string name="eggplant">Eggplant</string>
+    <string name="fig">Fig</string>
+    <string name="garlic">Garlic</string>
+    <string name="grapefruit">Grapefruit</string>
+    <string name="grape">Grape</string>
+    <string name="kiwi">Kiwi</string>
+    <string name="lemon">Lemon</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="lychee">Lychee</string>
+    <string name="mango">Mango</string>
+    <string name="melon">Melon</string>
+    <string name="mushroom">Mushroom</string>
+    <string name="nectarine">Nectarine</string>
+    <string name="olive">Olive</string>
+    <string name="onion">Onion</string>
+    <string name="orange">Orange</string>
+    <string name="peach">Peach</string>
+    <string name="pear">Pear</string>
+    <string name="pepper">Pepper</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="plum">Plum</string>
+    <string name="pomegranate">Pomegranate</string>
+    <string name="pomelo">Pomelo</string>
+    <string name="potato">Potato</string>
+    <string name="pumpkin">Pumpkin</string>
+    <string name="radish">Radish</string>
+    <string name="sabra">Sabra</string>
+    <string name="squash">Squash</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="sweet_potato">Sweet Potato</string>
+    <string name="tangerine">Tangerine</string>
+    <string name="tomato">Tomato</string>
+    <string name="watermelon">Watermelon</string>
+    <string name="zucchini">Zucchini</string>
+
+    <!-- Share Strings -->
+    <string name="share_subject">Thought that this might make Shmittah easier for you</string>
+    <string name="share_body">Check out The Shmittah App for Android (iPhone coming soon!). I can\'t believe how much it\'s already helped me. Just go to <a ref="http://TheShmittahApp.com/">TheShmittahApp.com.</a></string>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- Drawer Menu Strings -->
+    <string name="produce_list">List of Produce</string>
+    <string name="terms">Common Terms</string>
+    <string name="faqs">FAQ\'s</string>
+    <string name="overview">Brief Overview of the Halachos - Ebook</string>
+    <string name="detailed">Detailed Halachos - Ebook</string>
+    <string name="chart">Produce Chart</string>
+    <string name="shiurim">Online Shiurim</string>
+    <string name="rabbi">Ask the Rabbi</string>
+    <string name="about">About</string>
+
+    <!-- App Strings -->
+    <string name="app_name">The Shmittah App</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_common_terms">Common Terms</string>
+    <string name="title_activity_produce_details">ProduceDetailsActivity</string>
+    <string name="title_activity_definition">Definition</string>
+    <string name="title_activity_chart">Shmittah Chart</string>
+
+    <!-- Action Menu Strings -->
+    <string name="action_search">Search Fruits and Vegetables</string>
+    <string name="action_settings">Settings</string>
+    <string name="share">Share</string>
+
+    <!-- Drawer Activity Strings -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- Glossary Strings -->
+    <string name="biur">Biur</string>
+    <string name="biur_def">removel of shmittah produce from ones house by the date it is no longer available in the field</string>
+    <string name="chanatah">Chanatah</string>
+    <string name="chanatah_def">The stage when flowers bud on fruit trees</string>
+    <string name="heter_mechira">Heter mechirah</string>
+    <string name="heter_mechira_def">A collective sale of land in Eretz yisarael to non-Jews that allows agriculture to continue as usual</string>
+    <string name="kedushas_sheviis">Kedushas Sheviis</string>
+    <string name="kedushas_sheviis_def">Produce that was grown in Israel during the shmittah year on land owned by Jewish people</string>
+    <string name="otzar_beis_din">Otzar Beis Din</string>
+    <string name="otzar_bd_def">Storehouses belonging to a Beis Din that acts on behalf of the public to provide produce</string>
+    <string name="sefichim">Sefichim</string>
+    <string name="sefichim_def">Vegetables that grew during shmittah that are forbidden to be eaten or used in any way</string>
+    <string name="shmittah">Shmittah</string>
+    <string name="shmittah_def">The seventh year of the agricultural cycle in Eretz Yisrael</string>
+    <string name="shmittah_bin">Shmittah Bin</string>
+    <string name="shmittah_bin_def">A specific bin that produce with kedusha must be kept in until it spoils</string>
+
+    <!-- Landing Page Fragment Strings -->
+    <string name="dedications_title">Dedications:</string>
+    <string name="dedication_lefkowitz">The Shmittah App was developed by Yitz Lefkowitz. Contact him for any and all Android app development. The app is currently in beta release, please look out for updates.</string>
+    <string name="dedication_weisenfeld">The material in The Shmittah App was taken with permission from The Pocket Halacha Series Written by Rabbi A. Wiesenfeld a Rosh Kollel and Maggid Shiur in Yerushalayim</string>
+    <string name="dedication_get_started">To get started just tap the top-left corner of the screen, or else swipe from left to right.</string>
+
+    <!-- About Page Fragment -->
+    <string name="about_lefkowitz">The Shmittah App was developed by Yitzhak Lefkowitz in order to help people with their Shmittah observance. The app is currently in beta release, please look out for updates.</string>
+    <string name="about_weisenfeld1">The information in The Shmittah App was taken with permission from The Pocket Halacha Series - \"Shmittah in the Kitchen\" a popular addition to the growing Pocket Halachos Series written by Rabbi Avraham Wiesenfeld.</string>
+    <string name="about_weisenfeld2">Rabbi Avraham Wiesenfeld is the Rosh Kollel of a Halacha Kollel in Romema, Yerushalayim, a Maggid Shiur in various yeshivos in Yerushalayim and a sought after speaker, both in Israel and in the UK. He is the author of the popular book \"Kashrus in the Kitchen - QA\" published by Feldheim which has sold thousands of copies worldwide.</string>
+    <string name="about_weisenfeld3">The information on fruits and vegetables was sent as a chart form to over 50,000 people in Israel.</string>
+    <string name="about_weisenfeld4">If you want to organize a shiur on the Halachos of Shmittah or any other topic from Rabbi Wiesenfeld - please send a message though the \"Ask the Rabbi\" menu option.</string>
+
+    <!-- Produce Dates Strings -->
+    <string name="from">From</string>
+    <string name="to"> - </string>
+    <string name="tishrei">Tishrei</string>
+    <string name="cheshvan">Cheshvan</string>
+    <string name="kislev">Kislev</string>
+    <string name="teves">Teves</string>
+    <string name="shevat">Shevat</string>
+    <string name="adar">Adar</string>
+    <string name="nissan">Nissan</string>
+    <string name="iyar">Iyar</string>
+    <string name="sivan">Sivan</string>
+    <string name="tamuz">Tamuz</string>
+    <string name="av">Av</string>
+    <string name="elul">Elul</string>
+
+    <!-- Produce Prepared Strings -->
+    <string name="or">or</string>
+    <string name="raw">Raw</string>
+    <string name="cooked">Cooked</string>
+    <string name="salad">Raw in salad</string>
+    <string name="roasted">Roasted</string>
+    <string name="with_other">With other foods (ie. not alone)</string>
+    <string name="fried">Fried</string>
+    <string name="pickled">Pickled</string>
+    <string name="raw_or_cooked">Raw or cooked</string>
+    <string name="raw_or_baked">Raw or baked in cake</string>
+    <string name="salad_cooked">Raw in salad or cooked</string>
+    <string name="cooked_roasted">Cooked or Roasted</string>
+    <string name="raw_or_pickled">Raw or Pickled</string>
+    <string name="salad_cooked_fried">Raw in salad, cooked or fried</string>
+    <string name="cooked_fried_baked">Cooked, fried or baked</string>
+    <string name="raw_cooked_fried_pickled">Raw, cooked, fried or pickled</string>
+
+    <!-- Produce General -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="kedusha">Kedusha</string>
+    <string name="no_kedusha">No Kedusha</string>
+    <string name="kedusha_fruit">Kedusha if fruit attached</string>
+    <string name="outer_kedusha">Outer layer - no kedusha</string>
+
+    <!-- Produce Peel -->
+    <string name="outer_layer">Outer layer - </string>
+
+    <!-- Produce Squeezed -->
+    <string name="banana_smash">For children or for cake</string>
+    <string name="lemon_smash">Yes, in a tea or to give flavour to food</string>
+    <string name="pear_smash">No, Some allow it</string>
+    <string name="potato_smash">Yes (can be made into potato flour)</string>
+    <string name="pumpkin_smash">Yes. After it is cooked</string>
+    <string name="tomato_smash">Yes - but should not be strained </string>
+
+    <!-- Produce Comments -->
+    <string name="apple_comment">May be dried – stem has no kedusha</string>
+    <string name="apricot_comment">May be peeled finely for a child or elderly person - may be dried </string>
+    <string name="banana_comment">For adults can be mashed slightly.</string>
+    <string name="beet_comment">If made into borscht – it retains kedusha</string>
+    <string name="carrot_comment">May be grated for salad</string>
+    <string name="stem_comment">Stem has no kedusha</string>
+    <string name="dried_comment">May be dried</string>
+    <string name="garlic_comment">May be used to give flavour when pickling even if no intention to eat it. Should not be swallowed raw</string>
+    <string name="grapefruit_comment">Squeeze as much as possible and juice has kedusha</string>
+    <string name="grape_comment">May be peeled finely or mashed for a child or elderly person. May be dried for raisins.</string>
+    <string name="lemon_comment">May put lemon rind (peel) into dough for flavour. Cannot be used for removing stains.</string>
+    <string name="lettuce_comment">Can remove \'bad\' parts of it even if some good parts will come with it.</string>
+    <string name="melon_comment">Careful when throwing away the seeds not to waste any fruit</string>
+    <string name="olive_comment">Biur for olives/oil is Shevuos of 8th year</string>
+    <string name="onion_comment">May be minced for fish - juice  has kedusha. Can be cooked with chicken even if onions will not be eaten</string>
+    <string name="orange_comment">Squeeze as much as possible and juice is kedusha</string>
+    <string name="peach_comment">May be peeled finely or mashed for a child or elderly person</string>
+    <string name="plum_comment">May be peeled for a child</string>
+    <string name="potato_comment">The Water it is cooked in has no Kedusha</string>
+    <string name="tomato_comment">May be cut even if some juice will be lost.</string>
+
+    <!-- Produce Details Strings -->
+    <string name="details_approx_dates">Approximate dates of Kedusha</string>
+    <string name="details_start">Start:</string>
+    <string name="details_end">End:</string>
+    <string name="details_prepared">How may it be prepared or eaten:</string>
+    <string name="details_peeled">May it be peeled? </string>
+    <string name="details_pits">Status of pits/seeds:</string>
+    <string name="details_peel">Status of peel:</string>
+    <string name="details_mashed">May it be squeezed/blended/mashed?</string>
+    <string name="details_comments">Comments:</string>
+
+    <!-- FAQ Questions Strings -->
+    <string name="question1">Is there a mitzvah to eat shmittah produce?</string>
+    <string name="question2">When buying canned fruit or vegetables, is there a way to determine if the product is from the seventh year?</string>
+    <string name="question3">Does one have to be careful of shmittah produce when one is outside of Eretz Yisrael?</string>
+    <string name="question4">Is it important to buy produce with a good hechsher during shmittah?</string>
+    <string name="question5">May one give fruits of sheviis to a child?</string>
+    <string name="question6">May fruits that have kedushas sheviis be eaten raw?</string>
+    <string name="question7">Is it permitted to add orange juice or grape juice that has kedushas sheviis into a cake or meat for flavour?</string>
+    <string name="question8">After using a utensil for squeezing/grating the fruit/vegetable with kedushas sheviis, may it be washed (causing the leftover food to be discarded immediately)?</string>
+    <string name="question9"> If one may not ruin foods with kedushas sheviis, what can be done with leftover food?</string>
+    <string name="question10">May spices that were used for cooking and are now spent of their taste be thrown out normally?</string>
+    <string name="question11">May one feed shmittah fruit/vegetables to animals?</string>
+    <string name="question12">What can be done with animal food that is shmittah produce?</string>
+    <string name="question13">May one use a lemon with kedushas sheviis to remove stains from clothing?</string>
+    <string name="question14">If one has a non-Jewish worker who wishes to eat something, must one stop him from eating produce that has kedushas sheviis?</string>
+    <string name="question15">May dishes be washed normally if they have leftover shmittah food on them?</string>
+    <string name="question16">Is it permitted to make havdalah with kedushas sheviis wine/grape juice?</string>
+    <string name="question17">Is there a problem with buying a non-shmittah item from a Jewish owned store that also sells shmittah produce (and thereby does not keep the laws of shmittah)?</string>
+    <string name="question18">Does this same problem apply when buying from a non-Jewish owned shop, e.g., outside israel?</string>
+    <string name="question19">May a person who borrowed fruit/vegetables from a neighbour pay them back with kedushas sheviis produce?</string>
+    <string name="question20">Do flowers that grow during shmittah have kedushas sheviis?</string>
+    <string name="question21">May the flowers be thrown away normally?</string>
+    <string name="question22">May flowers/plants be bought from anyone?</string>
+    <string name="question23">May shmittah flowers be placed into water and cut before being placed into a vase?</string>
+    <string name="question24">May one grow an avocado in water during shmittah?</string>
+    <string name="question25">Can I level the ground to make the succah easier to sit in the succah?</string>
+    <string name="question26">If ones bush is blocking the path to ones house, may it be trimmed?</string>
+    <string name="question27">Can one move around his flowerpots as usual during shmittah?</string>
+
+    <!-- FAQ Answer Strings -->
+    <string name="answer1">Although some authorities claim there is, the final halachah is that it is not a mitzvah, but it is still a very nice thing to do.</string>
+    <string name="answer2">Yes, by way of the product code. For example, a code appearing as 06 273 2 indicates that the product was processed on the 2nd shift, day 273, year 2006. Similarly, the code 07 027 1 indicates processing on the 1st shift, day 27, year 2007.</string>
+    <string name="answer3">Yes. Shmittah produce from Eretz Yisrael retains its kedushah even when exported. Therefore, up to thirty percent of the flowers sold in the United States are imported from Israel, and if they have a scent and were grown during shmittah, they may be forbidden, depending upon where they came from within Israel. And, Israeli fruit is sold commonly throughout Europe, and plenty makes its way to America as well. One must therefore consult local kashrus authorities for details. One must be especially watchful for vegetables that were exported from Eretz Yisrael, which is very common, since they may be forbidden to eat because of sefichim and other problems.</string>
+    <string name="answer4">Yes. During the shmittah year (and for some time after) there are a great many factors and halachos involved, so it is very important to look for a trustworthy hechsher.</string>
+    <string name="answer5">Yes, even though some of the food may be wasted. They should not, however, be given to a very young child that will play with them and thereby waste them. Care should be taken to give the child only that which he will eat, not extra which is likely to be wasted. Children (from the age of understanding) should be taught not to ruin/destroy food with kedushas sheviis.</string>
+    <string name="answer6">Yes, provided that they are normally eaten this way. Thus, any fruit that is normally eaten raw (oranges, avocado, lettuce) may only be eaten raw, and fruit that is normally cooked (potato, squash, etc.) may not be eaten raw. Normal is defined as what many people do, even if it is not done by the majority.</string>
+    <string name="answer7">Yes, if it is normally done. Similarly, one may put spices – even if they can be eaten by themselves – into a mixture of other food for taste. The leftover cake that has this orange or grape juice in it may not be thrown away or wasted.</string>
+    <string name="answer8">Yes</string>
+    <string name="answer9">Any food that is still fit for human consumption [or even animal consumption] – even if no-one actually intends to eat it – or peels and pits that have some edible food clinging to them may not be destroyed. Consequently, they may not be thrown normally into a bin containing other food and refuse that would render them inedible. Rather, one should have in one’s kitchen a dedicated shmittah bin into which one may place all the leftover food and wait until the food begins to rot; at that point one may dispose of the leftovers normally, since at this stage it is no longer fit for human consumption and has lost its kedushah. Another reason to have a shmittah bin is that it is disrespectful toward food that has kedushah to be thrown into a receptacle for dirty or mouldy items. -1- The bag in the bin should be changed every day or every few days depending on the usage; or the new food should be placed into a bag before being put into the bin so that it will not be destroyed by leftovers which have earlier been placed there and have already grown mouldy. -2-In a situation where having a shmittah bin is difficult, one may simply place the food in a plastic bag, seal the top, and place it into the regular bin, allowing the food to rot by itself. -3- Food may be removed from the shmittah bin and discarded normally once it has spoiled to the point of being inedible.</string>
+    <string name="answer10">Yes</string>
+    <string name="answer11">Any food that is still fit for human consumption should not be fed to animals. Once it is no longer fit for people, it may be given to animals. If one wishes to take shmittah food to feed to the animals, one should do so only with food that is no longer fit for human consumption.</string>
+    <string name="answer12">Animal food with kedushas sheviis must be given to animals and may not be discarded in the normal way.</string>
+    <string name="answer13">No.</string>
+    <string name="answer14">No. One may even give shmittah produce to a non-Jewish worker working in one’s house as a snack, provided it is not part of his payment for the job</string>
+    <string name="answer15">If the remnants are insignificant such that they would usually not be gathered and saved, the dishes may be washed normally without regard for the remnants. If, however, they are significant enough such that one might gather and save them, they should be treated with kedusha and placed in the shmittah bin before the dishes are washed.</string>
+    <string name="answer16">Yes.  However, one should place a plate under the cup to catch whatever spills and pour it back into the cup or it should be drunk. Also, the candle may not be extinguished in the wine, and wine may not be dabbed into one’s pockets and upon the eyes.</string>
+    <string name="answer17">No. however, since the money one may receive as change from the till may be ‘shmittah’ money (i.e., it was used by someone to buy shmittah produce), it must only be used for food items and eaten as shmittah. If the majority of the store sells non shmittah produce, one need not be concerned every time he receives change from this store.</string>
+    <string name="answer18">No, the money used to buy foods with kedushas sheviis from a non-Jew do not become shmittah money.</string>
+    <string name="answer19">Some allow it if the food that was originally borrowed was also of shmittah. Nevertheless, the most preferable option when borrowing or repaying is to specify that the object being transferred is merely a gift. Thus, when one returns what one borrowed, it is not a debt being re-paid, but a present being given.</string>
+    <string name="answer20">Flowers that are primarily valued for their beauty and emit no fragrance do not have kedushas sheviis. Some say that they even if such flowers do emit a fragrance, they do not have kedushas sheviis.In all cases, flowers may be smelled [except if they are sefichim according to some opinions].</string>
+    <string name="answer21">Since the flowers one buys are mainly for beauty purposes, they do not have kedushah, and may be thrown away normally.</string>
+    <string name="answer22">No. They may only be bought from a store that keeps the halachos of shmittah such that we can be assured they were not planted, tended to, or harvested in a forbidden way. If one did buy or received flowers from a questionable source, one may still use them normally. When buying a plant during shmittah from a store that keeps the laws of shmittah, some require that a plastic bag be placed all around the plant while transporting it home to prevent it from receiving nourishment from the ground (which would be like planting it).</string>
+    <string name="answer23">They may be placed into a vase of water, even if this will cause the flower to open up</string>
+    <string name="answer24">Yes</string>
+    <string name="answer25">Yes – provided the boards are out showing clearly ones intention is only to make sitting in the succah easier and not to work the land in any way. Additionally, one should use non professional tools.</string>
+    <string name="answer26">Yes, provided it is not done in a professional manner.</string>
+    <string name="answer27">Absolutely not. There is a difference if the flowerpot is getting nourishment from the ground or not, and whether the place it will be moved to is a place where it can receive nourishment. This requires a lot of information.one should consult a rav before moving plants around – even in ones house.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.theshmittahapp.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".views.Activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.Activities.ProduceDetailsActivity"
+            android:label="@string/title_activity_produce_details"
+            android:parentActivityName=".views.Activities.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theshmittahapp.android.views.MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.Activities.CommonTermsActivity"
+            android:label="@string/title_activity_common_terms" >
+        </activity>
+        <activity
+            android:name=".views.Activities.DefinitionActivity"
+            android:label="@string/title_activity_definition"
+            android:parentActivityName=".views.Activities.CommonTermsActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theshmittahapp.android.views.CommonTermsActivity" />
+        </activity>
+        <activity
+            android:name="com.theshmittahapp.android.views.ChartActivity"
+            android:label="@string/title_activity_chart" >
+        </activity>
+    </application>
+
+</manifest>
