@@ -1,19 +1,32 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'MyAndroidKey'
+            keyPassword '3862dukey'
+            storeFile file('C:/Development tools/android keystore/android.jks')
+            storePassword '3862duks'
+        }
+    }
     compileSdkVersion 20
     buildToolsVersion "20.0.0"
-
     defaultConfig {
         applicationId "com.theshmittahapp.android"
         minSdkVersion 14
         targetSdkVersion 20
+        versionCode 2
+        versionName "1.0.1"
     }
-
     buildTypes {
         release {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            debuggable false
+            jniDebugBuild false
+            signingConfig signingConfigs.config
+            renderscriptDebugBuild false
+            zipAlign true
         }
     }
 }
