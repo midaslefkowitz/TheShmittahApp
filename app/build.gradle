@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'android'
 apply plugin: 'newrelic'
 
 android {
@@ -17,8 +16,8 @@ android {
         applicationId "com.theshmittahapp.android"
         minSdkVersion 14
         targetSdkVersion 20
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 3
+        versionName "1.1"
     }
     buildTypes {
         release {

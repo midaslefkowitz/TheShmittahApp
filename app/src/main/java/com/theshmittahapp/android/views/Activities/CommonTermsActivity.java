@@ -268,7 +268,11 @@ public class CommonTermsActivity extends Activity {
 			// update selected item and title, then close the drawer
 			mDrawerList.setItemChecked(position, true);
 			mDrawerList.setSelection(position);
-			setTitle(navMenuTitles[position]);
+            if (position == 6 || position == 7) {
+                setTitle(navMenuTitles[1]);
+            } else {
+                setTitle(navMenuTitles[position]);
+            }
 			mDrawerLayout.closeDrawer(mDrawerList);
 		} else {
 			// error in creating fragment

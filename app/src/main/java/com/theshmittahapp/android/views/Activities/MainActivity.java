@@ -66,6 +66,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        /* Required to track app stats with New Relic */
         NewRelic.withApplicationToken(
                 "AA5c2072a8d0e78b2f2c2171782195865df39a8e78"
         ).start(this.getApplication());
@@ -267,7 +268,7 @@ public class MainActivity extends Activity {
 				break;
 			case 6:
 				// shiurim
-				fragment = new CommonTermsFragment();
+				fragment = new ProduceFragment();
 				shiurim = true;
 				break;
 			case 7:
@@ -291,7 +292,12 @@ public class MainActivity extends Activity {
 			// update selected item and title, then close the drawer
 			mDrawerList.setItemChecked(position, true);
 			mDrawerList.setSelection(position);
-			setTitle(navMenuTitles[position]);
+            if (position == 6 || position == 7) {
+                setTitle(navMenuTitles[0]);
+            } else {
+                setTitle(navMenuTitles[position]);
+            }
+
 			mDrawerLayout.closeDrawer(mDrawerList);
 		} else {
 			// error in creating fragment

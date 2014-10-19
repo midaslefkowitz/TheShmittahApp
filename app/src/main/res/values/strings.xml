@@ -48,6 +48,9 @@
     <string name="watermelon">Watermelon</string>
     <string name="zucchini">Zucchini</string>
 
+    <!-- Donate Fragment Strings -->
+    <string name="donate">Please consider donating with Paypal. Money goes towards creating new Torah content. Please bear in mind that Paypal takes $0.30 and 2.5% of every donation. Thanks for your support.</string>
+
     <!-- Share Strings -->
     <string name="share_subject">Thought that this might make Shmittah easier for you</string>
     <string name="share_body">Check out The Shmittah App for Android (iPhone coming soon!). I can\'t believe how much it\'s already helped me. Just go to <a ref="http://TheShmittahApp.com/">TheShmittahApp.com.</a></string>
@@ -257,6 +260,5 @@
     <string name="answer25">Yes – provided the boards are out showing clearly ones intention is only to make sitting in the succah easier and not to work the land in any way. Additionally, one should use non professional tools.</string>
     <string name="answer26">Yes, provided it is not done in a professional manner.</string>
     <string name="answer27">Absolutely not. There is a difference if the flowerpot is getting nourishment from the ground or not, and whether the place it will be moved to is a place where it can receive nourishment. This requires a lot of information.one should consult a rav before moving plants around – even in ones house.</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -2,25 +2,37 @@
 <pre-dex-items>
 
     <item
-        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\release\internal_impl-20.0.0-e7069d0042f93f5a074c195a232b3627d51376e2.jar"
+        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-e7069d0042f93f5a074c195a232b3627d51376e2.jar"
         jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
     <item
-        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\release\classes-72a75530d55606dd5a6985f9e2589de82cd684df.jar"
+        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\classes-72a75530d55606dd5a6985f9e2589de82cd684df.jar"
         jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.joanzapata.pdfview\android-pdfview\1.0.2\classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="50897ff6c212a72aa3780027e0bf5fc363f366a0"/>
     <item
-        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\release\classes-14b5fabe8454444c8d1606e9c7bef95bafe30cbc.jar"
+        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\classes-14b5fabe8454444c8d1606e9c7bef95bafe30cbc.jar"
         jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
     <item
-        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\release\support-annotations-20.0.0-1933d681b22bd8785ca9a9f9b516fd6a31918f2b.jar"
+        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\classes-1eb3b93c011c025a457114c069213445d3587a3c.jar"
+        jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.github.hotchemi\android-rate\0.4.1\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="02570d3583b2f55cac8237a3641bba0f4cd3643c"/>
+    <item
+        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\android-agent-4.87.0-1014e8a82971ca55b1d119252fd51f50534a6443.jar"
+        jar="C:\Users\Lefkowitz\.gradle\caches\modules-2\files-2.1\com.newrelic.agent.android\android-agent\4.87.0\c9989fd7b9a00452306fcbe7c84ffc0b582b9f39\android-agent-4.87.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c9989fd7b9a00452306fcbe7c84ffc0b582b9f39"/>
+    <item
+        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-1933d681b22bd8785ca9a9f9b516fd6a31918f2b.jar"
         jar="C:\Development tools\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
         jumboMode="false"
         revision="20.0.0"
