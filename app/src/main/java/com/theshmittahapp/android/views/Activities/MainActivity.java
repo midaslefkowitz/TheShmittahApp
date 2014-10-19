@@ -32,6 +32,8 @@ import com.theshmittahapp.android.views.Fragments.ProduceFragment;
 
 import java.util.ArrayList;
 
+import com.newrelic.agent.android.NewRelic;
+
 public class MainActivity extends Activity {
 	
 	private DrawerLayout mDrawerLayout;
@@ -63,6 +65,11 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        NewRelic.withApplicationToken(
+                "AA5c2072a8d0e78b2f2c2171782195865df39a8e78"
+        ).start(this.getApplication());
+
         setContentView(R.layout.drawer_with_fragment_activity);
 
 		mTitle = mDrawerTitle = getTitle();

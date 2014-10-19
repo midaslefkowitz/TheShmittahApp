@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'android'
+apply plugin: 'newrelic'
 
 android {
     signingConfigs {
@@ -34,4 +36,19 @@ android {
 dependencies {
     compile 'com.android.support:support-v4:20.0.0'
     compile 'com.joanzapata.pdfview:android-pdfview:1.0.+@aar'
+    compile 'com.newrelic.agent.android:android-agent:4.+'
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.newrelic.agent.android:agent-gradle-plugin:4.+"
+    }
+}
+
+repositories {
+    mavenCentral()
 }

@@ -113,24 +113,23 @@ public final class R {
         public static final int faq_questions_lv=0x7f0a0011;
         public static final int frame_container=0x7f0a0005;
         public static final int icon=0x7f0a0002;
-        public static final int list_item_produce_textview=0x7f0a002b;
-        public static final int list_item_term_textview=0x7f0a002a;
+        public static final int list_item_produce_textview=0x7f0a002a;
+        public static final int list_item_term_textview=0x7f0a0029;
         public static final int list_slidermenu=0x7f0a0006;
         public static final int mashed=0x7f0a0025;
-        public static final int menu_item_share=0x7f0a002d;
+        public static final int menu_item_share=0x7f0a002c;
         public static final int pdfview=0x7f0a0015;
         public static final int peel=0x7f0a0023;
         public static final int peeled=0x7f0a001f;
         public static final int pits=0x7f0a0021;
         public static final int prepared=0x7f0a001d;
         public static final int producelist=0x7f0a0016;
-        public static final int question_group=0x7f0a002c;
+        public static final int question_group=0x7f0a002b;
         public static final int start_date=0x7f0a0019;
         public static final int term=0x7f0a0010;
         public static final int terms_list=0x7f0a000e;
         public static final int textView1=0x7f0a0018;
         public static final int title=0x7f0a0003;
-        public static final int webPage=0x7f0a0029;
     }
     public static final class layout {
         public static final int activity_definition=0x7f030000;
@@ -147,10 +146,9 @@ public final class R {
         public static final int fragment_pdf=0x7f03000b;
         public static final int fragment_produce=0x7f03000c;
         public static final int fragment_produce_details=0x7f03000d;
-        public static final int fragment_web_pdf_view=0x7f03000e;
-        public static final int glossary_list_item=0x7f03000f;
-        public static final int produce_list_item=0x7f030010;
-        public static final int question_layout=0x7f030011;
+        public static final int glossary_list_item=0x7f03000e;
+        public static final int produce_list_item=0x7f03000f;
+        public static final int question_layout=0x7f030010;
     }
     public static final class menu {
         public static final int common_terms=0x7f090000;
