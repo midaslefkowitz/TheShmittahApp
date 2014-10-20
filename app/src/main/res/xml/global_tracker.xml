@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+
+    <!-- the Local LogLevel for Analytics -->
+    <string name="ga_logLevel">verbose</string>
+
+    <!-- how often the dispatcher should fire -->
+    <integer name="ga_dispatchPeriod">30</integer>
+
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!-- The screen names that will appear in reports -->
+    <screenName name="com.theshmittahapp.android.views.Activities.MainActivity">
+        The Shmittah App Main Activity
+    </screenName>
+    <screenName name="com.theshmittahapp.android.views.Activities.CommonTermsActivity">
+        The Shmittah App Common Terms Activity
+    </screenName>
+    <screenName name="com.theshmittahapp.android.views.Activities.ProduceDetailsActivity">
+        The Shmittah App Produce Details Activity
+    </screenName>
+    <screenName name="com.theshmittahapp.android.views.Activities.DefinitionActivity">
+        The Shmittah App Common Term Definition Activity
+    </screenName>
+    <screenName name="com.theshmittahapp.android.views.Fragments.AboutFragment">
+        The Shmittah App About Fragment
+    </screenName>
+    <screenName name="com.theshmittahapp.android.views.Fragments.ChartFragment">
+        The Shmittah App Chart Fragment
+    </screenName>
+    <screenName name="com.theshmittahapp.android.views.Fragments.CommonTermsFragment">
+        The Shmittah App Common Terms Fragment
+    </screenName>
+    <screenName name="com.theshmittahapp.android.views.Fragments.FAQFragment">
+        The Shmittah App FAQ Fragment
+    </screenName>
+    <screenName name="com.theshmittahapp.android.views.Fragments.LandingPageFragment">
+        The Shmittah App Landing Page Fragment
+    </screenName>
+    <screenName name="com.theshmittahapp.android.views.Fragments.PDFFragment">
+        The Shmittah App PDF Fragment
+    </screenName>
+    <screenName name="com.theshmittahapp.android.views.Fragments.ProduceDetailsFragment">
+        The Shmittah App Produce Details Fragment
+    </screenName>
+    <screenName name="com.theshmittahapp.android.views.Fragments.ProduceFragment">
+        The Shmittah App Produce Fragment
+    </screenName>
+    <screenName name="com.theshmittahapp.android.views.Fragments.ShiurimFragment">
+        The Shmittah App Shiurim Fragment
+    </screenName>
+    <!--  The following value should be replaced with correct property id. -->
+    <string name="ga_trackingId">UA-55917111-1</string>
+</resources>

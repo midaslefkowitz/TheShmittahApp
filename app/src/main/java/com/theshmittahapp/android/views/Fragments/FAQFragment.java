@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.net.Uri;
@@ -15,8 +16,11 @@ import android.view.View.OnClickListener;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
 
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.theshmittahapp.android.HelperClasses.ExpandableListAdapter;
 import com.theshmittahapp.android.R;
+import com.theshmittahapp.android.views.MyApp;
 
 public class FAQFragment extends Fragment{
 	
@@ -26,10 +30,30 @@ public class FAQFragment extends Fragment{
 	private ExpandableListView expListView;
 	private List<String> listDataHeader;
 	private HashMap<String, List<String>> listDataChild;
-	
+
+    private Tracker mTracker;
+
 	public FAQFragment() { }
-	
-	@Override
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Activity activity = getActivity();
+        mTracker = ((MyApp) getActivity().getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Set screen name.
+        mTracker.setScreenName("The Shmittah App FAQ Fragment");
+
+        // Send a screen view.
+        mTracker.send(new HitBuilders.AppViewBuilder().build());
+    }
+
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
 		// inflate view

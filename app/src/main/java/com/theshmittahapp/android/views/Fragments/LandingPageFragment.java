@@ -1,5 +1,6 @@
 package com.theshmittahapp.android.views.Fragments;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.net.Uri;
@@ -10,13 +11,35 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.theshmittahapp.android.R;
+import com.theshmittahapp.android.views.MyApp;
 
 public class LandingPageFragment extends Fragment {
 
 	private String url = "http://www.mymakolet.com";
 
+    private Tracker mTracker;
+
 	public LandingPageFragment() {}
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Activity activity = getActivity();
+        mTracker = ((MyApp) getActivity().getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Set screen name.
+        mTracker.setScreenName("The Shmittah App Landing Page Fragment");
+
+        // Send a screen view.
+        mTracker.send(new HitBuilders.AppViewBuilder().build());
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

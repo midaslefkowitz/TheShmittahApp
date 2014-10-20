@@ -15,18 +15,25 @@ import android.widget.ImageView;
 import android.widget.ShareActionProvider;
 import android.widget.TextView;
 
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.Tracker;
 import com.theshmittahapp.android.R;
+import com.theshmittahapp.android.views.MyApp;
 
 public class DefinitionActivity extends Activity {
 
 	public static String TERM = "term";
 	public static String DEF = "definition";
-	
+
 	private ShareActionProvider mShareActionProvider;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+        //Get a Tracker (should auto-report)
+        ((MyApp) getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+
 		setContentView(R.layout.activity_definition);
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -36,8 +43,19 @@ public class DefinitionActivity extends Activity {
 					.add(R.id.container, new DefinitionFragment()).commit();
 		}
 	}
-	
-	
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        GoogleAnalytics.getInstance(this).reportActivityStart(this);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        GoogleAnalytics.getInstance(this).reportActivityStop(this);
+    }
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate menu resource file.

@@ -2,17 +2,17 @@
 <pre-dex-items>
 
     <item
-        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-e7069d0042f93f5a074c195a232b3627d51376e2.jar"
-        jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
-    <item
         dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\classes-72a75530d55606dd5a6985f9e2589de82cd684df.jar"
         jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.joanzapata.pdfview\android-pdfview\1.0.2\classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="50897ff6c212a72aa3780027e0bf5fc363f366a0"/>
+    <item
+        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-e7069d0042f93f5a074c195a232b3627d51376e2.jar"
+        jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
     <item
         dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\classes-14b5fabe8454444c8d1606e9c7bef95bafe30cbc.jar"
         jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
@@ -20,11 +20,17 @@
         revision="20.0.0"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
     <item
-        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\classes-1eb3b93c011c025a457114c069213445d3587a3c.jar"
-        jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.github.hotchemi\android-rate\0.4.1\classes.jar"
+        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\classes-cba23e2a21127495fca83198649b8d4aff64a2e8.jar"
+        jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="02570d3583b2f55cac8237a3641bba0f4cd3643c"/>
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
+    <item
+        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\classes-8bd8dacfedd1f4f1ee8080d44e115ead0d394a97.jar"
+        jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0f700f6802ba1a1f1fa7ac26d5db0666a89d75a6"/>
     <item
         dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\android-agent-4.87.0-1014e8a82971ca55b1d119252fd51f50534a6443.jar"
         jar="C:\Users\Lefkowitz\.gradle\caches\modules-2\files-2.1\com.newrelic.agent.android\android-agent\4.87.0\c9989fd7b9a00452306fcbe7c84ffc0b582b9f39\android-agent-4.87.0.jar"

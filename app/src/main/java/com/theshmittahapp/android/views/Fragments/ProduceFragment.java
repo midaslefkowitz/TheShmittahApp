@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.net.Uri;
@@ -18,9 +19,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.theshmittahapp.android.models.Produce;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.Activities.ProduceDetailsActivity;
+import com.theshmittahapp.android.views.MyApp;
 
 public class ProduceFragment extends Fragment{
 	
@@ -28,9 +32,28 @@ public class ProduceFragment extends Fragment{
 	
 	private View mRootView;
 	private ListView mListView;
+
+    private Tracker mTracker;
 	
 	public ProduceFragment() { }
-	
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Activity activity = getActivity();
+        mTracker = ((MyApp) getActivity().getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Set screen name.
+        mTracker.setScreenName("The Shmittah App Produce List Fragment");
+
+        // Send a screen view.
+        mTracker.send(new HitBuilders.AppViewBuilder().build());
+    }
+
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {

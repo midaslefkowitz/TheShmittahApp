@@ -19,12 +19,14 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ShareActionProvider;
 
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.Tracker;
+import com.newrelic.agent.android.NewRelic;
 import com.theshmittahapp.android.HelperClasses.NavDrawerListAdapter;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.models.NavDrawerItem;
 import com.theshmittahapp.android.views.Fragments.AboutFragment;
 import com.theshmittahapp.android.views.Fragments.ChartFragment;
-import com.theshmittahapp.android.views.Fragments.CommonTermsFragment;
 import com.theshmittahapp.android.views.Fragments.FAQFragment;
 import com.theshmittahapp.android.views.Fragments.LandingPageFragment;
 import com.theshmittahapp.android.views.Fragments.PDFFragment;
@@ -32,10 +34,8 @@ import com.theshmittahapp.android.views.Fragments.ProduceFragment;
 
 import java.util.ArrayList;
 
-import com.newrelic.agent.android.NewRelic;
-
 public class MainActivity extends Activity {
-	
+
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
@@ -70,6 +70,7 @@ public class MainActivity extends Activity {
         NewRelic.withApplicationToken(
                 "AA5c2072a8d0e78b2f2c2171782195865df39a8e78"
         ).start(this.getApplication());
+
 
         setContentView(R.layout.drawer_with_fragment_activity);
 
@@ -315,7 +316,7 @@ public class MainActivity extends Activity {
         	commonTerms();
         } else if (shiurim) {
         	shiurim = false;
-        	onlineShiruim();
+        	onlineShiurim();
         }
 	}
 
@@ -335,7 +336,7 @@ public class MainActivity extends Activity {
 		startActivity(intent);
 	}
 	
-	private void onlineShiruim() {
+	private void onlineShiurim() {
 		Uri webpage = Uri.parse(mShiurimUrl);
 	    Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
 	    if (intent.resolveActivity(getPackageManager()) != null) {

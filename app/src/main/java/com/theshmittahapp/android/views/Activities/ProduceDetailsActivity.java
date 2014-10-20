@@ -7,8 +7,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ShareActionProvider;
 
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.Tracker;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.Fragments.ProduceDetailsFragment;
+import com.theshmittahapp.android.views.MyApp;
 
 public class ProduceDetailsActivity extends Activity {
 
@@ -19,6 +22,9 @@ public class ProduceDetailsActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+        //Get a Tracker (should auto-report)
+        ((MyApp) getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
 		setContentView(R.layout.activity_produce_details);
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -28,8 +34,20 @@ public class ProduceDetailsActivity extends Activity {
 					.add(R.id.container, new ProduceDetailsFragment()).commit();
 		}
 	}
-	
-	@Override
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        GoogleAnalytics.getInstance(this).reportActivityStart(this);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        GoogleAnalytics.getInstance(this).reportActivityStop(this);
+    }
+
+    @Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate menu resource file.
 	    getMenuInflater().inflate(R.menu.main, menu);
@@ -57,7 +75,7 @@ public class ProduceDetailsActivity extends Activity {
 		intent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.share_body));
 		return intent;
 	}
-	
+
 	// Call to update the share intent
 	private void setShareIntent(Intent shareIntent) {
 	    if (mShareActionProvider != null) {
