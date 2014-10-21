@@ -41,16 +41,17 @@ public class ProduceFragment extends Fragment{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Activity activity = getActivity();
+        // google analytics tracker
         mTracker = ((MyApp) getActivity().getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        // Set screen name.
+        // Set screen name for analytics
         mTracker.setScreenName("The Shmittah App Produce List Fragment");
 
-        // Send a screen view.
+        // Send a screen view for analytics
         mTracker.send(new HitBuilders.AppViewBuilder().build());
     }
 
@@ -119,7 +120,11 @@ public class ProduceFragment extends Fragment{
 	private List<Produce> createProduceArrayList() {
 		String[] allProduceNames = getResources().getStringArray(R.array.fruits_and_veggies);
 		String[] allProduceFrom = getResources().getStringArray(R.array.from_date);
+        String[] allProduceFromYear = getResources().getStringArray(R.array.from_year);
 		String[] allProduceTo = getResources().getStringArray(R.array.to_date);
+        String[] allProduceToYear = getResources().getStringArray(R.array.to_year);
+        String[] allProduceSefichimFrom = getResources().getStringArray(R.array.sefichim_from);
+        String[] allProduceSefichimTo = getResources().getStringArray(R.array.sefichim_to);
 		String[] allProducePrepare = getResources().getStringArray(R.array.prepared);
 		String[] allProducePeeled = getResources().getStringArray(R.array.peeled);
 		String[] allProducePits = getResources().getStringArray(R.array.pits);
@@ -128,12 +133,16 @@ public class ProduceFragment extends Fragment{
 		String[] allProduceComments = getResources().getStringArray(R.array.comments);
 		
 		List<Produce> allProduce = new ArrayList<Produce>();
-		for (int i=0, totalProduce=allProduceNames.length; i<totalProduce; i++)
+		for (int i=0; i<allProduceNames.length; i++)
 		{
 			Produce produce = new Produce(
 					allProduceNames[i],
 					allProduceFrom[i],
+                    allProduceFromYear[i],
 					allProduceTo[i],
+                    allProduceToYear[i],
+                    allProduceSefichimFrom[i],
+                    allProduceSefichimTo[i],
 					allProducePrepare[i],
 					allProducePeeled[i],
 					allProducePits[i],

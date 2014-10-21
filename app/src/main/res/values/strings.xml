@@ -4,33 +4,51 @@
     <!-- Fruit Strings -->
     <string name="apple">Apple</string>
     <string name="apricot">Apricot</string>
+    <string name="artichoke">Artichoke</string>
+    <string name="asparagus">Asparagus</string>
     <string name="avocado">Avocado</string>
     <string name="banana">Banana</string>
+    <string name="bay">Bay Leaf</string>
     <string name="beet">Beet</string>
-    <string name="cabbage">Cabbage</string>
+    <string name="blackberry">Blackberry</string>
+    <string name="broccoli">Broccoli</string>
+    <string name="cabbage">Cabbage (White and Red)</string>
     <string name="carrot">Carrot</string>
     <string name="celery">Celery</string>
     <string name="cherries">Cherries</string>
+    <string name="cinnamon">Cinnamon</string>
+    <string name="cauliflower">Cauliflower</string>
+    <string name="coriander">Coriander</string>
     <string name="cucumber">Cucumber</string>
     <string name="date">Date</string>
     <string name="eggplant">Eggplant</string>
     <string name="fig">Fig</string>
+    <string name="fennel">Fennel</string>
     <string name="garlic">Garlic</string>
+    <string name="ginger">Ginger</string>
     <string name="grapefruit">Grapefruit</string>
     <string name="grape">Grape</string>
+    <string name="guava">Guava</string>
+    <string name="horseradish">Horseradish</string>
     <string name="kiwi">Kiwi</string>
     <string name="lemon">Lemon</string>
     <string name="lettuce">Lettuce</string>
     <string name="lychee">Lychee</string>
     <string name="mango">Mango</string>
     <string name="melon">Melon</string>
+    <string name="mint">Mint</string>
     <string name="mushroom">Mushroom</string>
     <string name="nectarine">Nectarine</string>
     <string name="olive">Olive</string>
     <string name="onion">Onion</string>
     <string name="orange">Orange</string>
+    <string name="oregano">Oregano</string>
+    <string name="parsley">Parsley</string>
+    <string name="paprika">Paprika</string>
     <string name="peach">Peach</string>
     <string name="pear">Pear</string>
+    <string name="peanuts">Peanuts</string>
+    <string name="popcorn">Popcorn</string>
     <string name="pepper">Pepper</string>
     <string name="pineapple">Pineapple</string>
     <string name="plum">Plum</string>
@@ -38,15 +56,137 @@
     <string name="pomelo">Pomelo</string>
     <string name="potato">Potato</string>
     <string name="pumpkin">Pumpkin</string>
+    <string name="poppy_seed">Poppy Seed</string>
+    <string name="quince">Quince</string>
     <string name="radish">Radish</string>
-    <string name="sabra">Sabra</string>
+    <string name="rice">Rice</string>
+    <string name="sabra">Sabra (prickly pear)</string>
+    <string name="saffron">Saffron</string>
+    <string name="sesame">Sesame</string>
     <string name="squash">Squash</string>
     <string name="strawberry">Strawberry</string>
+    <string name="spinach">Spinach</string>
+    <string name="sweet_pepper">Sweer Pepper</string>
     <string name="sweet_potato">Sweet Potato</string>
     <string name="tangerine">Tangerine</string>
     <string name="tomato">Tomato</string>
+    <string name="turnip">Turnip</string>
     <string name="watermelon">Watermelon</string>
     <string name="zucchini">Zucchini</string>
+
+    <!-- Produce Dates Strings -->
+    <string name="jan">January</string>
+    <string name="feb">February</string>
+    <string name="mar">March</string>
+    <string name="apr">April</string>
+    <string name="may">May</string>
+    <string name="jun">June</string>
+    <string name="jul">July</string>
+    <string name="aug">August</string>
+    <string name="sept">September</string>
+    <string name="oct">October</string>
+    <string name="nov">November</string>
+    <string name="dec">December</string>
+    <string name="fourteen">&nbsp;2014</string>
+    <string name="fifteen">&nbsp;2015</string>
+    <string name="sixteen">&nbsp;2016</string>
+    <string name="seventeen">&nbsp;2017</string>
+    
+    <!-- Sefichim Dates -->
+    <string name="no_sefichim">No Sefichim</string>
+    <string name="mid_jan_15">Mid-January 2015</string>
+    <string name="jan_15">January 2015</string>
+    <string name="jan_17">January 2017</string>
+    <string name="feb_15">February 2015</string>
+    <string name="mar_15">March 2015</string>
+    <string name="mar_16">March 2016</string>
+    <string name="jul_15">July 2015</string>
+    <string name="jul_16">July 2016</string>
+    <string name="aug_15">August 2015</string>
+    <string name="aug_16">August 2016</string>
+    <string name="sept_15">September 2015</string>
+    <string name="sept_16">September 2016</string>
+    <string name="oct_14">October 2014</string>
+    <string name="nov_14">November 2014</string>
+    <string name="nov_15">November 2015</string>
+    <string name="dec_14">December 2014</string>
+
+    <!-- Produce Prepared Strings -->
+    <string name="or">or</string>
+    <string name="raw">Raw</string>
+    <string name="cooked">Cooked</string>
+    <string name="salad">Raw in salad</string>
+    <string name="roasted">Roasted</string>
+    <string name="with_other">With other foods (ie. not alone)</string>
+    <string name="fried">Fried</string>
+    <string name="pickled">Pickled</string>
+    <string name="raw_or_cooked">Raw or cooked</string>
+    <string name="raw_or_baked">Raw or baked in cake</string>
+    <string name="salad_cooked">Raw in salad or cooked</string>
+    <string name="cooked_roasted">Cooked or Roasted</string>
+    <string name="raw_or_pickled">Raw or Pickled</string>
+    <string name="salad_cooked_fried">Raw in salad, cooked or fried</string>
+    <string name="cooked_fried_baked">Cooked, fried or baked</string>
+    <string name="raw_cooked_fried_pickled">Raw, cooked, fried or pickled</string>
+    <string name="cooked_raw_roasted">Cooked, raw or roasted</string>
+    <string name="raw_roasted_chocolate">Raw, roasted, cooked in chocolate</string>
+    <string name="cooked_roasted_fried_baked">Cooked, roasted, fried, baked</string>
+
+    <!-- Produce General -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="kedusha">Kedusha</string>
+    <string name="no_kedusha">No Kedusha</string>
+    <string name="no_kedusha_chul">No Kedusha as comes from outside Israel</string>
+    <string name="kedusha_fruit">Kedusha if fruit attached</string>
+    <string name="outer_kedusha">Outer layer - no kedusha</string>
+
+    <!-- Produce Peel -->
+    <string name="outer_layer">Outer layer - </string>
+
+    <!-- Produce Squeezed -->
+    <string name="banana_smash">For children or for cake</string>
+    <string name="cabbage_smash">Can be grated or shredded</string>
+    <string name="lemon_smash">Yes, in a tea or to give flavour to food</string>
+    <string name="pear_smash">No, Some allow it</string>
+    <string name="potato_smash">Yes (can be made into potato flour)</string>
+    <string name="pumpkin_smash">Yes. After it is cooked</string>
+    <string name="tomato_smash">Yes - but should not be strained </string>
+
+    <!-- Produce Comments -->
+    <string name="apple_comment">May be dried – stem has no kedusha</string>
+    <string name="apricot_comment">May be peeled finely for a child or elderly person - may be dried </string>
+    <string name="banana_comment">For adults can be mashed slightly.</string>
+    <string name="beet_comment">If made into borscht – it retains kedusha</string>
+    <string name="carrot_comment">May be grated for salad</string>
+    <string name="stem_comment">Stem has no kedusha</string>
+    <string name="dried_comment">May be dried</string>
+    <string name="garlic_comment">May be used to give flavour when pickling even if no intention to eat it. Should not be swallowed raw</string>
+    <string name="grapefruit_comment">Squeeze as much as possible and juice has kedusha</string>
+    <string name="grape_comment">May be peeled finely or mashed for a child or elderly person. May be dried for raisins.</string>
+    <string name="lemon_comment">May put lemon rind (peel) into dough for flavour. Cannot be used for removing stains.</string>
+    <string name="lettuce_comment">Can remove \'bad\' parts of it even if some good parts will come with it.</string>
+    <string name="melon_comment">Careful when throwing away the seeds not to waste any fruit</string>
+    <string name="olive_comment">Biur for olives/oil is Shevuos of 8th year</string>
+    <string name="onion_comment">May be minced for fish - juice  has kedusha. Can be cooked with chicken even if onions will not be eaten</string>
+    <string name="orange_comment">Squeeze as much as possible and juice is kedusha</string>
+    <string name="peach_comment">May be peeled finely or mashed for a child or elderly person</string>
+    <string name="peanut_comment">Making peanut oil from shmittah peanuts is subject to a dispute</string>
+    <string name="plum_comment">May be peeled for a child</string>
+    <string name="potato_comment">The Water it is cooked in has no Kedusha</string>
+    <string name="tomato_comment">May be cut even if some juice will be lost.</string>
+
+    <!-- Produce Details Strings -->
+    <string name="details_approx_dates">Approximate dates of Kedusha</string>
+    <string name="details_sefichim_dates">Approximate Sefichim dates</string>
+    <string name="details_start">Start:</string>
+    <string name="details_end">End:</string>
+    <string name="details_prepared">How may it be prepared or eaten:</string>
+    <string name="details_peeled">May it be peeled? </string>
+    <string name="details_pits">Status of pits/seeds:</string>
+    <string name="details_peel">Status of peel:</string>
+    <string name="details_mashed">May it be squeezed/blended/mashed?</string>
+    <string name="details_comments">Comments:</string>
 
     <!-- Donate Fragment Strings -->
     <string name="donate">Please consider donating with Paypal. Money goes towards creating new Torah content. Please bear in mind that Paypal takes $0.30 and 2.5% of every donation. Thanks for your support.</string>
@@ -98,7 +238,12 @@
     <string name="otzar_beis_din">Otzar Beis Din</string>
     <string name="otzar_bd_def">Storehouses belonging to a Beis Din that acts on behalf of the public to provide produce</string>
     <string name="sefichim">Sefichim</string>
-    <string name="sefichim_def">Vegetables that grew during shmittah that are forbidden to be eaten or used in any way</string>
+    <string name="sefichim_def">When Chazal saw that people were transgressing the laws of shmittah \
+        and planting in their fields during the shmittah year while claiming that the produce grew \
+        by itself, they forbade eating anything that grew, even by itself. Items which grew by themselves \
+        are termed sefichim and, in accord with Chazal’s directive, are prohibited. The logic behind \
+        the decree is that there is no incentive to plant the seeds during Shmittah if the produce \
+        cannot, in any event, be eaten.</string>
     <string name="shmittah">Shmittah</string>
     <string name="shmittah_def">The seventh year of the agricultural cycle in Eretz Yisrael</string>
     <string name="shmittah_bin">Shmittah Bin</string>
@@ -116,92 +261,6 @@
     <string name="about_weisenfeld2">Rabbi Avraham Wiesenfeld is the Rosh Kollel of a Halacha Kollel in Romema, Yerushalayim, a Maggid Shiur in various yeshivos in Yerushalayim and a sought after speaker, both in Israel and in the UK. He is the author of the popular book \"Kashrus in the Kitchen - QA\" published by Feldheim which has sold thousands of copies worldwide.</string>
     <string name="about_weisenfeld3">The information on fruits and vegetables was sent as a chart form to over 50,000 people in Israel.</string>
     <string name="about_weisenfeld4">If you want to organize a shiur on the Halachos of Shmittah or any other topic from Rabbi Wiesenfeld - please send a message though the \"Ask the Rabbi\" menu option.</string>
-
-    <!-- Produce Dates Strings -->
-    <string name="from">From</string>
-    <string name="to"> - </string>
-    <string name="tishrei">Tishrei</string>
-    <string name="cheshvan">Cheshvan</string>
-    <string name="kislev">Kislev</string>
-    <string name="teves">Teves</string>
-    <string name="shevat">Shevat</string>
-    <string name="adar">Adar</string>
-    <string name="nissan">Nissan</string>
-    <string name="iyar">Iyar</string>
-    <string name="sivan">Sivan</string>
-    <string name="tamuz">Tamuz</string>
-    <string name="av">Av</string>
-    <string name="elul">Elul</string>
-
-    <!-- Produce Prepared Strings -->
-    <string name="or">or</string>
-    <string name="raw">Raw</string>
-    <string name="cooked">Cooked</string>
-    <string name="salad">Raw in salad</string>
-    <string name="roasted">Roasted</string>
-    <string name="with_other">With other foods (ie. not alone)</string>
-    <string name="fried">Fried</string>
-    <string name="pickled">Pickled</string>
-    <string name="raw_or_cooked">Raw or cooked</string>
-    <string name="raw_or_baked">Raw or baked in cake</string>
-    <string name="salad_cooked">Raw in salad or cooked</string>
-    <string name="cooked_roasted">Cooked or Roasted</string>
-    <string name="raw_or_pickled">Raw or Pickled</string>
-    <string name="salad_cooked_fried">Raw in salad, cooked or fried</string>
-    <string name="cooked_fried_baked">Cooked, fried or baked</string>
-    <string name="raw_cooked_fried_pickled">Raw, cooked, fried or pickled</string>
-
-    <!-- Produce General -->
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="kedusha">Kedusha</string>
-    <string name="no_kedusha">No Kedusha</string>
-    <string name="kedusha_fruit">Kedusha if fruit attached</string>
-    <string name="outer_kedusha">Outer layer - no kedusha</string>
-
-    <!-- Produce Peel -->
-    <string name="outer_layer">Outer layer - </string>
-
-    <!-- Produce Squeezed -->
-    <string name="banana_smash">For children or for cake</string>
-    <string name="lemon_smash">Yes, in a tea or to give flavour to food</string>
-    <string name="pear_smash">No, Some allow it</string>
-    <string name="potato_smash">Yes (can be made into potato flour)</string>
-    <string name="pumpkin_smash">Yes. After it is cooked</string>
-    <string name="tomato_smash">Yes - but should not be strained </string>
-
-    <!-- Produce Comments -->
-    <string name="apple_comment">May be dried – stem has no kedusha</string>
-    <string name="apricot_comment">May be peeled finely for a child or elderly person - may be dried </string>
-    <string name="banana_comment">For adults can be mashed slightly.</string>
-    <string name="beet_comment">If made into borscht – it retains kedusha</string>
-    <string name="carrot_comment">May be grated for salad</string>
-    <string name="stem_comment">Stem has no kedusha</string>
-    <string name="dried_comment">May be dried</string>
-    <string name="garlic_comment">May be used to give flavour when pickling even if no intention to eat it. Should not be swallowed raw</string>
-    <string name="grapefruit_comment">Squeeze as much as possible and juice has kedusha</string>
-    <string name="grape_comment">May be peeled finely or mashed for a child or elderly person. May be dried for raisins.</string>
-    <string name="lemon_comment">May put lemon rind (peel) into dough for flavour. Cannot be used for removing stains.</string>
-    <string name="lettuce_comment">Can remove \'bad\' parts of it even if some good parts will come with it.</string>
-    <string name="melon_comment">Careful when throwing away the seeds not to waste any fruit</string>
-    <string name="olive_comment">Biur for olives/oil is Shevuos of 8th year</string>
-    <string name="onion_comment">May be minced for fish - juice  has kedusha. Can be cooked with chicken even if onions will not be eaten</string>
-    <string name="orange_comment">Squeeze as much as possible and juice is kedusha</string>
-    <string name="peach_comment">May be peeled finely or mashed for a child or elderly person</string>
-    <string name="plum_comment">May be peeled for a child</string>
-    <string name="potato_comment">The Water it is cooked in has no Kedusha</string>
-    <string name="tomato_comment">May be cut even if some juice will be lost.</string>
-
-    <!-- Produce Details Strings -->
-    <string name="details_approx_dates">Approximate dates of Kedusha</string>
-    <string name="details_start">Start:</string>
-    <string name="details_end">End:</string>
-    <string name="details_prepared">How may it be prepared or eaten:</string>
-    <string name="details_peeled">May it be peeled? </string>
-    <string name="details_pits">Status of pits/seeds:</string>
-    <string name="details_peel">Status of peel:</string>
-    <string name="details_mashed">May it be squeezed/blended/mashed?</string>
-    <string name="details_comments">Comments:</string>
 
     <!-- FAQ Questions Strings -->
     <string name="question1">Is there a mitzvah to eat shmittah produce?</string>

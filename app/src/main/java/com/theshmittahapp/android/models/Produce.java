@@ -6,7 +6,11 @@ public class Produce implements Serializable {
 	
 	private String name = null;
 	private String startDate = null;
+    private String startYear = null;
 	private String endDate = null;
+    private String endYear = null;
+    private String sefichimFrom = null;
+    private String sefichimTo = null;
 	private String prepared = null;
 	private String peeled = null;
 	private String seeds = null;
@@ -14,11 +18,16 @@ public class Produce implements Serializable {
 	private String squeezed = null;
 	private String comments = null;
 	
-	public Produce(String name, String startDate, String endDate, String prepared, 
-			String peeled, String seeds, String peel, String squeezed, String comments) {
+	public Produce(String name, String startDate, String startYear, String endDate, String endYear,
+                   String sefichimFrom, String sefichimTo, String prepared, String peeled,
+                   String seeds, String peel, String squeezed, String comments) {
 		this.name = name;
 		this.startDate = startDate;
+        this.startYear = startYear;
 		this.endDate = endDate;
+        this.endYear = endYear;
+        this.sefichimFrom = sefichimFrom;
+        this.sefichimTo = sefichimTo;
 		this.prepared = prepared;
 		this.peeled = peeled;
 		this.seeds = seeds;
@@ -26,26 +35,7 @@ public class Produce implements Serializable {
 		this.squeezed = squeezed;
 		this.comments = comments;
 	}
-	
-	/*
-	public Produce(String name, String startDate, String endDate, String prepared, 
-			boolean peeled, String seeds, String peel, boolean squeezed) {
-		this.name = name;
-		this.startDate = startDate;
-		this.endDate = endDate;
-		this.prepared = prepared;
-		this.peeled = peeled;
-		this.seeds = seeds;
-		this.peel = peel;
-		this.squeezed = squeezed;
-	}
-	
-	public Produce(String name, String startDate) {
-		this.name = name;
-		this.startDate = startDate;
-	}
-	*/
-	
+
 	public String getName() {
 		return name;
 	}
@@ -53,20 +43,36 @@ public class Produce implements Serializable {
 	public String getStartDate() {
 		return startDate;
 	}
-	
-	public String getEndDate() {
+
+    public String getStartYear() {
+        return startYear;
+    }
+
+    public String getEndDate() {
 		return endDate;
 	}
-	
-	public String getPrepared() {
+
+    public String getEndYear() {
+        return endYear;
+    }
+
+    public String getSefichimFrom() {
+        return sefichimFrom;
+    }
+
+    public String getSefichimTo() {
+        return sefichimTo;
+    }
+
+    public String getPrepared() {
 		return prepared;
 	}
 
 	public String getPeeled() {
 		return peeled;
 	}
-	
-	public String getSeeds() {
+
+    public String getSeeds() {
 		return seeds;
 	}
 	

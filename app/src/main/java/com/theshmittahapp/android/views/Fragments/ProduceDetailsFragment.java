@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ProduceDetailsFragment extends Fragment {
+
 	private String url = "http://www.mymakolet.com";
 	
 	public ProduceDetailsFragment() {}
@@ -49,6 +50,14 @@ public class ProduceDetailsFragment extends Fragment {
 		
 		TextView startTV = (TextView) v.findViewById(R.id.details_start_date);
 		startTV.setText(produce.getStartDate());
+
+        /* Set Start Date Year TV */
+        TextView startYearTV = (TextView) v.findViewById(R.id.details_start_date_year);
+        String startYear = produce.getStartYear();
+        startYearTV.setText(startYear);
+        if (startYear == null || startYear.length()==0) {
+            startYearTV.setVisibility(View.GONE);
+        }
 		
 		/* Set End Date TV */
 		TextView endTV1 = (TextView) v.findViewById(R.id.end_date);
@@ -59,7 +68,39 @@ public class ProduceDetailsFragment extends Fragment {
 			endTV1.setVisibility(View.GONE);
 			endTV2.setVisibility(View.GONE);
 		}
-		
+
+        /* Set End Date Year TV */
+        TextView endYearTV = (TextView) v.findViewById(R.id.details_end_date_year);
+        String endYear = produce.getEndYear();
+        endYearTV.setText(endYear);
+        if (endYear == null || endYear.length()==0) {
+            endYearTV.setVisibility(View.GONE);
+        }
+
+        /* Sefichim Texts */
+
+        /* Sefichim Start Date */
+        TextView sefichimTitleTV = (TextView) v.findViewById(R.id.sefichim_title);
+        TextView sefichimStartTV1 = (TextView) v.findViewById(R.id.sefichim_start_date);
+        TextView sefichimStartTV2 = (TextView) v.findViewById(R.id.details_sefichim_start_date);
+        String sefichimStart = produce.getSefichimFrom();
+        sefichimStartTV2.setText(sefichimStart);
+        if (sefichimStart == null || sefichimStart.length()==0) {
+            sefichimTitleTV.setVisibility(View.GONE);
+            sefichimStartTV1.setVisibility(View.GONE);
+            sefichimStartTV2.setVisibility(View.GONE);
+        }
+
+        /* Sefichim End Date */
+        TextView sefichimEndTV1 = (TextView) v.findViewById(R.id.sefichim_end_date);
+        TextView sefichimEndTV2 = (TextView) v.findViewById(R.id.details_sefichim_end_date);
+        String sefichimEnd = produce.getSefichimTo();
+        sefichimStartTV2.setText(sefichimEnd);
+        if (sefichimEnd == null || sefichimEnd.length()==0) {
+            sefichimEndTV1.setVisibility(View.GONE);
+            sefichimEndTV2.setVisibility(View.GONE);
+        }
+
 		/* Set prepared TV */
 		TextView preparedTV1 = (TextView) v.findViewById(R.id.prepared);
 		TextView preparedTV2 = (TextView) v.findViewById(R.id.details_prepared);

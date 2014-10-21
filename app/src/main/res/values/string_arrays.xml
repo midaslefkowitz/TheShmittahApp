@@ -18,33 +18,51 @@
     <string-array name="fruits_and_veggies">
         <item>@string/apple</item>
         <item>@string/apricot</item>
+        <item>@string/artichoke</item>
+        <item>@string/asparagus</item>
         <item>@string/avocado</item>
         <item>@string/banana</item>
+        <item>@string/bay</item>
         <item>@string/beet</item>
+        <item>@string/blackberry</item>
+        <item>@string/broccoli</item>
         <item>@string/cabbage</item>
         <item>@string/carrot</item>
         <item>@string/celery</item>
         <item>@string/cherries</item>
+        <item>@string/cinnamon</item>
+        <item>@string/cauliflower</item>
+        <item>@string/coriander</item>
         <item>@string/cucumber</item>
         <item>@string/date</item>
         <item>@string/eggplant</item>
         <item>@string/fig</item>
+        <item>@string/fennel</item>
         <item>@string/garlic</item>
+        <item>@string/ginger</item>
         <item>@string/grapefruit</item>
         <item>@string/grape</item>
+        <item>@string/guava</item>
+        <item>@string/horseradish</item>
         <item>@string/kiwi</item>
         <item>@string/lemon</item>
         <item>@string/lettuce</item>
         <item>@string/lychee</item>
         <item>@string/mango</item>
         <item>@string/melon</item>
+        <item>@string/mint</item>
         <item>@string/mushroom</item>
         <item>@string/nectarine</item>
         <item>@string/olive</item>
         <item>@string/onion</item>
         <item>@string/orange</item>
+        <item>@string/oregano</item>
+        <item>@string/parsley</item>
+        <item>@string/paprika</item>
         <item>@string/peach</item>
         <item>@string/pear</item>
+        <item>@string/peanuts</item>
+        <item>@string/popcorn</item>
         <item>@string/pepper</item>
         <item>@string/pineapple</item>
         <item>@string/plum</item>
@@ -52,143 +70,517 @@
         <item>@string/pomelo</item>
         <item>@string/potato</item>
         <item>@string/pumpkin</item>
+        <item>@string/poppy_seed</item>
+        <item>@string/quince</item>
         <item>@string/radish</item>
+        <item>@string/rice</item>
         <item>@string/sabra</item>
+        <item>@string/saffron</item>
+        <item>@string/sesame</item>
         <item>@string/squash</item>
         <item>@string/strawberry</item>
+        <item>@string/spinach</item>
+        <item>@string/sweet_pepper</item>
         <item>@string/sweet_potato</item>
         <item>@string/tangerine</item>
         <item>@string/tomato</item>
+        <item>@string/turnip</item>
         <item>@string/watermelon</item>
         <item>@string/zucchini</item>
     </string-array>
     
     <string-array name="from_date">
-        <item>@string/iyar</item>
-        <item>@string/nissan</item>
-        <item>@string/kislev</item>
-        <item>@string/tishrei</item>
-        <item>@string/tishrei</item>
-        <item>@string/tishrei</item>
-        <item>@string/tishrei</item>
-        <item>@string/tishrei</item>
-        <item>@string/nissan</item>
-        <item>@string/tishrei</item>
-        <item>@string/av</item>
-        <item>@string/tishrei</item>
-        <item>@string/iyar</item>
-        <item>@string/shevat</item>
-        <item>@string/elul</item>
-        <item>@string/adar</item>
-        <item>@string/elul</item>
-        <item>@string/iyar</item>
-        <item>@string/tishrei</item>
-        <item>@string/sivan</item>
-        <item>@string/sivan</item>
-        <item>@string/tishrei</item>
+        <item>@string/may</item>
+        <item>@string/apr</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/dec</item>
+        <item>@string/oct</item>
+        <item>@string/apr</item>
+        <item>@string/oct</item>
         <item>@string/no_kedusha</item>
-        <item>@string/shevat</item>
-        <item>@string/elul</item>
-        <item>@string/tishrei</item>
-        <item>@string/elul</item>
-        <item>@string/shevat</item>
-        <item>@string/tamuz</item>
-        <item>@string/tishrei</item>
-        <item>@string/tishrei</item>
-        <item>@string/iyar</item>
-        <item>@string/av</item>
-        <item>@string/elul</item>
-        <item>@string/cheshvan</item>
-        <item>@string/tishrei</item>
-        <item>@string/tishrei</item>
-        <item>@string/iyar</item>
-        <item>@string/tishrei</item>
-        <item>@string/tishrei</item>
-        <item>@string/cheshvan</item>
-        <item>@string/elul</item>
-        <item>@string/tishrei</item>
-        <item>@string/tishrei</item>
-        <item>@string/tishrei</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/apr</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/aug</item>
+        <item>@string/oct</item>
+        <item>@string/apr</item>
+        <item>@string/oct</item>
+        <item>@string/feb</item>
+        <item>@string/no_kedusha</item>
+        <item>@string/sept</item>
+        <item>@string/feb</item>
+        <item>@string/sept</item>
+        <item>@string/oct</item>
+        <item>@string/sept</item>
+        <item>@string/may</item>
+        <item>@string/oct</item>
+        <item>@string/jun</item>
+        <item>@string/jun</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/no_kedusha</item>
+        <item>@string/feb</item>
+        <item>@string/sept</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/sept</item>
+        <item>@string/jun</item>
+        <item>@string/sept</item>
+        <item>@string/aug</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/may</item>
+        <item>@string/jul</item>
+        <item>@string/sept</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/no_kedusha</item>
+        <item>@string/sept</item>
+        <item>@string/oct</item>
+        <item>@string/no_kedusha_chul</item>
+        <item>@string/may</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/sept</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
+        <item>@string/oct</item>
     </string-array>
-    
+
+    <string-array name="from_year">
+        <item>@string/fifteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item></item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fifteen</item>
+        <item></item>
+        <item>@string/fifteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item></item>
+        <item>@string/fifteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item></item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item></item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fifteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+        <item>@string/fourteen</item>
+    </string-array>
+
     <string-array name="to_date">
-        <item>@string/sivan</item>
-        <item>@string/nissan</item>
-        <item>@string/sivan</item>
+        <item>@string/jun</item>
+        <item>@string/may</item>
+        <item></item>
+        <item></item>
+        <item>@string/jun</item>
         <item></item>
         <item></item>
         <item></item>
         <item></item>
         <item></item>
-        <item>@string/iyar</item>
-        <item></item>
-        <item>@string/tishrei</item>
-        <item></item>
-        <item>@string/iyar</item>
-        <item></item>
-        <item>@string/cheshvan</item>
-        <item>@string/adar</item>
-        <item>@string/elul</item>
-        <item>@string/sivan</item>
-        <item></item>
-        <item>@string/sivan</item>
-        <item>@string/sivan</item>
-        <item></item>
-        <item></item>
-        <item>@string/shevat</item>
-        <item>@string/elul</item>
-        <item></item>
-        <item>@string/cheshvan</item>
-        <item>@string/shevat</item>
-        <item>@string/sivan</item>
-        <item></item>
-        <item></item>
-        <item>@string/iyar</item>
-        <item>@string/av</item>
-        <item>@string/cheshvan</item>
         <item></item>
         <item></item>
         <item></item>
-		<item>@string/sivan</item>
-		<item></item>
-		<item></item>
-		<item></item>
-		<item>@string/elul</item>	
-		<item></item>
-		<item></item>
-		<item></item>
+        <item>@string/jun</item>
+        <item>@string/sept</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/sept</item>
+        <item></item>
+        <item>@string/may</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/nov</item>
+        <item>@string/feb</item>
+        <item>@string/sept</item>
+        <item></item>
+        <item>@string/sept</item>
+        <item>@string/may</item>
+        <item></item>
+        <item>@string/jun</item>
+        <item>@string/jun</item>
+        <item></item>
+        <item>@string/sept</item>
+        <item></item> mushroom
+        <item>@string/feb</item>
+        <item>@string/sept</item>
+        <item></item>
+        <item>@string/nov</item>
+        <item>@string/dec</item>
+        <item></item>
+        <item></item>
+        <item>@string/sept</item>
+        <item>@string/jun</item>
+        <item>@string/sept</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/may</item>
+        <item>@string/aug</item>
+        <item>@string/sept</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/sept</item>
+        <item></item>
+        <item></item> rice
+        <item>@string/jun</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/sept</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
-    
+
+    <string-array name="to_year">
+        <item>@string/sixteen</item>
+        <item>@string/sixteen</item>
+        <item></item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item>@string/fifteen</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/seventeen</item>
+        <item>@string/sixteen</item>
+        <item>@string/sixteen</item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item>@string/sixteen</item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item>@string/sixteen</item>
+        <item></item>
+        <item>@string/fifteen</item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item>@string/sixteen</item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item>@string/fifteen</item>
+        <item></item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item>@string/sixteen</item>
+        <item>@string/sixteen</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item>@string/sixteen</item>
+        <item>@string/seventeen</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item></item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/sixteen</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="sefichim_from">
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item></item>
+        <item>@string/jan_15</item>
+        <item>@string/jan_15</item>
+        <item>@string/jan_15</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/jan_15</item>
+        <item>@string/nov_15</item>
+        <item>@string/nov_14</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/jan_15</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/nov_14</item>
+        <item>@string/mar_15</item>
+        <item></item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/jul_15</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/jan_15</item>
+        <item>@string/no_sefichim</item>
+        <item></item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/nov_14</item>
+        <item>@string/aug_15</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/sept_15</item>
+        <item>@string/aug_15</item>
+        <item>@string/jan_15</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/nov_14</item>
+        <item>@string/jul_15</item>
+        <item></item>
+        <item>@string/no_sefichim</item>
+        <item>@string/nov_14</item>
+        <item></item>
+        <item>@string/no_sefichim</item>
+        <item>@string/no_sefichim</item>
+        <item></item>
+        <item></item>
+        <item>@string/feb_15</item>
+        <item>@string/nov_14</item>
+        <item>@string/feb_15</item>
+        <item>@string/jul_15</item>
+        <item>@string/no_sefichim</item>
+        <item>@string/dec_14</item>
+        <item>@string/oct_14</item>
+        <item>@string/mid_jan_15</item>
+        <item>@string/no_sefichim</item>
+    </string-array>
+
+    <string-array name="sefichim_to">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/jan_17</item>
+        <item>@string/jan_17</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/jan_17</item>
+        <item>@string/jan_17</item>
+        <item>@string/nov_15</item>
+        <item></item>
+        <item>@string/jan_17</item>
+        <item></item>
+        <item>@string/nov_15</item>
+        <item>@string/mar_16</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/jan_17</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/jan_17</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/nov_15</item>
+        <item>@string/sept_16</item>
+        <item></item>
+        <item></item>
+        <item>@string/sept_16</item>
+        <item>@string/aug_16</item>
+        <item>@string/jan_17</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/jan_17</item>
+        <item>@string/jul_16</item>
+        <item></item>
+        <item></item>
+        <item>@string/nov_15</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/jan_17</item>
+        <item>@string/nov_15</item>
+        <item>@string/jan_17</item>
+        <item>@string/jan_17</item>
+        <item></item>
+        <item>@string/jan_17</item>
+        <item>@string/jan_17</item>
+        <item>@string/jan_17</item>
+        <item></item>
+    </string-array>
+
     <string-array name="prepared">
         <item>@string/raw_or_cooked</item>
         <item>@string/raw_or_cooked</item>
+        <item></item>
+        <item>@string/cooked</item>
         <item>@string/raw</item>
         <item>@string/raw_or_baked</item>
+        <item></item>
         <item>@string/cooked</item>
+        <item></item>
+        <item>@string/cooked_raw_roasted</item>
         <item>@string/salad_cooked</item>
         <item>@string/raw_or_cooked</item>
         <item>@string/raw_or_cooked</item>
         <item>@string/raw_or_cooked</item>
+        <item></item>
+        <item></item>
+        <item>@string/raw_or_cooked</item>
         <item>@string/raw</item>
         <item>@string/raw</item>
         <item>@string/cooked_roasted</item>
         <item>@string/raw_or_cooked</item>
+        <item></item>
         <item>@string/raw_or_cooked</item>
+        <item></item>
         <item>@string/raw</item>
         <item>@string/raw</item>
+        <item>@string/raw</item>
+        <item></item>
         <item>@string/raw</item>
         <item>@string/with_other</item>
         <item>@string/raw</item>
-        <item>@string/cooked_roasted</item>
-        <item>@string/cooked_roasted</item>
+        <item>@string/raw_or_cooked</item>
+        <item>@string/raw_or_cooked</item>
         <item>@string/raw</item>
+        <item>@string/raw_or_cooked</item>
         <item></item>
         <item>@string/raw_or_cooked</item>
         <item>@string/raw_or_pickled</item>
         <item>@string/salad_cooked_fried</item>
         <item>@string/raw</item>
         <item>@string/raw_or_cooked</item>
+        <item></item>
+        <item></item>
         <item>@string/raw_or_cooked</item>
+        <item>@string/raw_or_cooked</item>
+        <item>@string/raw_roasted_chocolate</item>
+        <item></item>
         <item>@string/raw_or_cooked</item>
         <item>@string/raw_or_cooked</item>
         <item>@string/raw_or_cooked</item>
@@ -196,13 +588,21 @@
         <item>@string/raw</item>
         <item>@string/cooked_fried_baked</item>
         <item>@string/cooked</item>
-        <item>@string/raw</item>
-        <item>@string/raw</item>
+        <item></item>
         <item>@string/cooked</item>
         <item>@string/raw</item>
-        <item>@string/cooked_fried_baked</item>
+        <item></item> rice
+        <item>@string/raw</item>
+        <item></item>
+        <item></item>
+        <item>@string/cooked</item>
+        <item>@string/raw</item>
+        <item></item>
+        <item></item>
+        <item>@string/cooked_roasted_fried_baked</item>
         <item>@string/raw</item>
         <item>@string/raw_cooked_fried_pickled</item>
+        <item>@string/cooked</item>
         <item>@string/raw</item>
         <item>@string/cooked</item>
     </string-array>
@@ -210,47 +610,73 @@
     <string-array name="peeled">
         <item>@string/yes</item>
         <item>@string/no</item>
+        <item></item>
+        <item>@string/no</item>
         <item>@string/yes</item>
         <item>@string/yes</item>
         <item></item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>@string/yes</item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item></item>
         <item></item>
         <item>@string/yes</item>
         <item>@string/no</item>
         <item>@string/no</item>
         <item>@string/no</item>
-        <item>@string/yes</item>
-        <item>@string/yes</item>
-        <item>@string/no</item>
-        <item>@string/yes</item>
-        <item>@string/yes</item>
         <item></item>
-        <item>@string/yes</item>
-        <item>@string/yes</item>
-        <item>@string/yes</item>
-        <item></item>
-        <item>@string/no</item>
-        <item></item>
-        <item>@string/yes</item>
-        <item>@string/yes</item>
-        <item>@string/no</item>
         <item>@string/yes</item>
         <item></item>
         <item>@string/yes</item>
         <item>@string/no</item>
         <item>@string/yes</item>
+        <item></item> horseradish
+        <item>@string/yes</item>
+        <item>@string/yes</item>
+        <item></item> lettuce
+        <item>@string/yes</item>
+        <item>@string/yes</item>
+        <item>@string/yes</item>
+        <item></item>
+        <item></item> mushroom
+        <item>@string/no</item>
+        <item></item>
+        <item>@string/yes</item>
+        <item>@string/yes</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/no</item>
+        <item>@string/yes</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/yes</item>
+        <item>@string/no</item>
         <item>@string/yes</item>
         <item>@string/yes</item>
         <item>@string/yes</item>
         <item>@string/yes</item>
+        <item></item>
+        <item></item>
+        <item>@string/yes</item>
+        <item></item> rice
 		<item>@string/yes</item>
+        <item></item>
+        <item></item>
+        <item>@string/yes</item>
+        <item>@string/no</item>
+        <item></item>
+        <item></item>
+        <item>@string/yes</item>
         <item>@string/yes</item>
         <item>@string/no</item>
         <item>@string/yes</item>
-        <item>@string/yes</item>
-        <item>@string/no</item>
         <item>@string/yes</item>
         <item>@string/yes</item>
     </string-array>
@@ -258,20 +684,32 @@
     <string-array name="pits">
         <item>@string/no_kedusha</item>
         <item>@string/no_kedusha</item>
+        <item></item>
+        <item></item>
+        <item>@string/no_kedusha</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>@string/no_kedusha</item>
         <item></item>
         <item></item>
         <item></item>
-        <item></item>
-        <item></item>
-        <item>@string/no_kedusha</item>
         <item>@string/kedusha</item>
         <item>@string/no_kedusha</item>
         <item>@string/kedusha</item>
         <item>@string/kedusha</item>
         <item></item>
+        <item></item>
+        <item></item>
         <item>@string/no_kedusha</item>
         <item>@string/no_kedusha</item>
+        <item>@string/kedusha</item>
+        <item></item> horseradish
         <item>@string/kedusha</item>
         <item>@string/no_kedusha</item>
         <item></item>
@@ -279,60 +717,92 @@
         <item>@string/kedusha</item>
         <item>@string/kedusha</item>
         <item></item>
+        <item></item>
         <item>@string/no_kedusha</item>
         <item>@string/no_kedusha</item>
         <item></item>
         <item>@string/no_kedusha</item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>@string/no_kedusha</item>
         <item>@string/no_kedusha</item>
+        <item></item>
+        <item></item>
         <item>@string/kedusha</item>
         <item>@string/kedusha_fruit</item>
-        <item>@string/kedusha</item>
+        <item>@string/no_kedusha</item>
         <item>@string/kedusha</item>
         <item>@string/no_kedusha</item>
         <item></item>
         <item>@string/kedusha</item>
-		<item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item></item>
         <item>@string/kedusha</item>
         <item>@string/kedusha</item>
         <item></item>
+        <item></item>
+        <item>@string/kedusha</item>
         <item>@string/no_kedusha</item>
+        <item>@string/kedusha</item>
         <item>@string/kedusha</item>
         <item>@string/kedusha</item>
         <item>@string/kedusha</item>
     </string-array>
     
     <string-array name="peel">
-        <item>@string/kedusha</item>
-        <item>@string/kedusha</item>
-        <item>@string/no_kedusha</item>
-        <item>@string/no_kedusha</item>
-        <item>@string/no_kedusha</item>
-        <item></item>
+        <item>@string/kedusha</item> apple
         <item>@string/kedusha</item>
         <item></item>
         <item></item>
-        <item>@string/kedusha</item>
-        <item>@string/kedusha</item>
-        <item>@string/kedusha</item>
-        <item>@string/kedusha</item>
-        <item>@string/no_kedusha</item>
-        <item>@string/no_kedusha</item>
-        <item>@string/kedusha</item>
         <item>@string/no_kedusha</item>
         <item>@string/no_kedusha</item>
         <item></item>
         <item>@string/no_kedusha</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>@string/kedusha</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>@string/kedusha</item>
         <item>@string/kedusha</item>
+        <item>@string/kedusha</item>
+        <item>@string/kedusha</item>
+        <item></item>
+        <item>@string/no_kedusha</item>
+        <item></item>
+        <item>@string/no_kedusha</item>
+        <item>@string/kedusha</item>
+        <item>@string/no_kedusha</item>
+        <item></item>
+        <item>@string/no_kedusha</item>
+        <item>@string/no_kedusha</item>
+        <item></item>
+        <item>@string/no_kedusha</item>
+        <item>@string/kedusha</item>
+        <item>@string/kedusha</item>
+        <item></item>
         <item></item>
         <item>@string/kedusha</item>
         <item></item>
         <item>@string/outer_kedusha</item>
         <item>@string/no_kedusha</item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>@string/kedusha</item>
         <item>@string/kedusha</item>
+        <item></item>
+        <item></item>
         <item></item>
         <item>@string/no_kedusha</item>
 		<item>@string/kedusha</item>
@@ -340,13 +810,21 @@
         <item>@string/no_kedusha</item>
         <item>@string/kedusha</item>
         <item>@string/no_kedusha</item>
+        <item></item>
+        <item></item>
         <item>@string/kedusha</item>
+        <item></item>
+        <item>@string/no_kedusha</item>
+        <item></item>
+        <item></item>
+        <item>@string/kedusha</item>
+        <item>@string/kedusha</item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>@string/no_kedusha</item>
         <item>@string/kedusha</item>
-        <item>@string/kedusha</item>
-        <item>@string/kedusha</item>
-        <item>@string/no_kedusha</item>
-        <item>@string/kedusha</item>
+        <item></item>
         <item>@string/no_kedusha</item>
         <item>@string/kedusha</item>
     </string-array>
@@ -354,33 +832,51 @@
     <string-array name="mashed">
         <item>@string/yes</item>
         <item>@string/yes</item>
+        <item></item>
+        <item>@string/yes</item>
         <item>@string/yes</item>
         <item>@string/banana_smash</item>
+        <item></item>
+        <item>@string/yes</item>
+        <item></item> blackberry
+        <item>@string/yes</item>
+        <item>@string/cabbage_smash</item>
         <item>@string/yes</item>
         <item>@string/no</item>
-        <item>@string/yes</item>
         <item>@string/no</item>
-        <item>@string/no</item>
-        <item>@string/no</item>
-        <item>@string/no</item>
+        <item></item>
+        <item></item>
         <item>@string/yes</item>
-        <item>@string/no</item>
-        <item>@string/yes</item>
-        <item>@string/yes</item>
-        <item>@string/yes</item>
-        <item>@string/yes</item>
-        <item>@string/lemon_smash</item>
         <item>@string/no</item>
         <item>@string/no</item>
         <item>@string/yes</item>
         <item>@string/no</item>
         <item></item>
         <item>@string/yes</item>
+        <item></item>
         <item>@string/yes</item>
         <item>@string/yes</item>
+        <item>@string/yes</item>
+        <item></item>
+        <item>@string/yes</item>
+        <item>@string/lemon_smash</item>
+        <item>@string/no</item>
+        <item>@string/no</item>
         <item>@string/yes</item>
         <item>@string/no</item>
-        <item>@string/pear_smash</item>
+        <item>@string/yes</item>
+        <item></item> mush
+        <item>@string/yes</item>
+        <item>@string/yes</item>
+        <item>@string/yes</item>
+        <item>@string/yes</item>
+        <item>@string/yes</item>
+        <item></item>
+        <item></item>
+        <item>@string/no</item>
+        <item>@string/yes</item>
+        <item>@string/yes</item>
+        <item></item> popcorn
         <item>@string/no</item>
         <item>@string/yes</item>
         <item>@string/yes</item>
@@ -388,13 +884,21 @@
         <item>@string/no</item>
         <item>@string/potato_smash</item>
         <item>@string/pumpkin_smash</item>
+        <item></item>
         <item>@string/yes</item>
-        <item>@string/no</item>
+        <item>@string/yes</item>
+        <item></item>
+        <item>@string/no</item> sabra
+        <item></item>
+        <item></item>
         <item>@string/yes</item>
         <item>@string/yes</item>
-        <item>@string/potato_smash</item>
+        <item></item>
+        <item></item>
+        <item>@string/yes</item>
         <item>@string/yes</item>
         <item>@string/tomato_smash</item>
+        <item>@string/yes</item>
         <item>@string/no</item>
         <item>@string/yes</item>
     </string-array>
@@ -403,19 +907,31 @@
         <item>@string/apple_comment</item>
         <item>@string/apricot_comment</item>
         <item></item>
+        <item></item>
+        <item></item>
         <item>@string/banana_comment</item>
+        <item></item>
         <item>@string/beet_comment</item>
+        <item></item>
+        <item></item>
         <item></item>
         <item>@string/carrot_comment</item>
         <item></item>
         <item>@string/stem_comment</item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>@string/dried_comment</item>
         <item></item>
         <item>@string/dried_comment</item>
+        <item></item>
         <item>@string/garlic_comment</item>
+        <item></item>
         <item>@string/grapefruit_comment</item>
         <item>@string/grape_comment</item>
+        <item></item>
+        <item></item>
         <item></item>
         <item>@string/lemon_comment</item>
         <item>@string/lettuce_comment</item>
@@ -424,11 +940,17 @@
         <item>@string/melon_comment</item>
         <item></item>
         <item></item>
+        <item></item>
         <item>@string/olive_comment</item>
         <item>@string/onion_comment</item>
         <item>@string/orange_comment</item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>@string/peach_comment</item>
         <item>@string/stem_comment</item>
+        <item>@string/peanut_comment</item>
+        <item></item>
         <item></item>
         <item></item>
         <item>@string/plum_comment</item>
@@ -439,10 +961,18 @@
         <item></item>
         <item></item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>@string/stem_comment</item>
+        <item></item>
+        <item></item>
         <item>@string/potato_comment</item>
         <item></item>
         <item>@string/tomato_comment</item>
+        <item></item>
         <item></item>
         <item></item>
     </string-array>
