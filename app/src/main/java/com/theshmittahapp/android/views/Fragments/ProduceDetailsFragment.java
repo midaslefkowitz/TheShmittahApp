@@ -95,7 +95,7 @@ public class ProduceDetailsFragment extends Fragment {
         TextView sefichimEndTV1 = (TextView) v.findViewById(R.id.sefichim_end_date);
         TextView sefichimEndTV2 = (TextView) v.findViewById(R.id.details_sefichim_end_date);
         String sefichimEnd = produce.getSefichimTo();
-        sefichimStartTV2.setText(sefichimEnd);
+        sefichimEndTV2.setText(sefichimEnd);
         if (sefichimEnd == null || sefichimEnd.length()==0) {
             sefichimEndTV1.setVisibility(View.GONE);
             sefichimEndTV2.setVisibility(View.GONE);
