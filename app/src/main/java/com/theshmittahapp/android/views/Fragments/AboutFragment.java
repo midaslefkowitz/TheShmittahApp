@@ -3,6 +3,7 @@ package com.theshmittahapp.android.views.Fragments;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.HitBuilders;
@@ -56,6 +58,17 @@ public class AboutFragment extends Fragment {
 			    startActivity(Intent.createChooser(intent, ""));				
 			}
 		});
-		return rootView;
+
+        String versionName = "";
+        try {
+            versionName = getActivity().getPackageManager()
+                    .getPackageInfo(getActivity().getPackageName(), 0).versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        TextView versionTV = (TextView) rootView.findViewById(R.id.about_version);
+        versionTV.setText(versionTV.getText() + " " + versionName);
+        return rootView;
 	}
 }

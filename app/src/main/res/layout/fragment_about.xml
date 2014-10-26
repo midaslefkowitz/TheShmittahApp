@@ -52,5 +52,20 @@
 	        android:text="@string/about_weisenfeld4" 
 	        android:paddingTop="10dp"/>
 
+        <TextView
+            android:id="@+id/about_jacobs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_jacobs"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_version"
+            android:paddingTop="10dp"/>
+
+
 	</LinearLayout>
 </ScrollView>

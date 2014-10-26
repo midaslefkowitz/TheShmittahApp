@@ -262,6 +262,9 @@
     <string name="about_weisenfeld2">Rabbi Avraham Wiesenfeld is the Rosh Kollel of a Halacha Kollel in Romema, Yerushalayim, a Maggid Shiur in various yeshivos in Yerushalayim and a sought after speaker, both in Israel and in the UK. He is the author of the popular book \"Kashrus in the Kitchen - QA\" published by Feldheim which has sold thousands of copies worldwide.</string>
     <string name="about_weisenfeld3">The information on fruits and vegetables was sent as a chart form to over 50,000 people in Israel.</string>
     <string name="about_weisenfeld4">If you want to organize a shiur on the Halachos of Shmittah or any other topic from Rabbi Wiesenfeld - please send a message though the \"Ask the Rabbi\" menu option.</string>
+    <string name="about_jacobs">Thank you Kayla Jacobs from New York who gave me the idea for this project</string>
+    <string name="about_version">Version:</string>
+
 
     <!-- FAQ Questions Strings -->
     <string name="question1">Is there a mitzvah to eat shmittah produce?</string>
