@@ -20,11 +20,14 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
+import com.theshmittahapp.android.HelperClasses.WordUtils;
 import com.theshmittahapp.android.models.Produce;
 import com.theshmittahapp.android.R;
+import com.theshmittahapp.android.views.Activities.NoResults;
 import com.theshmittahapp.android.views.Activities.ProduceDetailsActivity;
 import com.theshmittahapp.android.views.MyApp;
 
@@ -36,7 +39,9 @@ public class ProduceFragment extends Fragment{
 	private ListView mListView;
 
     private Tracker mTracker;
-	
+	private List<Produce> mAllProduce;
+
+
 	public ProduceFragment() { }
 
     @Override
@@ -61,8 +66,49 @@ public class ProduceFragment extends Fragment{
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.produce_fragment, menu);
+        SearchView searchView = (SearchView) menu.findItem(R.id.menu_search)
+                .getActionView();
+        searchView.setOnQueryTextListener(queryTextListener);
+
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    final SearchView.OnQueryTextListener queryTextListener = new SearchView.OnQueryTextListener() {
+        @Override
+        public boolean onQueryTextChange(String newText) {
+            // Do something
+            return true;
+        }
+
+        @Override
+        public boolean onQueryTextSubmit(String query) {
+            // strip trailing whitespaces
+            String modString = query.trim();
+            // capitalize evey word
+            //modString = WordUtils.capitalizeFully(modString);
+            Produce p = queryInList(modString, mAllProduce);
+            Intent i;
+            if (p==null) {
+                i = new Intent(getActivity(), NoResults.class);
+                i.putExtra(NoResults.QUERY, query);
+            } else {
+                i = new Intent(getActivity(),
+                        ProduceDetailsActivity.class);
+                i.putExtra(ProduceDetailsActivity.PRODUCE, p);
+            }
+            startActivity(i);
+            return true;
+        }
+    };
+
+    private Produce queryInList(String query, List<Produce> allProd){
+        for (Produce p : allProd) {
+          if (p.getName().equalsIgnoreCase(query)) {
+              return p;
+          }
+        }
+        return null;
     }
 
 	@Override
@@ -140,7 +186,7 @@ public class ProduceFragment extends Fragment{
 		String[] allProduceMashed = getResources().getStringArray(R.array.mashed);
 		String[] allProduceComments = getResources().getStringArray(R.array.comments);
 		
-		List<Produce> allProduce = new ArrayList<Produce>();
+		mAllProduce = new ArrayList<Produce>();
 		for (int i=0; i<allProduceNames.length; i++)
 		{
 			Produce produce = new Produce(
@@ -158,9 +204,9 @@ public class ProduceFragment extends Fragment{
 					allProduceMashed[i],
 					allProduceComments[i]
 					);
-			allProduce.add(produce);
+			mAllProduce.add(produce);
 		}
 		
-		return allProduce;
+		return mAllProduce;
 	}
 }

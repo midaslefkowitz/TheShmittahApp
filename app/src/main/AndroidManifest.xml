@@ -12,17 +12,18 @@
         android:targetSdkVersion="20" />
 
     <application
+        android:name=".views.MyApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:name=".views.MyApp">
+        android:theme="@style/AppTheme" >
 
         <!-- Google Analytics Version v4 needs this value for easy tracking -->
-        <meta-data android:name="com.google.android.gms.analytics.globalConfigResource"
-        android:resource="@xml/global_tracker" />
-        
-        <meta-data android:name="com.google.android.gms.version"
+        <meta-data
+            android:name="com.google.android.gms.analytics.globalConfigResource"
+            android:resource="@xml/global_tracker" />
+        <meta-data
+            android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
         <activity
@@ -30,6 +31,7 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -56,6 +58,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.theshmittahapp.android.views.CommonTermsActivity" />
+        </activity>
+        <activity
+            android:name=".views.Activities.NoResults"
+            android:label="@string/title_activity_no_results"
+            android:parentActivityName=".views.Activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theshmittahapp.android.views.Activities.MainActivity" />
         </activity>
     </application>
 

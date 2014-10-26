@@ -75,41 +75,41 @@
     <string name="zucchini">Zucchini</string>
 
     <!-- Produce Dates Strings -->
-    <string name="jan">&#160;January</string>
-    <string name="feb">&#160;February</string>
-    <string name="mar">&#160;March</string>
-    <string name="apr">&#160;April</string>
-    <string name="may">&#160;May</string>
-    <string name="jun">&#160;June</string>
-    <string name="jul">&#160;July</string>
-    <string name="aug">&#160;August</string>
-    <string name="sept">&#160;September</string>
-    <string name="oct">&#160;October</string>
-    <string name="nov">&#160;November</string>
-    <string name="dec">&#160;December</string>
-    <string name="fourteen">&#160;2014</string>
-    <string name="fifteen">&#160;2015</string>
-    <string name="sixteen">&#160;2016</string>
-    <string name="seventeen">&#160;2017</string>
-    
+    <string name="jan"> January</string>
+    <string name="feb"> February</string>
+    <string name="mar"> March</string>
+    <string name="apr"> April</string>
+    <string name="may"> May</string>
+    <string name="jun"> June</string>
+    <string name="jul"> July</string>
+    <string name="aug"> August</string>
+    <string name="sept"> September</string>
+    <string name="oct"> October</string>
+    <string name="nov"> November</string>
+    <string name="dec"> December</string>
+    <string name="fourteen"> 2014</string>
+    <string name="fifteen"> 2015</string>
+    <string name="sixteen"> 2016</string>
+    <string name="seventeen"> 2017</string>
+
     <!-- Sefichim Dates -->
-    <string name="no_sefichim">&#160;No Sefichim</string>
-    <string name="mid_jan_15">&#160;Mid-January 2015</string>
-    <string name="jan_15">&#160;January 2015</string>
-    <string name="jan_17">&#160;January 2017</string>
-    <string name="feb_15">&#160;February 2015</string>
-    <string name="mar_15">&#160;March 2015</string>
-    <string name="mar_16">&#160;March 2016</string>
-    <string name="jul_15">&#160;July 2015</string>
-    <string name="jul_16">&#160;July 2016</string>
-    <string name="aug_15">&#160;August 2015</string>
-    <string name="aug_16">&#160;August 2016</string>
-    <string name="sept_15">&#160;September 2015</string>
-    <string name="sept_16">&#160;September 2016</string>
-    <string name="oct_14">&#160;October 2014</string>
-    <string name="nov_14">&#160;November 2014</string>
-    <string name="nov_15">&#160;November 2015</string>
-    <string name="dec_14">&#160;December 2014</string>
+    <string name="no_sefichim"> No Sefichim</string>
+    <string name="mid_jan_15"> Mid-January 2015</string>
+    <string name="jan_15"> January 2015</string>
+    <string name="jan_17"> January 2017</string>
+    <string name="feb_15"> February 2015</string>
+    <string name="mar_15"> March 2015</string>
+    <string name="mar_16"> March 2016</string>
+    <string name="jul_15"> July 2015</string>
+    <string name="jul_16"> July 2016</string>
+    <string name="aug_15"> August 2015</string>
+    <string name="aug_16"> August 2016</string>
+    <string name="sept_15"> September 2015</string>
+    <string name="sept_16"> September 2016</string>
+    <string name="oct_14"> October 2014</string>
+    <string name="nov_14"> November 2014</string>
+    <string name="nov_15"> November 2015</string>
+    <string name="dec_14"> December 2014</string>
 
     <!-- Produce Prepared Strings -->
     <string name="or">or</string>
@@ -211,11 +211,12 @@
 
     <!-- App Strings -->
     <string name="app_name">The Shmittah App</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Home</string>
     <string name="title_activity_common_terms">Common Terms</string>
-    <string name="title_activity_produce_details">ProduceDetailsActivity</string>
+    <string name="title_activity_produce_details">Produce Details</string>
     <string name="title_activity_definition">Definition</string>
     <string name="title_activity_chart">Shmittah Chart</string>
+    <string name="title_activity_no_results">No Results</string>
 
     <!-- Action Menu Strings -->
     <string name="action_search">Search Fruits and Vegetables</string>
@@ -319,5 +320,8 @@
     <string name="answer25">Yes – provided the boards are out showing clearly ones intention is only to make sitting in the succah easier and not to work the land in any way. Additionally, one should use non professional tools.</string>
     <string name="answer26">Yes, provided it is not done in a professional manner.</string>
     <string name="answer27">Absolutely not. There is a difference if the flowerpot is getting nourishment from the ground or not, and whether the place it will be moved to is a place where it can receive nourishment. This requires a lot of information.one should consult a rav before moving plants around – even in ones house.</string>
+
+    <!-- Results Activity String -->
+    <string name="no_result">Sorry, but we couldn\'t find anything matching</string>
 
 </resources>
