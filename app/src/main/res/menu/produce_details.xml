@@ -7,6 +7,7 @@
 		android:showAsAction="ifRoom"
 		android:title="@string/share"
 		android:actionProviderClass=
-		    "android.widget.ShareActionProvider" />
+		    "android.widget.ShareActionProvider"
+        android:orderInCategory="100" />
 
 </menu>

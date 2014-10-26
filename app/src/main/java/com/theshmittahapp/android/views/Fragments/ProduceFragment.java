@@ -10,6 +10,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -43,6 +45,8 @@ public class ProduceFragment extends Fragment{
         Activity activity = getActivity();
         // google analytics tracker
         mTracker = ((MyApp) getActivity().getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -53,6 +57,12 @@ public class ProduceFragment extends Fragment{
 
         // Send a screen view for analytics
         mTracker.send(new HitBuilders.AppViewBuilder().build());
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.produce_fragment, menu);
     }
 
 	@Override
@@ -82,9 +92,7 @@ public class ProduceFragment extends Fragment{
 
 		return mRootView;
 	}
-	
-	
-	
+
 	private void addListToAdapter(List<Produce> allProd) {
 		final List<Produce> allProduce = allProd;
 		String[] allProduceNamesArray = getResources().getStringArray(R.array.fruits_and_veggies);
