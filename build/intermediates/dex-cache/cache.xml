@@ -26,17 +26,17 @@
         revision="20.0.0"
         sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
     <item
+        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\android-agent-4.95.0-8083c44144f59908b1887eb5d3609d559569cb7c.jar"
+        jar="C:\Users\Lefkowitz\.gradle\caches\modules-2\files-2.1\com.newrelic.agent.android\android-agent\4.95.0\6c268dae677a628b68de9ffdc8b4593cae13ef31\android-agent-4.95.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6c268dae677a628b68de9ffdc8b4593cae13ef31"/>
+    <item
         dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\classes-8bd8dacfedd1f4f1ee8080d44e115ead0d394a97.jar"
         jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="0f700f6802ba1a1f1fa7ac26d5db0666a89d75a6"/>
-    <item
-        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\android-agent-4.87.0-1014e8a82971ca55b1d119252fd51f50534a6443.jar"
-        jar="C:\Users\Lefkowitz\.gradle\caches\modules-2\files-2.1\com.newrelic.agent.android\android-agent\4.87.0\c9989fd7b9a00452306fcbe7c84ffc0b582b9f39\android-agent-4.87.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="c9989fd7b9a00452306fcbe7c84ffc0b582b9f39"/>
     <item
         dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-1933d681b22bd8785ca9a9f9b516fd6a31918f2b.jar"
         jar="C:\Development tools\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"

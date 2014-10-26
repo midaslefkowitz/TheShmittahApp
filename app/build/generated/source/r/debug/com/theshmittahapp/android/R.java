@@ -1451,12 +1451,12 @@ containing a value of this type.
         public static final int image=0x7f090039;
         public static final int listMode=0x7f090001;
         public static final int list_item=0x7f09003b;
-        public static final int list_item_produce_textview=0x7f09007d;
-        public static final int list_item_term_textview=0x7f09007c;
+        public static final int list_item_produce_textview=0x7f09007e;
+        public static final int list_item_term_textview=0x7f09007d;
         public static final int list_slidermenu=0x7f090052;
         public static final int mashed=0x7f090078;
         public static final int match_parent=0x7f09001e;
-        public static final int menu_item_share=0x7f09007f;
+        public static final int menu_item_share=0x7f090080;
         public static final int middle=0x7f09000b;
         public static final int monochrome=0x7f090025;
         public static final int never=0x7f090010;
@@ -1471,7 +1471,7 @@ containing a value of this type.
         public static final int production=0x7f090019;
         public static final int progress_circular=0x7f09002a;
         public static final int progress_horizontal=0x7f09002b;
-        public static final int question_group=0x7f09007e;
+        public static final int question_group=0x7f09007f;
         public static final int radio=0x7f090041;
         public static final int sandbox=0x7f09001a;
         public static final int satellite=0x7f09000d;
@@ -1506,6 +1506,7 @@ containing a value of this type.
         public static final int top_action_bar=0x7f090032;
         public static final int up=0x7f090033;
         public static final int useLogo=0x7f090003;
+        public static final int webPage=0x7f09007c;
         public static final int withText=0x7f090013;
         public static final int wrap_content=0x7f09001f;
     }
@@ -1552,10 +1553,11 @@ containing a value of this type.
         public static final int fragment_pdf=0x7f030023;
         public static final int fragment_produce=0x7f030024;
         public static final int fragment_produce_details=0x7f030025;
-        public static final int glossary_list_item=0x7f030026;
-        public static final int produce_list_item=0x7f030027;
-        public static final int question_layout=0x7f030028;
-        public static final int support_simple_spinner_dropdown_item=0x7f030029;
+        public static final int fragment_web_pdf_view=0x7f030026;
+        public static final int glossary_list_item=0x7f030027;
+        public static final int produce_list_item=0x7f030028;
+        public static final int question_layout=0x7f030029;
+        public static final int support_simple_spinner_dropdown_item=0x7f03002a;
     }
     public static final class menu {
         public static final int common_terms=0x7f0e0000;
