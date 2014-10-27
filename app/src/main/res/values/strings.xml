@@ -265,7 +265,6 @@
     <string name="about_jacobs">Thank you Kayla Jacobs from New York who gave me the idea for this project</string>
     <string name="about_version">Version:</string>
 
-
     <!-- FAQ Questions Strings -->
     <string name="question1">Is there a mitzvah to eat shmittah produce?</string>
     <string name="question2">When buying canned fruit or vegetables, is there a way to determine if the product is from the seventh year?</string>
@@ -326,5 +325,17 @@
 
     <!-- Results Activity String -->
     <string name="no_result">Sorry, but we couldn\'t find anything matching</string>
+
+    <!-- Donate Dialog Fragment -->
+    <string name="donate_plea">Thanks for using The Shmittah App. I\'ve put a lot of work into this \
+        project so I\'m asking users to help out a bit. The plan is to keep The Shmittah App free so \
+        that people have the halachos literally in their pockets.\n
+        Money goes towards updates as well as future Torah apps. Please keep in mind that there aren\'t\
+         that many Torah observant Jews living in Israel who own a smartphones. </string>
+    <string name="donate_instructions">To donate just click the button below. You can choose how much \
+        you want to donate after you click. Recommended donation is $5.</string>
+    <string name="not_now_btn">Not Now</string>
+    <string name="never_btn">Never</string>
+    <string name="dialog_title">The Shmittah App</string>
 
 </resources>

@@ -45,7 +45,7 @@ public class LandingPageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
     	// inflate view
-		View rootView = inflater.inflate(R.layout.fragment_landing_page, container, false);	
+		View rootView = inflater.inflate(R.layout.fragment_landing_page, container, false);
 
 		ImageView ad = (ImageView) rootView.findViewById(R.id.ad);
 		ad.setOnClickListener(new OnClickListener(){

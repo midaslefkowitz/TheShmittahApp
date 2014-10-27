@@ -11,17 +11,29 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.ShareActionProvider;
 import android.widget.TextView;
 
+import com.google.android.gms.analytics.GoogleAnalytics;
 import com.theshmittahapp.android.R;
+import com.theshmittahapp.android.views.MyApp;
 
 public class NoResults extends Activity {
 
     public static String QUERY = "query";
 
+    private ShareActionProvider mShareActionProvider;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Get a Tracker (should auto-report)
+        ((MyApp) getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+        setContentView(R.layout.activity_produce_details);
+
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+
         setContentView(R.layout.activity_no_results);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
@@ -30,24 +42,52 @@ public class NoResults extends Activity {
         }
     }
 
-
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.no_results, menu);
-        return true;
+    protected void onStart() {
+        super.onStart();
+        GoogleAnalytics.getInstance(this).reportActivityStart(this);
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+    protected void onStop() {
+        super.onStop();
+        GoogleAnalytics.getInstance(this).reportActivityStop(this);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate menu resource file.
+        getMenuInflater().inflate(R.menu.main, menu);
+
+        // Locate MenuItem with ShareActionProvider
+        MenuItem item = menu.findItem(R.id.menu_item_share);
+
+        // Fetch and store ShareActionProvider
+        mShareActionProvider = (ShareActionProvider) item.getActionProvider();
+
+        // Create and set the share Intent
+        mShareActionProvider.setShareIntent(createShareIntent());
+
+        // Return true to display menu
+        return true;
+    }
+
+    private Intent createShareIntent() {
+        Intent intent = new Intent(android.content.Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+
+        // Add data to the intent, the receiving app will decide what to do with it.
+        intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.share_subject));
+        intent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.share_body));
+        return intent;
+    }
+
+    // Call to update the share intent
+    private void setShareIntent(Intent shareIntent) {
+        if (mShareActionProvider != null) {
+            mShareActionProvider.setShareIntent(shareIntent);
         }
-        return super.onOptionsItemSelected(item);
     }
 
     /**

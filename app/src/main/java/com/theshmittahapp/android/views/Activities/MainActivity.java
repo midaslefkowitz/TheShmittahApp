@@ -1,8 +1,10 @@
 package com.theshmittahapp.android.views.Activities;
 
 import android.app.Activity;
+import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -19,14 +21,13 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ShareActionProvider;
 
-import com.google.android.gms.analytics.GoogleAnalytics;
-import com.google.android.gms.analytics.Tracker;
 import com.newrelic.agent.android.NewRelic;
 import com.theshmittahapp.android.HelperClasses.NavDrawerListAdapter;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.models.NavDrawerItem;
 import com.theshmittahapp.android.views.Fragments.AboutFragment;
 import com.theshmittahapp.android.views.Fragments.ChartFragment;
+import com.theshmittahapp.android.views.Fragments.DonateDialogFragment;
 import com.theshmittahapp.android.views.Fragments.FAQFragment;
 import com.theshmittahapp.android.views.Fragments.LandingPageFragment;
 import com.theshmittahapp.android.views.Fragments.PDFFragment;
@@ -104,9 +105,6 @@ public class MainActivity extends Activity {
 		// about
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[8]) );
 		
-		// Recycle the typed array
-		// navMenuIcons.recycle();
-
 		mDrawerList.setOnItemClickListener(new SlideMenuClickListener());
 
 		// setting the nav drawer list adapter
@@ -142,22 +140,24 @@ public class MainActivity extends Activity {
 		
 		// Only load landing page fragment the first time the app is run on a device
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if(!prefs.getBoolean("firstTime", false)) {
+        if(!prefs.getBoolean("firstTimeEver", false)) {
         	 getFragmentManager().beginTransaction()
              .add(R.id.frame_container, new LandingPageFragment())
              .commit();
 	        SharedPreferences.Editor editor = prefs.edit();
-	        editor.putBoolean("firstTime", true);
+	        editor.putBoolean("firstTimeEver", true);
 	        editor.commit();
         } else if (savedInstanceState == null) {
-			// on first time display view for first nav item
-			displayView(0);
-		}
+            // on first time display view for first nav item
+            displayView(0);
+            DialogFragment newFragment = new DonateDialogFragment();
+            newFragment.show(getFragmentManager(), "donate");
+        }
 	}
-    
-	/**
+
+    /**
 	 * Slide menu item click listener
-	 * */
+	 **/
 	private class SlideMenuClickListener implements
 			ListView.OnItemClickListener {
 		@Override
@@ -196,8 +196,7 @@ public class MainActivity extends Activity {
 		intent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.share_body));
 		return intent;
 	}
-	
-	// Call to update the share intent
+
 	private void setShareIntent(Intent shareIntent) {
 	    if (mShareActionProvider != null) {
 	        mShareActionProvider.setShareIntent(shareIntent);
@@ -211,18 +210,6 @@ public class MainActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
-	}
-
-	/*
-	 * Called when invalidateOptionsMenu() is triggered
-	 */
-	
-	@Override
-	public boolean onPrepareOptionsMenu(Menu menu) {
-		// if nav drawer is opened, hide the action items
-		// boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
-		// menu.findItem(R.id.action_settings).setVisible(!drawerOpen);
-		return super.onPrepareOptionsMenu(menu);
 	}
 
 	/*
@@ -349,11 +336,6 @@ public class MainActivity extends Activity {
 		mTitle = title;
 		getActionBar().setTitle(mTitle);
 	}
-
-	/**
-	 * When using the ActionBarDrawerToggle, you must call it during
-	 * onPostCreate() and onConfigurationChanged()...
-	 */
 
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
