@@ -23,7 +23,7 @@
     </style>
     <!-- another text color option #7B952B -->
     <style name="TextAppearance">
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">@color/custom_theme_color</item>
     </style>
 
 
