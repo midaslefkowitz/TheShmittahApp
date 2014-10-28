@@ -63,6 +63,22 @@ public class DonateDialogFragment extends DialogFragment {
         builder.setCustomTitle(inflater.inflate(R.layout.dialog_title_layout, null));
         Dialog alertDialog = builder.create();
 
+        alertDialog.setOnShowListener(new DialogInterface.OnShowListener() {
+            @Override
+            public void onShow(DialogInterface dialog) {
+                Button positiveButton = ((AlertDialog) dialog)
+                        .getButton(AlertDialog.BUTTON_POSITIVE);
+                positiveButton.setBackgroundColor(getResources().getColor(R.color.dark_green));
+                positiveButton.setTextColor(getResources().getColor(R.color.custom_theme_color));
+
+                Button negativeButton = ((AlertDialog) dialog)
+                        .getButton(AlertDialog.BUTTON_NEGATIVE);
+                negativeButton.setBackgroundColor(getResources().getColor(R.color.dark_green));
+                negativeButton.setTextColor(getResources().getColor(R.color.custom_theme_color));
+            }
+        });
+
+
         return alertDialog;
     }
 
