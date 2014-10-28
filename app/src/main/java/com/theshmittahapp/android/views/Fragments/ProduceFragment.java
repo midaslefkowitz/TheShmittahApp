@@ -9,6 +9,7 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -69,8 +70,7 @@ public class ProduceFragment extends Fragment{
         inflater.inflate(R.menu.produce_fragment, menu);
         SearchView searchView = (SearchView) menu.findItem(R.id.menu_search)
                 .getActionView();
-        //searchView.setQueryHint(getResources().getString(R.string.action_search));
-        //TODO change color of hint
+        searchView.setQueryHint(Html.fromHtml("<font color = #fffbe4>" + getResources().getString(R.string.action_search) + "</font>"));
         searchView.setOnQueryTextListener(queryTextListener);
 
         super.onCreateOptionsMenu(menu, inflater);
