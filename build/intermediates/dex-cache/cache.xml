@@ -8,6 +8,12 @@
         revision="20.0.0"
         sha1="50897ff6c212a72aa3780027e0bf5fc363f366a0"/>
     <item
+        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\joda-time-2.5-ad17fc7ab96a0b735759ce52dc8104ff9d631075.jar"
+        jar="C:\Users\Lefkowitz\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.5\c73038a3688525aad5cf33409df483178290cd64\joda-time-2.5.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c73038a3688525aad5cf33409df483178290cd64"/>
+    <item
         dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-e7069d0042f93f5a074c195a232b3627d51376e2.jar"
         jar="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
         jumboMode="false"

@@ -69,13 +69,13 @@ public class DonateDialogFragment extends DialogFragment {
             public void onShow(DialogInterface dialog) {
                 Button positiveButton = ((AlertDialog) dialog)
                         .getButton(AlertDialog.BUTTON_POSITIVE);
-                positiveButton.setBackgroundColor(getResources().getColor(R.color.dark_green));
+                positiveButton.setBackgroundResource(R.drawable.button_custom);
                 positiveButton.setTextColor(getResources().getColor(R.color.custom_theme_color));
                 positiveButton.setTextSize(getResources().getDimension(R.dimen.textsize));
 
                 Button negativeButton = ((AlertDialog) dialog)
                         .getButton(AlertDialog.BUTTON_NEGATIVE);
-                negativeButton.setBackgroundColor(getResources().getColor(R.color.dark_green));
+                positiveButton.setBackgroundResource(R.drawable.button_custom);
                 negativeButton.setTextColor(getResources().getColor(R.color.custom_theme_color));
                 negativeButton.setTextSize(getResources().getDimension(R.dimen.textsize));
             }
