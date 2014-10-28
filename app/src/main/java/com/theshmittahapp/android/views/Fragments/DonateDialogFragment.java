@@ -8,6 +8,7 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.widget.Button;
 
@@ -50,14 +51,14 @@ public class DonateDialogFragment extends DialogFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
                 .setView(inflater.inflate(R.layout.fragment_donate_dialog, null))
                 .setTitle(R.string.dialog_title)
-                .setPositiveButton(R.string.not_now_btn, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        // Not Now
-                    }
-                })
-                .setNegativeButton(R.string.never_btn, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.never_btn, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // Never
+                    }
+                })
+                .setNegativeButton(R.string.not_now_btn, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // Not Now
                     }
                 });
         builder.setCustomTitle(inflater.inflate(R.layout.dialog_title_layout, null));
@@ -70,11 +71,13 @@ public class DonateDialogFragment extends DialogFragment {
                         .getButton(AlertDialog.BUTTON_POSITIVE);
                 positiveButton.setBackgroundColor(getResources().getColor(R.color.dark_green));
                 positiveButton.setTextColor(getResources().getColor(R.color.custom_theme_color));
+                positiveButton.setTextSize(getResources().getDimension(R.dimen.textsize));
 
                 Button negativeButton = ((AlertDialog) dialog)
                         .getButton(AlertDialog.BUTTON_NEGATIVE);
                 negativeButton.setBackgroundColor(getResources().getColor(R.color.dark_green));
                 negativeButton.setTextColor(getResources().getColor(R.color.custom_theme_color));
+                negativeButton.setTextSize(getResources().getDimension(R.dimen.textsize));
             }
         });
 
