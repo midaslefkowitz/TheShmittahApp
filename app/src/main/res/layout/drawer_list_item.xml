@@ -11,8 +11,6 @@
         android:layout_alignParentLeft="true"
         android:contentDescription="@string/desc_list_item_icon"
         android:layout_centerVertical="true" />
-        <!-- android:src="@drawable/ic_home" -->  
-         
 
     <TextView
         android:id="@+id/title"

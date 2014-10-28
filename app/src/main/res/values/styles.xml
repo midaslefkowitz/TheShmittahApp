@@ -6,7 +6,7 @@
         <item name="android:homeAsUpIndicator">@drawable/ic_action_up</item>
         <item name="android:windowBackground">@color/custom_theme_color</item>
     	<item name="android:colorBackground">@color/custom_theme_color</item>
-    	<item name="android:textColor">#8c7d67</item>
+    	<item name="android:textColor">@color/theme_text_color</item>
     	<item name="android:typeface">sans</item>
         <item name="android:itemTextAppearance">@style/TextAppearance</item>
 
@@ -19,9 +19,8 @@
         <item name="android:actionModeBackground">@drawable/cab_background_top_</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode</item>
-		
     </style>
-    <!-- another text color option #7B952B -->
+
     <style name="TextAppearance">
         <item name="android:textColor">@color/custom_theme_color</item>
     </style>
@@ -41,34 +40,34 @@
     </style>
 
     <!-- Generated Styles -->
-    <style name="ActionBar.Transparent" parent="@android:style/Widget.Holo.Light.ActionBar">
+    <style name="ActionBar.Transparent" parent="@android:style/Widget.Holo.ActionBar">
         <item name="android:background">@drawable/ab_transparent_</item>
         <item name="android:progressBarStyle">@style/ProgressBar</item>
     </style>
 
-    <style name="PopupMenu" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+    <style name="PopupMenu" parent="@android:style/Widget.Holo.ListPopupWindow">
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_</item>	
     </style>
 
-    <style name="DropDownListView" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+    <style name="DropDownListView" parent="@android:style/Widget.Holo.ListView.DropDown">
         <item name="android:listSelector">@drawable/selectable_background_</item>
     </style>
 
-    <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+    <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
         <item name="android:background">@drawable/tab_indicator_ab_</item>
     </style>
 
-    <style name="DropDownNav" parent="@android:style/Widget.Holo.Light.Spinner">
+    <style name="DropDownNav" parent="@android:style/Widget.Holo.Spinner">
         <item name="android:background">@drawable/spinner_background_ab_</item>
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_</item>
         <item name="android:dropDownSelector">@drawable/selectable_background_</item>
     </style>
     
-    <style name="ProgressBar" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+    <style name="ProgressBar" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/progress_horizontal_</item>
     </style>
     
-    <style name="ActionButton.CloseMode" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+    <style name="ActionButton.CloseMode" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
         <item name="android:background">@drawable/btn_cab_done_</item>
     </style>
 

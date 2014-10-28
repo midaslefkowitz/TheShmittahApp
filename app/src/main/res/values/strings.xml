@@ -327,10 +327,10 @@
     <string name="no_result">Sorry, but we couldn\'t find anything matching</string>
 
     <!-- Donate Dialog Fragment -->
-    <string name="donate_plea">Thanks for using The Shmittah App. I\'ve put a lot of work into this \
+    <string name="donate_plea1">Thanks for using The Shmittah App. I\'ve put a lot of work into this \
         project so I\'m asking users to help out a bit. The plan is to keep The Shmittah App free so \
-        that people have the halachos literally in their pockets.\n
-        Money goes towards updates as well as future Torah apps. Please keep in mind that there aren\'t\
+        that people have the halachos literally in their pockets.</string>
+    <string name="donate_plea2">Money goes towards updates as well as future Torah apps. Please keep in mind that there aren\'t\
          that many Torah observant Jews living in Israel who own a smartphones. </string>
     <string name="donate_instructions">To donate just click the button below. You can choose how much \
         you want to donate after you click. Recommended donation is $5.</string>

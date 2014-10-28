@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
+import android.widget.Button;
 
 import com.theshmittahapp.android.R;
 
@@ -59,8 +60,10 @@ public class DonateDialogFragment extends DialogFragment {
                         // Never
                     }
                 });
-        // Create the AlertDialog object and return it
-        return builder.create();
+        builder.setCustomTitle(inflater.inflate(R.layout.dialog_title_layout, null));
+        Dialog alertDialog = builder.create();
+
+        return alertDialog;
     }
 
     private void logEntries() {
