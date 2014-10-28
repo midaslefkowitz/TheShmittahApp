@@ -1,10 +1,13 @@
+//TODO: clean up the code
+//TODO: create custom action provider
+//TODO: add download link to pdfs and chart
+
 package com.theshmittahapp.android.views.Activities;
 
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -42,134 +45,73 @@ public class MainActivity extends Activity {
     private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
-	
+    private CharSequence mDrawerTitle;
+    private CharSequence mTitle;
+    private String[] navMenuTitles;
+    private ArrayList<NavDrawerItem> navDrawerItems;
+    private NavDrawerListAdapter adapter;
+    private ShareActionProvider mShareActionProvider;
+
     private String mDetailedName = "detailed.pdf";
     private String mOverviewName = "overview.pdf";
-
-	private String mShiurimUrl = "http://mp3shiur.com/viewProd.asp?catID=279&max=all&startAt=1";
-	private String mRabbisEmailAddress = "theshmittahapp@gmail.com";
+    private String mShiurimUrl = "http://mp3shiur.com/viewProd.asp?catID=279&max=all&startAt=1";
+    private String mRabbisEmailAddress = "theshmittahapp@gmail.com";
 	private String mSubject = "Question from The Shmittah App";
 
-	// nav drawer title
-	private CharSequence mDrawerTitle;
-
-	// used to store app title
-	private CharSequence mTitle;
-
-	// slide menu items
-	private String[] navMenuTitles;
-	//private TypedArray navMenuIcons;
-
-	private ArrayList<NavDrawerItem> navDrawerItems;
-	private NavDrawerListAdapter adapter;
-	
-	private ShareActionProvider mShareActionProvider;
-	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        /* Required to track app stats with New Relic */
-        NewRelic.withApplicationToken(
-                "AA5c2072a8d0e78b2f2c2171782195865df39a8e78"
-        ).start(this.getApplication());
+        startNewRelicTracking();
 
+        createLayout();
 
-        setContentView(R.layout.drawer_with_fragment_activity);
+        setDrawerToggle();
 
-		mTitle = mDrawerTitle = getTitle();
+        landingPageOnFirstRun();
 
-		// load slide menu items
-		navMenuTitles = getResources().getStringArray(R.array.drawer_items);
-
-		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-		mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
-
-		navDrawerItems = new ArrayList<NavDrawerItem>();		
-		
-		// adding nav drawer items to array
-		// produce_list
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0]) );
-		// common terms
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1]) );
-		// faqs
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2]) );
-		// Halacha overview
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3]) );
-		// detailed halachos
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4]) );
-		// chart
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5]) );
-		// shiurim
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6]) );
-		// ask the rabbi
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[7]) );
-		// about
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[8]) );
-		
-		mDrawerList.setOnItemClickListener(new SlideMenuClickListener());
-
-		// setting the nav drawer list adapter
-		adapter = new NavDrawerListAdapter(this, navDrawerItems);
-		mDrawerList.setAdapter(adapter);
-
-		// enabling action bar app icon and behaving it as toggle button
-		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getActionBar().setHomeButtonEnabled(true);
-
-		mDrawerToggle = new ActionBarDrawerToggle(
-				this, 					/* host Activity */
-				mDrawerLayout,			/* DrawerLayout object */
-				R.drawable.ic_drawer, 	/* nav drawer image to replace 'Up' caret */
-				R.string.drawer_open,	/* "open drawer" description for accessibility */
-                R.string.drawer_close	/* "close drawer" description for accessibility */
-		) {
-			/* Called when a drawer has settled in a completely closed state. */
-			public void onDrawerClosed(View view) {
-				getActionBar().setTitle(mTitle);
-				// calling onPrepareOptionsMenu() to show action bar icons
-				invalidateOptionsMenu();
-			}
-			
-			/* Called when a drawer has settled in a completely open state. */
-			public void onDrawerOpened(View drawerView) {
-				getActionBar().setTitle(mDrawerTitle);
-				// calling onPrepareOptionsMenu() to hide action bar icons
-				invalidateOptionsMenu();
-			}
-		};
-		mDrawerLayout.setDrawerListener(mDrawerToggle);
-		
-		// Only load landing page fragment the first time the app is run on a device
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if(!prefs.getBoolean("firstTimeEver", false)) {
-        	 getFragmentManager().beginTransaction()
-             .add(R.id.frame_container, new LandingPageFragment())
-             .commit();
-	        SharedPreferences.Editor editor = prefs.edit();
-	        editor.putBoolean("firstTimeEver", true);
-	        editor.commit();
-        } else if (savedInstanceState == null) {
+        if (savedInstanceState == null) {
             // on first time display view for first nav item
             displayView(0);
-            DialogFragment newFragment = new DonateDialogFragment();
-            newFragment.show(getFragmentManager(), "donate");
-
-            try {
-                newFragment.getView().getContext().getResources().getIdentifier("android:id/titleDivider", null, null);
-                int dividerId = newFragment.getView().getContext().getResources().getIdentifier("android:id/titleDivider", null, null);
-                View divider = newFragment.getView().findViewById(dividerId);
-                if (divider != null)
-                    divider.setBackgroundColor(getResources().getColor(R.color.list_divider));
-            } catch (Exception e){
-                Log.d(TAG, "can\'t grab the divider" );
-            }
+            createDonateDialog();
         }
 	}
 
-    /**
-	 * Slide menu item click listener
-	 **/
+    private void startNewRelicTracking() {
+        NewRelic.withApplicationToken(
+                "AA5c2072a8d0e78b2f2c2171782195865df39a8e78"
+        ).start(this.getApplication());
+    }
+
+    private void createLayout() {
+        setContentView(R.layout.drawer_with_fragment_activity);
+        mTitle = mDrawerTitle = getTitle();
+
+        createDrawer();
+    }
+
+    private void createDrawer() {
+        // load slide menu items
+        navMenuTitles = getResources().getStringArray(R.array.drawer_items);
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
+
+        navDrawerItems = new ArrayList<NavDrawerItem>();
+
+        // adding nav drawer items to array
+        for (String title : navMenuTitles) {
+            navDrawerItems.add(new NavDrawerItem(title));
+        }
+
+        // set click listener for menu items
+        mDrawerList.setOnItemClickListener(new SlideMenuClickListener());
+
+        // setting the nav drawer list adapter
+        adapter = new NavDrawerListAdapter(this, navDrawerItems);
+        mDrawerList.setAdapter(adapter);
+    }
+
 	private class SlideMenuClickListener implements
 			ListView.OnItemClickListener {
 		@Override
@@ -179,6 +121,54 @@ public class MainActivity extends Activity {
 			displayView(position);
 		}
 	}
+
+    private void setDrawerToggle() {
+
+        mDrawerToggle = new ActionBarDrawerToggle(
+                this, 					/* host Activity */
+                mDrawerLayout,			/* DrawerLayout object */
+                R.drawable.ic_drawer, 	/* nav drawer image to replace 'Up' caret */
+                R.string.drawer_open,	/* "open drawer" description for accessibility */
+                R.string.drawer_close	/* "close drawer" description for accessibility */
+        ) {
+            /* Called when a drawer has settled in a completely closed state. */
+            public void onDrawerClosed(View view) {
+                getActionBar().setTitle(mTitle);
+                // calling onPrepareOptionsMenu() to show action bar icons
+                invalidateOptionsMenu();
+            }
+
+            /* Called when a drawer has settled in a completely open state. */
+            public void onDrawerOpened(View drawerView) {
+                getActionBar().setTitle(mDrawerTitle);
+                // calling onPrepareOptionsMenu() to hide action bar icons
+                invalidateOptionsMenu();
+            }
+        };
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
+
+        // enabling action bar app icon and behaving it as toggle button
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
+    }
+
+    private void landingPageOnFirstRun() {
+        // Only load landing page fragment the first time the app is run on a device
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (!prefs.getBoolean("firstTimeEver", false)) {
+            getFragmentManager().beginTransaction()
+                    .add(R.id.frame_container, new LandingPageFragment())
+                    .commit();
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putBoolean("firstTimeEver", true);
+            editor.commit();
+        }
+    }
+
+    private void createDonateDialog() {
+        DialogFragment newFragment = new DonateDialogFragment();
+        newFragment.show(getFragmentManager(), "donate");
+    }
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

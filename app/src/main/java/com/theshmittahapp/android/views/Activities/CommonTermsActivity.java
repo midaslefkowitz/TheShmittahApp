@@ -1,12 +1,15 @@
 package com.theshmittahapp.android.views.Activities;
 
 import android.app.Activity;
+import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
@@ -17,13 +20,16 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ShareActionProvider;
 
+import com.newrelic.agent.android.NewRelic;
 import com.theshmittahapp.android.HelperClasses.NavDrawerListAdapter;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.models.NavDrawerItem;
 import com.theshmittahapp.android.views.Fragments.AboutFragment;
 import com.theshmittahapp.android.views.Fragments.ChartFragment;
 import com.theshmittahapp.android.views.Fragments.CommonTermsFragment;
+import com.theshmittahapp.android.views.Fragments.DonateDialogFragment;
 import com.theshmittahapp.android.views.Fragments.FAQFragment;
+import com.theshmittahapp.android.views.Fragments.LandingPageFragment;
 import com.theshmittahapp.android.views.Fragments.PDFFragment;
 
 import java.util.ArrayList;
@@ -32,117 +38,118 @@ public class CommonTermsActivity extends Activity {
 
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
-	private ActionBarDrawerToggle mDrawerToggle;
+    private CharSequence mDrawerTitle;
+    private CharSequence mTitle;
+    private String[] navMenuTitles;
+    private ArrayList<NavDrawerItem> navDrawerItems;
+    private NavDrawerListAdapter adapter;
+    private ShareActionProvider mShareActionProvider;
 
+	private ActionBarDrawerToggle mDrawerToggle;
     private String mDetailedName = "detailed.pdf";
     private String mOverviewName = "overview.pdf";
-	private String mShiurimUrl = "http://mp3shiur.com/viewProd.asp?catID=279&max=all&startAt=1";
-	private String mRabbisEmailAddress = "theshmittahapp@gmail.com";
+    private String mShiurimUrl = "http://mp3shiur.com/viewProd.asp?catID=279&max=all&startAt=1";
+    private String mRabbisEmailAddress = "theshmittahapp@gmail.com";
+
 	private String mSubject = "Question from The Shmittah App";
 
-	// nav drawer title
-	private CharSequence mDrawerTitle;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-	// used to store app title
-	private CharSequence mTitle;
+        createLayout();
 
-	// slide menu items
-	private String[] navMenuTitles;
-	//private TypedArray navMenuIcons;
+        setDrawerToggle();
 
-	private ArrayList<NavDrawerItem> navDrawerItems;
-	private NavDrawerListAdapter adapter;
-	
-	private ShareActionProvider mShareActionProvider;
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.drawer_with_fragment_activity);
-		
-		mTitle = mDrawerTitle = getResources().getString(R.string.app_name);
+        landingPageOnFirstRun();
 
-		// load slide menu items
-		navMenuTitles = getResources().getStringArray(R.array.drawer_items);
+        if (savedInstanceState == null) {
+            // on first time display view for first nav item
+            displayView(1);
+        }
+    }
 
-		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-		mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
+    private void createLayout() {
+        setContentView(R.layout.drawer_with_fragment_activity);
+        mTitle = mDrawerTitle = getTitle();
 
-		navDrawerItems = new ArrayList<NavDrawerItem>();		
-		
-		// adding nav drawer items to array
-		// produce_list
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0]) );
-		// common terms
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1]) );
-		// faqs
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2]) );
-		// Halacha overview
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3]) );
-		// detailed halachos
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4]) );
-		// chart
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5]) );
-		// shiurim
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6]) );
-		// ask the rabbi
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[7]) );
-		// about
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[8]) );
-		
-		// Recycle the typed array
-		// navMenuIcons.recycle();
+        createDrawer();
+    }
 
-		mDrawerList.setOnItemClickListener(new SlideMenuClickListener());
+    private void createDrawer() {
+        // load slide menu items
+        navMenuTitles = getResources().getStringArray(R.array.drawer_items);
 
-		// setting the nav drawer list adapter
-		adapter = new NavDrawerListAdapter(this, navDrawerItems);
-		mDrawerList.setAdapter(adapter);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
 
-		// enabling action bar app icon and behaving it as toggle button
-		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getActionBar().setHomeButtonEnabled(true);
+        navDrawerItems = new ArrayList<NavDrawerItem>();
 
-		mDrawerToggle = new ActionBarDrawerToggle(
-				this, 					/* host Activity */
-				mDrawerLayout,			/* DrawerLayout object */
-				R.drawable.ic_drawer, 	/* nav drawer image to replace 'Up' caret */
-				R.string.drawer_open,	/* "open drawer" description for accessibility */
+        // adding nav drawer items to array
+        for (String title : navMenuTitles) {
+            navDrawerItems.add(new NavDrawerItem(title));
+        }
+
+        // set click listener for menu items
+        mDrawerList.setOnItemClickListener(new SlideMenuClickListener());
+
+        // setting the nav drawer list adapter
+        adapter = new NavDrawerListAdapter(this, navDrawerItems);
+        mDrawerList.setAdapter(adapter);
+    }
+
+    private class SlideMenuClickListener implements
+            ListView.OnItemClickListener {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position,
+                                long id) {
+            // display view for selected nav drawer item
+            displayView(position);
+        }
+    }
+
+    private void setDrawerToggle() {
+
+        mDrawerToggle = new ActionBarDrawerToggle(
+                this, 					/* host Activity */
+                mDrawerLayout,			/* DrawerLayout object */
+                R.drawable.ic_drawer, 	/* nav drawer image to replace 'Up' caret */
+                R.string.drawer_open,	/* "open drawer" description for accessibility */
                 R.string.drawer_close	/* "close drawer" description for accessibility */
-		) {
-			/* Called when a drawer has settled in a completely closed state. */
-			public void onDrawerClosed(View view) {
-				getActionBar().setTitle(mTitle);
-				// calling onPrepareOptionsMenu() to show action bar icons
-				invalidateOptionsMenu();
-			}
-			
-			/* Called when a drawer has settled in a completely open state. */
-			public void onDrawerOpened(View drawerView) {
-				getActionBar().setTitle(mDrawerTitle);
-				// calling onPrepareOptionsMenu() to hide action bar icons
-				invalidateOptionsMenu();
-			}
-		};
-		mDrawerLayout.setDrawerListener(mDrawerToggle);
-		
-		if (savedInstanceState == null) {
-			displayView(1);
-		}
-	}
+        ) {
+            /* Called when a drawer has settled in a completely closed state. */
+            public void onDrawerClosed(View view) {
+                getActionBar().setTitle(mTitle);
+                // calling onPrepareOptionsMenu() to show action bar icons
+                invalidateOptionsMenu();
+            }
 
-	/**
-	 * Slide menu item click listener
-	 * */
-	private class SlideMenuClickListener implements
-			ListView.OnItemClickListener {
-		@Override
-		public void onItemClick(AdapterView<?> parent, View view, int position,
-				long id) {
-			// display view for selected nav drawer item
-			displayView(position);
-		}
-	}	
+            /* Called when a drawer has settled in a completely open state. */
+            public void onDrawerOpened(View drawerView) {
+                getActionBar().setTitle(mDrawerTitle);
+                // calling onPrepareOptionsMenu() to hide action bar icons
+                invalidateOptionsMenu();
+            }
+        };
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
+
+        // enabling action bar app icon and behaving it as toggle button
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
+    }
+
+    private void landingPageOnFirstRun() {
+        // Only load landing page fragment the first time the app is run on a device
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (!prefs.getBoolean("firstTimeEver", false)) {
+            getFragmentManager().beginTransaction()
+                    .add(R.id.frame_container, new LandingPageFragment())
+                    .commit();
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putBoolean("firstTimeEver", true);
+            editor.commit();
+        }
+    }
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -323,11 +330,6 @@ public class CommonTermsActivity extends Activity {
 		mTitle = title;
 		getActionBar().setTitle(mTitle);
 	}
-	
-	/**
-	 * When using the ActionBarDrawerToggle, you must call it during
-	 * onPostCreate() and onConfigurationChanged()...
-	 */
 
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
