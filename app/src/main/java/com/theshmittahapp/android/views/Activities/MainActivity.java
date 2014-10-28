@@ -37,7 +37,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-	private DrawerLayout mDrawerLayout;
+	private final String TAG = "Main Activity";
+
+    private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
 	
@@ -152,6 +154,16 @@ public class MainActivity extends Activity {
             displayView(0);
             DialogFragment newFragment = new DonateDialogFragment();
             newFragment.show(getFragmentManager(), "donate");
+
+            try {
+                newFragment.getView().getContext().getResources().getIdentifier("android:id/titleDivider", null, null);
+                int dividerId = newFragment.getView().getContext().getResources().getIdentifier("android:id/titleDivider", null, null);
+                View divider = newFragment.getView().findViewById(dividerId);
+                if (divider != null)
+                    divider.setBackgroundColor(getResources().getColor(R.color.list_divider));
+            } catch (Exception e){
+                Log.d(TAG, "can\'t grab the divider" );
+            }
         }
 	}
 

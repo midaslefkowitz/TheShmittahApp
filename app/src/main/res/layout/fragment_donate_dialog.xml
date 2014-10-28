@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/custom_theme_color"
     tools:context="com.theshmittahapp.android.views.Fragments.DonateDialogFragment"
-    android:padding="10dp" >
+     >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,31 +12,51 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="@string/donate_plea1"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="@string/donate_plea2"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="@string/donate_instructions"
-            android:textSize="16sp" />
-
-        <ImageView
+            android:background="@drawable/list_selector"
+            android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:src="@drawable/btn_donate"/>
+            android:layout_height="match_parent"
+            android:text="@string/dialog_title"
+            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textColor="@color/list_item_title"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/donate_plea1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/donate_plea2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/donate_instructions"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/donate_paypal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:src="@drawable/btn_donate"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

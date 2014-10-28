@@ -69,6 +69,8 @@ public class ProduceFragment extends Fragment{
         inflater.inflate(R.menu.produce_fragment, menu);
         SearchView searchView = (SearchView) menu.findItem(R.id.menu_search)
                 .getActionView();
+        //searchView.setQueryHint(getResources().getString(R.string.action_search));
+        //TODO change color of hint
         searchView.setOnQueryTextListener(queryTextListener);
 
         super.onCreateOptionsMenu(menu, inflater);
@@ -77,7 +79,6 @@ public class ProduceFragment extends Fragment{
     final SearchView.OnQueryTextListener queryTextListener = new SearchView.OnQueryTextListener() {
         @Override
         public boolean onQueryTextChange(String newText) {
-            // Do something
             return true;
         }
 

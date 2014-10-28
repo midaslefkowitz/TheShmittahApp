@@ -26,7 +26,7 @@
     </style>
 
 
-    <style name="AppTheme.ActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+    <style name="AppTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
         <item name="android:background">#928575</item>
         <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
         <!-- Generated -->
