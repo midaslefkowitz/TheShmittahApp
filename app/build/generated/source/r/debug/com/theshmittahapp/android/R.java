@@ -1409,6 +1409,7 @@ containing a value of this type.
         public static final int answer=0x7f09004f;
         public static final int beginning=0x7f09000a;
         public static final int book_now=0x7f090022;
+        public static final int btn_paypal=0x7f090060;
         public static final int buyButton=0x7f09001c;
         public static final int buy_now=0x7f090021;
         public static final int buy_with_google=0x7f090020;
@@ -1438,7 +1439,6 @@ containing a value of this type.
         public static final int details_start_date_year=0x7f09006c;
         public static final int dialog=0x7f090015;
         public static final int disableHome=0x7f090008;
-        public static final int donate_paypal=0x7f090060;
         public static final int donation_amount=0x7f09005f;
         public static final int drawer_layout=0x7f090050;
         public static final int dropdown=0x7f090016;

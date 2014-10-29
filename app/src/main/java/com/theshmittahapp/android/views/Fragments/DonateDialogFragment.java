@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.paypal.android.sdk.payments.PayPalConfiguration;
@@ -36,6 +37,7 @@ public class DonateDialogFragment extends DialogFragment {
     private static final int TOTAL_NOT_NOW_ENTRIES = 5;
     private static final int TOTAL_FREE_DAYS = 5;
     private static final int TOTAL_FREE_ENTRIES = 5;
+    private static final String DEFAULT_DONATION = "5";
 
     private static final String USER_DONATED = "user donated";
     private static final String CLICKED_NEVER = "clicked never";
@@ -115,11 +117,17 @@ public class DonateDialogFragment extends DialogFragment {
     private View getCustomView() {
         mInflater = getActivity().getLayoutInflater();
         View v = mInflater.inflate(R.layout.fragment_donate_dialog, null);
-        ImageView paypal = (ImageView) v.findViewById(R.id.donate_paypal);
+        EditText donationAmountET = (EditText) v.findViewById(R.id.donation_amount);
+        String donationAmountStr = donationAmountET.getText().toString();
+        if (donationAmountStr == null || donationAmountStr.length()==0) {
+            donationAmountStr = DEFAULT_DONATION;
+        }
+        final String donationAmount = donationAmountStr;
+        ImageView paypal = (ImageView) v.findViewById(R.id.btn_paypal);
         paypal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                donatePayPalOnClick(v);
+                donatePayPalOnClick(v, donationAmount);
             }
         });
         return v;
@@ -128,7 +136,6 @@ public class DonateDialogFragment extends DialogFragment {
     private Dialog createDialog(View v) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
                 .setView(v)
-                //.setTitle(R.string.dialog_title)
                 .setPositiveButton(R.string.never_btn, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // Never
@@ -141,8 +148,6 @@ public class DonateDialogFragment extends DialogFragment {
                         resetNotNowValues();
                     }
                 });
-        //builder.setCustomTitle(mInflater.inflate(R.layout.dialog_title_layout, null));
-
         return (builder.create());
     }
 
@@ -271,17 +276,17 @@ public class DonateDialogFragment extends DialogFragment {
                 (mPrefs.getInt(NOT_NOW_ENTRIES_REMAINING, TOTAL_NOT_NOW_DAYS) > 0) );
     }
 
-    public void donatePayPalOnClick(View view) {
+    public void donatePayPalOnClick(View view, String donationAmount) {
 
-        PayPalPayment donation = getThingToBuy(PayPalPayment.PAYMENT_INTENT_SALE);
+        PayPalPayment donation = getThingToBuy(PayPalPayment.PAYMENT_INTENT_SALE, donationAmount);
         Intent intent = new Intent(getActivity(), PaymentActivity.class);
         intent.putExtra(PaymentActivity.EXTRA_PAYMENT, donation);
         startActivityForResult(intent, REQUEST_CODE_PAYMENT);
     }
 
-    private PayPalPayment getThingToBuy(String paymentIntent) {
+    private PayPalPayment getThingToBuy(String paymentIntent, String donationAmount) {
         return new PayPalPayment(
-                new BigDecimal("1.75"),
+                new BigDecimal(donationAmount),
                 mPaypalCurrencyCode,
                 getResources().getString(R.string.donation_description),
                 paymentIntent);

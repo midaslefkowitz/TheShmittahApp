@@ -83,7 +83,7 @@
                     android:layout_weight="0.70" >
 
                     <ImageView
-                        android:id="@+id/donate_paypal"
+                        android:id="@+id/btn_paypal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:src="@drawable/btn_donate"
