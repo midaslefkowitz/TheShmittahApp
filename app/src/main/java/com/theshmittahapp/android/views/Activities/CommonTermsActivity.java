@@ -1,7 +1,6 @@
 package com.theshmittahapp.android.views.Activities;
 
 import android.app.Activity;
-import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
@@ -20,7 +19,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ShareActionProvider;
 
-import com.newrelic.agent.android.NewRelic;
 import com.theshmittahapp.android.HelperClasses.NavDrawerListAdapter;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.models.NavDrawerItem;
@@ -35,6 +33,8 @@ import com.theshmittahapp.android.views.Fragments.PDFFragment;
 import java.util.ArrayList;
 
 public class CommonTermsActivity extends Activity {
+
+    private static final String DONATE_DIALOG_TAG = "donate";
 
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
@@ -65,7 +65,7 @@ public class CommonTermsActivity extends Activity {
 
         if (savedInstanceState == null) {
             // on first time display view for first nav item
-            displayView(1);
+            displayView(2);
         }
     }
 
@@ -207,7 +207,13 @@ public class CommonTermsActivity extends Activity {
 		// menu.findItem(R.id.action_settings).setVisible(!drawerOpen);
 		return super.onPrepareOptionsMenu(menu);
 	}
-	
+
+    private void createDonateDialog(boolean fromDrawer) {
+        DonateDialogFragment mDonateDialog = DonateDialogFragment.newInstance(fromDrawer);
+        mDonateDialog.show(getFragmentManager(), DONATE_DIALOG_TAG);
+    }
+
+
 	/*
 	 * Diplaying fragment view for selected nav drawer list item
 	 * */
@@ -216,50 +222,56 @@ public class CommonTermsActivity extends Activity {
 		Fragment fragment = null;
 		boolean ask = false;
 		boolean produce = false;
+        boolean donate = false;
 		boolean shiurim = false;
 		Bundle args;
 		switch (position) {
-			case 0:
+            case 0:
+                // donate dialog
+                fragment = new CommonTermsFragment();
+                donate = true;
+                break;
+			case 1:
 				// produce_list
 				produce = true;
 				break;
-			case 1:
+			case 2:
 				// common terms
 				fragment = new CommonTermsFragment();
 				break;
-			case 2:
+			case 3:
 				// faqs
 				fragment = new FAQFragment();
 				break;
-			case 3:
+			case 4:
 				// Halacha overview
                 fragment = new PDFFragment();
                 args = new Bundle();
                 args.putString(PDFFragment.PDF, mOverviewName);
                 fragment.setArguments(args);
                 break;
-            case 4:
+            case 5:
                 // detailed halachos
                 fragment = new PDFFragment();
                 args = new Bundle();
                 args.putString(PDFFragment.PDF, mDetailedName);
                 fragment.setArguments(args);
                 break;
-			case 5:
+			case 6:
 				// chart
 				fragment = new ChartFragment();
 				break;
-			case 6:
-				// shiurim 
+			case 7:
+				// shiurim
 				fragment = new CommonTermsFragment();
 				shiurim = true;
 				break;
-			case 7:
+			case 8:
 				// ask the rabbi
 				fragment = new CommonTermsFragment();
 				ask = true;
 				break;
-			case 8:
+			case 9:
 				// about
 				fragment = new AboutFragment();
 				break;
@@ -275,8 +287,8 @@ public class CommonTermsActivity extends Activity {
 			// update selected item and title, then close the drawer
 			mDrawerList.setItemChecked(position, true);
 			mDrawerList.setSelection(position);
-            if (position == 6 || position == 7) {
-                setTitle(navMenuTitles[1]);
+            if (position == 7 || position == 8 || position == 0) {
+                setTitle(navMenuTitles[2]);
             } else {
                 setTitle(navMenuTitles[position]);
             }
@@ -288,16 +300,17 @@ public class CommonTermsActivity extends Activity {
 				
 		// placed here to force close drawer first
 		if (ask) {
-        	//setTitle(R.string.app_name);
         	ask = false;
         	askTheRabbi();
         } else if (produce) {
-        	//setTitle(R.string.app_name);
         	produce = false;
         	produceList();
         } else if (shiurim) {
         	shiurim = false;
         	onlineShiruim();
+        } else if (donate) {
+            donate = false;
+            createDonateDialog(true);
         }
 	}
 	

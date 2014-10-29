@@ -199,6 +199,7 @@
     <string name="desc_list_item_icon">Item Icon</string>
 
     <!-- Drawer Menu Strings -->
+    <string name="donate_drawer">DONATE</string>
     <string name="produce_list">List of Produce</string>
     <string name="terms">Common Terms</string>
     <string name="faqs">FAQ\'s</string>
@@ -217,6 +218,7 @@
     <string name="title_activity_definition">Definition</string>
     <string name="title_activity_chart">Shmittah Chart</string>
     <string name="title_activity_no_results">No Results</string>
+    <string name="title_activity_donate">Donate</string>
 
     <!-- Action Menu Strings -->
     <string name="action_search">Search Produce</string>
@@ -339,4 +341,6 @@
     <string name="donation_paypal_item">Donation</string>
     <string name="donate_paypal_prompt">Donate With Paypal</string>
     <string name="donation_description">Donation to The Shmittah App</string>
+
+
 </resources>

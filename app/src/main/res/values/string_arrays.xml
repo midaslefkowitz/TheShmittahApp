@@ -3,6 +3,7 @@
 <resources>
     <!-- Drawer Strings -->
 	<string-array name="drawer_items">
+        <item>@string/donate_drawer</item>
 	    <item>@string/produce_list</item>
 		<item>@string/terms</item>
 		<item>@string/faqs</item>
@@ -16,77 +17,77 @@
     
 	<!-- Fruits and Veggies Names -->
     <string-array name="fruits_and_veggies">
-        <item>@string/apple</item>
-        <item>@string/apricot</item>
-        <item>@string/artichoke</item>
-        <item>@string/asparagus</item>
-        <item>@string/avocado</item>
-        <item>@string/banana</item>
-        <item>@string/bay</item>
-        <item>@string/beet</item>
-        <item>@string/blackberry</item>
-        <item>@string/broccoli</item>
-        <item>@string/cabbage</item>
-        <item>@string/carrot</item>
-        <item>@string/celery</item>
-        <item>@string/cherries</item>
-        <item>@string/cinnamon</item>
-        <item>@string/cauliflower</item>
-        <item>@string/coriander</item>
-        <item>@string/cucumber</item>
-        <item>@string/date</item>
-        <item>@string/eggplant</item>
-        <item>@string/fig</item>
-        <item>@string/fennel</item>
-        <item>@string/garlic</item>
-        <item>@string/ginger</item>
-        <item>@string/grapefruit</item>
-        <item>@string/grape</item>
-        <item>@string/guava</item>
-        <item>@string/horseradish</item>
-        <item>@string/kiwi</item>
-        <item>@string/lemon</item>
-        <item>@string/lettuce</item>
-        <item>@string/lychee</item>
-        <item>@string/mango</item>
-        <item>@string/melon</item>
-        <item>@string/mint</item>
-        <item>@string/mushroom</item>
-        <item>@string/nectarine</item>
-        <item>@string/olive</item>
-        <item>@string/onion</item>
-        <item>@string/orange</item>
-        <item>@string/oregano</item>
-        <item>@string/parsley</item>
-        <item>@string/paprika</item>
-        <item>@string/peach</item>
-        <item>@string/pear</item>
-        <item>@string/peanuts</item>
-        <item>@string/popcorn</item>
-        <item>@string/pepper</item>
-        <item>@string/pineapple</item>
-        <item>@string/plum</item>
-        <item>@string/pomegranate</item>
-        <item>@string/pomelo</item>
-        <item>@string/potato</item>
-        <item>@string/pumpkin</item>
-        <item>@string/poppy_seed</item>
-        <item>@string/quince</item>
-        <item>@string/radish</item>
-        <item>@string/rice</item>
-        <item>@string/sabra</item>
-        <item>@string/saffron</item>
-        <item>@string/sesame</item>
-        <item>@string/squash</item>
-        <item>@string/strawberry</item>
-        <item>@string/spinach</item>
-        <item>@string/sweet_pepper</item>
-        <item>@string/sweet_potato</item>
-        <item>@string/tangerine</item>
-        <item>@string/tomato</item>
-        <item>@string/turnip</item>
-        <item>@string/watermelon</item>
-        <item>@string/zucchini</item>
+        01<item>@string/apple</item>
+        02<item>@string/apricot</item>
+        03<item>@string/artichoke</item>
+        04<item>@string/asparagus</item>
+        05<item>@string/avocado</item>
+        06<item>@string/banana</item>
+        07<item>@string/bay</item>
+        08<item>@string/beet</item>
+        09<item>@string/blackberry</item>
+        10<item>@string/broccoli</item>
+        11<item>@string/cabbage</item>
+        12<item>@string/carrot</item>
+        13<item>@string/celery</item>
+        14<item>@string/cherries</item>
+        15<item>@string/cinnamon</item>
+        16<item>@string/cauliflower</item>
+        17<item>@string/coriander</item>
+        18<item>@string/cucumber</item>
+        19<item>@string/date</item>
+        20<item>@string/eggplant</item>
+        21<item>@string/fig</item>
+        22<item>@string/fennel</item>
+        23<item>@string/garlic</item>
+        24<item>@string/ginger</item>
+        25<item>@string/grapefruit</item>
+        26<item>@string/grape</item>
+        27<item>@string/guava</item>
+        28<item>@string/horseradish</item>
+        29<item>@string/kiwi</item>
+        30<item>@string/lemon</item>
+        31<item>@string/lettuce</item>
+        32<item>@string/lychee</item>
+        33<item>@string/mango</item>
+        34<item>@string/melon</item>
+        35<item>@string/mint</item>
+        36<item>@string/mushroom</item>
+        37<item>@string/nectarine</item>
+        38<item>@string/olive</item>
+        39<item>@string/onion</item>
+        40<item>@string/orange</item>
+        41<item>@string/oregano</item>
+        42<item>@string/parsley</item>
+        43<item>@string/paprika</item>
+        44<item>@string/peach</item>
+        45<item>@string/pear</item>
+        46<item>@string/peanuts</item>
+        47<item>@string/popcorn</item>
+        48<item>@string/pepper</item>
+        49<item>@string/pineapple</item>
+        50<item>@string/plum</item>
+        51<item>@string/pomegranate</item>
+        52<item>@string/pomelo</item>
+        53<item>@string/potato</item>
+        54<item>@string/pumpkin</item>
+        55<item>@string/poppy_seed</item>
+        56<item>@string/quince</item>
+        57<item>@string/radish</item>
+        58<item>@string/rice</item>
+        59<item>@string/sabra</item>
+        60<item>@string/saffron</item>
+        61<item>@string/sesame</item>
+        62<item>@string/squash</item>
+        63<item>@string/strawberry</item>
+        64<item>@string/spinach</item>
+        65<item>@string/sweet_pepper</item>
+        66<item>@string/sweet_potato</item>
+        67<item>@string/tangerine</item>
+        68<item>@string/tomato</item>
+        69<item>@string/turnip</item>
+        70<item>@string/watermelon</item>
+        71<item>@string/zucchini</item>
     </string-array>
     
     <string-array name="from_date">
@@ -729,7 +730,7 @@
         <item>@string/no_kedusha</item>
         <item></item>
         <item></item>
-        <item>@string/kedusha</item>
+        <item>@string/no_kedusha</item>
         <item>@string/kedusha_fruit</item>
         <item>@string/no_kedusha</item>
         <item>@string/kedusha</item>

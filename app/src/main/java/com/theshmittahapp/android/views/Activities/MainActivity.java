@@ -1,11 +1,9 @@
-//todo: finish paypal
 //TODO: create custom action provider
 //TODO: add download link to pdfs and chart
 
 package com.theshmittahapp.android.views.Activities;
 
 import android.app.Activity;
-import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
@@ -40,7 +38,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-	private final String TAG = "Main Activity";
+	private static final String TAG = "Main Activity";
+    private static final String DONATE_DIALOG_TAG = "donate";
 
     private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
@@ -158,14 +157,14 @@ public class MainActivity extends Activity {
                     .commit();
         } else if (savedInstanceState == null) {
             // on first time display view for first nav item
-            displayView(0);
-            createDonateDialog();
+            displayView(1);
+            createDonateDialog(false);
         }
     }
 
-    private void createDonateDialog() {
-        DialogFragment newFragment = new DonateDialogFragment();
-        newFragment.show(getFragmentManager(), "donate");
+    private void createDonateDialog(boolean fromDrawer) {
+        DonateDialogFragment mDonateDialog = DonateDialogFragment.newInstance(fromDrawer);
+        mDonateDialog.show(getFragmentManager(), DONATE_DIALOG_TAG);
     }
 
 	@Override
@@ -222,49 +221,55 @@ public class MainActivity extends Activity {
 		boolean ask = false;
 		boolean terms = false;
 		boolean shiurim = false;
+        boolean donate = false;
 		switch (position) {
-			case 0:
+            case 0:
+                // donate dialog
+                fragment = new ProduceFragment();
+                donate = true;
+                break;
+			case 1:
 				// produce_list
 				fragment = new ProduceFragment();
 				break;
-			case 1:
+			case 2:
 				// common terms
 				fragment = new ProduceFragment();
 				terms = true;
 				break;
-			case 2:
+			case 3:
 				// faqs
 				fragment = new FAQFragment();
 				break;
-			case 3:
+			case 4:
 				// Halacha overview
 				fragment = new PDFFragment();
 				args = new Bundle();
     			args.putString(PDFFragment.PDF, mOverviewName);
     			fragment.setArguments(args);
 				break;
-			case 4:
+			case 5:
 				// detailed halachos
 				fragment = new PDFFragment();
 				args = new Bundle();
     			args.putString(PDFFragment.PDF, mDetailedName);
     			fragment.setArguments(args);
 				break;
-			case 5:
+			case 6:
 				// chart
 				fragment = new ChartFragment();
 				break;
-			case 6:
+			case 7:
 				// shiurim
 				fragment = new ProduceFragment();
 				shiurim = true;
 				break;
-			case 7:
+			case 8:
 				// ask the rabbi
 				fragment = new ProduceFragment();
 				ask = true;
 				break;
-			case 8:
+			case 9:
 				// about
 				fragment = new AboutFragment();
 				break;
@@ -280,8 +285,8 @@ public class MainActivity extends Activity {
 			// update selected item and title, then close the drawer
 			mDrawerList.setItemChecked(position, true);
 			mDrawerList.setSelection(position);
-            if (position == 6 || position == 7) {
-                setTitle(navMenuTitles[0]);
+            if (position == 7 || position == 8 || position == 0) {
+                setTitle(navMenuTitles[1]);
             } else {
                 setTitle(navMenuTitles[position]);
             }
@@ -304,6 +309,9 @@ public class MainActivity extends Activity {
         } else if (shiurim) {
         	shiurim = false;
         	onlineShiurim();
+        } else if (donate) {
+            donate = false;
+            createDonateDialog(true);
         }
 	}
 
