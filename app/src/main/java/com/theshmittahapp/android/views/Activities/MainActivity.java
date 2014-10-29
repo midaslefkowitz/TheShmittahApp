@@ -1,4 +1,4 @@
-//TODO: clean up the code
+//todo: finish paypal
 //TODO: create custom action provider
 //TODO: add download link to pdfs and chart
 
@@ -68,13 +68,7 @@ public class MainActivity extends Activity {
 
         setDrawerToggle();
 
-        landingPageOnFirstRun();
-
-        if (savedInstanceState == null) {
-            // on first time display view for first nav item
-            displayView(0);
-            createDonateDialog();
-        }
+        displayPage(savedInstanceState);
 	}
 
     private void startNewRelicTracking() {
@@ -152,16 +146,20 @@ public class MainActivity extends Activity {
         getActionBar().setHomeButtonEnabled(true);
     }
 
-    private void landingPageOnFirstRun() {
+    private void displayPage(Bundle savedInstanceState) {
         // Only load landing page fragment the first time the app is run on a device
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (!prefs.getBoolean("firstTimeEver", false)) {
-            getFragmentManager().beginTransaction()
-                    .add(R.id.frame_container, new LandingPageFragment())
-                    .commit();
             SharedPreferences.Editor editor = prefs.edit();
             editor.putBoolean("firstTimeEver", true);
             editor.commit();
+            getFragmentManager().beginTransaction()
+                    .add(R.id.frame_container, new LandingPageFragment())
+                    .commit();
+        } else if (savedInstanceState == null) {
+            // on first time display view for first nav item
+            displayView(0);
+            createDonateDialog();
         }
     }
 

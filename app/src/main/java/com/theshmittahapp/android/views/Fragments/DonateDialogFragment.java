@@ -10,36 +10,51 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.paypal.android.sdk.payments.PayPalConfiguration;
+import com.paypal.android.sdk.payments.PayPalPayment;
+import com.paypal.android.sdk.payments.PayPalService;
+import com.paypal.android.sdk.payments.PaymentActivity;
 import com.theshmittahapp.android.R;
 
 import org.joda.time.DateTime;
 import org.joda.time.Seconds;
 
+import java.math.BigDecimal;
+
 public class DonateDialogFragment extends DialogFragment {
 
-    private final int TOTAL_NEVER_DAYS = 20;
-    private final int TOTAL_NEVER_ENTRIES = 20;
-    private final int TOTAL_NOT_NOW_DAYS = 5;
-    private final int TOTAL_NOT_NOW_ENTRIES = 5;
-    private final int TOTAL_FREE_DAYS = 5;
-    private final int TOTAL_FREE_ENTRIES = 5;
+    private static final int TOTAL_NEVER_DAYS = 20;
+    private static final int TOTAL_NEVER_ENTRIES = 20;
+    private static final int TOTAL_NOT_NOW_DAYS = 5;
+    private static final int TOTAL_NOT_NOW_ENTRIES = 5;
+    private static final int TOTAL_FREE_DAYS = 5;
+    private static final int TOTAL_FREE_ENTRIES = 5;
 
-    private final String USER_DONATED = "user donated";
-    private final String CLICKED_NEVER = "clicked never";
-    private final String CLICKED_NOT_NOW = "clicked not now";
-    private final String NEVER_CLICKED_DATE = "never clicked date";
-    private final String NEVER_ENTRIES_REMAINING = "never entries remaining";
-    private final String NOT_NOW_CLICKED_DATE = "not now clicked date";
-    private final String NOT_NOW_ENTRIES_REMAINING = "not now entries remaining";
-    private final String FREE_DATE = "free date";
-    private final String FREE_ENTRIES_REMAINING = "free entries remaining";
-    private final String TAG = "Donate Dialog";
+    private static final String USER_DONATED = "user donated";
+    private static final String CLICKED_NEVER = "clicked never";
+    private static final String CLICKED_NOT_NOW = "clicked not now";
+    private static final String NEVER_CLICKED_DATE = "never clicked date";
+    private static final String NEVER_ENTRIES_REMAINING = "never entries remaining";
+    private static final String NOT_NOW_CLICKED_DATE = "not now clicked date";
+    private static final String NOT_NOW_ENTRIES_REMAINING = "not now entries remaining";
+    private static final String FREE_DATE = "free date";
+    private static final String FREE_ENTRIES_REMAINING = "free entries remaining";
+    private static final String TAG = "Donate Dialog";
+
+    /* Paypal constants */
+    private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_NO_NETWORK;
+    private static final String CONFIG_CLIENT_ID = "credential from developer.paypal.com";
+    private static final int REQUEST_CODE_PAYMENT = 1;
+    private static PayPalConfiguration config = new PayPalConfiguration()
+            .environment(CONFIG_ENVIRONMENT)
+            .clientId(CONFIG_CLIENT_ID);
 
     private SharedPreferences mPrefs;
     private int mNeverRemaining;
@@ -64,6 +79,8 @@ public class DonateDialogFragment extends DialogFragment {
             //return null;
         }
 
+        startPaypalService();
+
         View v = getCustomView();
 
         Dialog alertDialog = createDialog(v);
@@ -72,7 +89,18 @@ public class DonateDialogFragment extends DialogFragment {
 
         alertDialog.getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
+
         return alertDialog;
+    }
+
+    private void startPaypalService() {
+        try {
+            Intent intent = new Intent(getActivity(), PayPalService.class);
+            intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
+            getActivity().startService(intent);
+        } catch (Exception e) {
+            Log.i("PayPal Exception", e.getMessage());
+        }
     }
 
     private void firstEntranceInit() {
@@ -244,44 +272,18 @@ public class DonateDialogFragment extends DialogFragment {
     }
 
     public void donatePayPalOnClick(View view) {
-        Uri.Builder uriBuilder = new Uri.Builder();
-        uriBuilder.scheme("https").authority("www.paypal.com").path("cgi-bin/webscr");
-        uriBuilder.appendQueryParameter("cmd", "_donations");
 
-        uriBuilder.appendQueryParameter("business", mPaypalUser);
-        uriBuilder.appendQueryParameter("lc", "US");
-        uriBuilder.appendQueryParameter("item_name", getString(R.string.donation_paypal_item));
-        uriBuilder.appendQueryParameter("no_note", "1");
-        // uriBuilder.appendQueryParameter("no_note", "0");
-        // uriBuilder.appendQueryParameter("cn", "Note to the developer");
-        uriBuilder.appendQueryParameter("no_shipping", "1");
-        uriBuilder.appendQueryParameter("currency_code", mPaypalCurrencyCode);
-        Uri payPalUri = uriBuilder.build();
-
-        // Start your favorite browser
-        try {
-            Intent viewIntent = new Intent(Intent.ACTION_VIEW, payPalUri);
-            startActivity(viewIntent);
-        } catch (ActivityNotFoundException e) {
-            openDialog(android.R.drawable.ic_dialog_alert, R.string.donations__alert_dialog_title,
-                    getString(R.string.donations__alert_dialog_no_browser));
-        }
+        PayPalPayment donation = getThingToBuy(PayPalPayment.PAYMENT_INTENT_SALE);
+        Intent intent = new Intent(getActivity(), PaymentActivity.class);
+        intent.putExtra(PaymentActivity.EXTRA_PAYMENT, donation);
+        startActivityForResult(intent, REQUEST_CODE_PAYMENT);
     }
 
-    void openDialog(int icon, int title, String message) {
-        AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity());
-        dialog.setIcon(icon);
-        dialog.setTitle(title);
-        dialog.setMessage(message);
-        dialog.setCancelable(true);
-        dialog.setNeutralButton(R.string.donations__button_close,
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                }
-        );
-        dialog.show();
+    private PayPalPayment getThingToBuy(String paymentIntent) {
+        return new PayPalPayment(
+                new BigDecimal("1.75"),
+                mPaypalCurrencyCode,
+                getResources().getString(R.string.donation_description),
+                paymentIntent);
     }
 }

@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/custom_theme_color"
-    tools:context="com.theshmittahapp.android.views.Fragments.DonateDialogFragment"
-     >
+    tools:context="com.theshmittahapp.android.views.Fragments.DonateDialogFragment" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,6 +20,11 @@
             android:textAppearance="?android:attr/textAppearanceListItem"
             android:textColor="@color/list_item_title"
             android:gravity="center_vertical|center_horizontal" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/list_divider"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,12 +53,45 @@
                 android:text="@string/donate_instructions"
                 android:textSize="16sp" />
 
-            <ImageView
-                android:id="@+id/donate_paypal"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:src="@drawable/btn_donate"/>
+                android:orientation="horizontal"
+                android:paddingTop="5dp" >
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.30" >
+
+                    <EditText
+                        android:id="@+id/donation_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/theme_text_color"
+                        android:hint="$"
+                        android:textSize="20sp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.70" >
+
+                    <ImageView
+                        android:id="@+id/donate_paypal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_donate"
+                        android:layout_alignParentTop="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 

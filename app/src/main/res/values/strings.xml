@@ -332,13 +332,11 @@
         that people have the halachos literally in their pockets.</string>
     <string name="donate_plea2">Money goes towards updates as well as future Torah apps. Please keep in mind that there aren\'t\
          that many Torah observant Jews living in Israel who own a smartphone. </string>
-    <string name="donate_instructions">To donate just click the button below. You can choose how much \
-        you want to donate after you click. Recommended donation is $5.</string>
+    <string name="donate_instructions">Recommended donation is $5.</string>
     <string name="not_now_btn">Not Now</string>
     <string name="never_btn">Never</string>
     <string name="dialog_title">The Shmittah App</string>
     <string name="donation_paypal_item">Donation</string>
-    <string name="donations__alert_dialog_title">Error occurred</string>
-    <string name="donations__alert_dialog_no_browser">No browser was found to open a website!</string>
-    <string name="donations__button_close">Close</string>
+    <string name="donate_paypal_prompt">Donate With Paypal</string>
+    <string name="donation_description">Donation to The Shmittah App</string>
 </resources>
