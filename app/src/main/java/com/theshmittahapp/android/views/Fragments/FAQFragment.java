@@ -18,6 +18,7 @@ import android.widget.ImageView;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
+import com.theshmittahapp.android.HelperClasses.Advertisement;
 import com.theshmittahapp.android.HelperClasses.ExpandableListAdapter;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.MyApp;
@@ -59,19 +60,8 @@ public class FAQFragment extends Fragment{
 		// inflate view
 		View mRootView = inflater.inflate(R.layout.fragment_faq, container, false);
 		ImageView ad = (ImageView) mRootView.findViewById(R.id.ad);
-		
-		// no ad in landscape so check for null first
-		if (ad!=null) {
-			ad.setOnClickListener(new OnClickListener(){
-				@Override
-				public void onClick(View arg0) {
-					Uri webpage = Uri.parse(url);
-				    Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-				    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-				    startActivity(Intent.createChooser(intent, ""));				
-				}
-			});
-		}
+
+        Advertisement.setAd(getActivity(), ad, url);
 		
 		// get the listview
         expListView = (ExpandableListView) mRootView.findViewById(R.id.faq_questions_lv);

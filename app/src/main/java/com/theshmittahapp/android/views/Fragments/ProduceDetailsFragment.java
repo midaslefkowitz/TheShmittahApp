@@ -1,5 +1,6 @@
 package com.theshmittahapp.android.views.Fragments;
 
+import com.theshmittahapp.android.HelperClasses.Advertisement;
 import com.theshmittahapp.android.models.Produce;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.Activities.ProduceDetailsActivity;
@@ -27,20 +28,8 @@ public class ProduceDetailsFragment extends Fragment {
 		// inflate view
 		View v = inflater.inflate(R.layout.fragment_produce_details, container, false);
 		ImageView ad = (ImageView) v.findViewById(R.id.ad);
-		
-		// no ad in landscape so check for null first
-		if (ad!=null) {
-			ad.setOnClickListener(new OnClickListener(){
-				@Override
-				public void onClick(View arg0) {
-					Uri webpage = Uri.parse(url);
-				    Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-				    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-				    startActivity(Intent.createChooser(intent, ""));				
-				}
-			});
 
-		}
+        Advertisement.setAd(getActivity(), ad, url);
 		
 		Intent intent = getActivity().getIntent();
 		Produce produce = (Produce) intent.getSerializableExtra(ProduceDetailsActivity.PRODUCE);

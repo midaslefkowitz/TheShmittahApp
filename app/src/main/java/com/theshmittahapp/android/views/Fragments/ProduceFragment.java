@@ -25,6 +25,7 @@ import android.widget.SearchView;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
+import com.theshmittahapp.android.HelperClasses.Advertisement;
 import com.theshmittahapp.android.HelperClasses.WordUtils;
 import com.theshmittahapp.android.models.Produce;
 import com.theshmittahapp.android.R;
@@ -118,19 +119,8 @@ public class ProduceFragment extends Fragment{
 		// inflate view
 		mRootView = inflater.inflate(R.layout.fragment_produce, container, false);
 		ImageView ad = (ImageView) mRootView.findViewById(R.id.ad);
-		
-		// no ad in landscape so check for null first
-		if (ad!=null) {
-			ad.setOnClickListener(new OnClickListener() {
-				@Override
-				public void onClick(View arg0) {
-					Uri webpage = Uri.parse(url);
-				    Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-				    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-				    startActivity(Intent.createChooser(intent, ""));				
-				}
-			});
-		}
+
+        Advertisement.setAd(getActivity(), ad, url);
 		// create list of Produce objects
 		List<Produce> allProduce = createProduceArrayList();
 		

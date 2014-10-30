@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.Tracker;
+import com.theshmittahapp.android.HelperClasses.Advertisement;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.MyApp;
 
@@ -104,17 +105,8 @@ public class DefinitionActivity extends Activity {
 			View v = inflater.inflate(R.layout.fragment_definition,
 					container, false);
 			ImageView ad = (ImageView) v.findViewById(R.id.ad);
-			
-			// no ad in landscape so check for null first
-			ad.setOnClickListener(new OnClickListener(){
-				@Override
-				public void onClick(View arg0) {
-					Uri webpage = Uri.parse(url);
-				    Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-				    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-				    startActivity(Intent.createChooser(intent, ""));				
-				}
-			});			
+
+            Advertisement.setAd(getActivity(), ad, url);
 			Intent intent = getActivity().getIntent();
 			String term = intent.getStringExtra(TERM);
 			String def = intent.getStringExtra(DEF);

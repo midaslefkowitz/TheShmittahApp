@@ -21,6 +21,7 @@ import android.widget.ListView;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
+import com.theshmittahapp.android.HelperClasses.Advertisement;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.Activities.DefinitionActivity;
 import com.theshmittahapp.android.views.MyApp;
@@ -60,19 +61,8 @@ public class CommonTermsFragment extends Fragment{
 		// inflate view
 		mRootView = inflater.inflate(R.layout.fragment_common_terms, container, false);
 		ImageView ad = (ImageView) mRootView.findViewById(R.id.ad);
-		
-		// no ad in landscape so check for null first
-		if (ad!=null) {
-			ad.setOnClickListener(new OnClickListener(){
-				@Override
-				public void onClick(View arg0) {
-					Uri webpage = Uri.parse(url);
-				    Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-				    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-				    startActivity(Intent.createChooser(intent, ""));				
-				}
-			});
-		}
+
+        Advertisement.setAd(getActivity(), ad, url);
 
 		// create arrays of terms and defs
 		mGlossary_terms = getResources().getStringArray(R.array.glossary_terms);

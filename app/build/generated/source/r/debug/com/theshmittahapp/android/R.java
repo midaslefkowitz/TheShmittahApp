@@ -1403,7 +1403,6 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f090027;
         public static final int action_menu_presenter=0x7f090028;
         public static final int action_mode_close_button=0x7f090036;
-        public static final int action_settings=0x7f090086;
         public static final int activity_chooser_view_content=0x7f090037;
         public static final int ad=0x7f090053;
         public static final int always=0x7f090012;
@@ -1467,7 +1466,7 @@ containing a value of this type.
         public static final int mashed=0x7f09007d;
         public static final int match_parent=0x7f09001e;
         public static final int menu_item_share=0x7f090085;
-        public static final int menu_search=0x7f090087;
+        public static final int menu_search=0x7f090086;
         public static final int middle=0x7f09000b;
         public static final int monochrome=0x7f090025;
         public static final int never=0x7f090010;

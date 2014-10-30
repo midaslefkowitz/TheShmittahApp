@@ -13,6 +13,7 @@ import android.widget.ImageView;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
+import com.theshmittahapp.android.HelperClasses.Advertisement;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.MyApp;
 
@@ -48,15 +49,7 @@ public class LandingPageFragment extends Fragment {
 		View rootView = inflater.inflate(R.layout.fragment_landing_page, container, false);
 
 		ImageView ad = (ImageView) rootView.findViewById(R.id.ad);
-		ad.setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View arg0) {
-				Uri webpage = Uri.parse(url);
-			    Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-			    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-			    startActivity(Intent.createChooser(intent, ""));				
-			}
-		});
+        Advertisement.setAd(getActivity(), ad, url);
 		return rootView;
     }
 }

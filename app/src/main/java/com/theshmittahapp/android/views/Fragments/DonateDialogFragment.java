@@ -47,6 +47,7 @@ public class DonateDialogFragment extends DialogFragment {
     private int mNotNowRemaining;
     private int mFreeRemaining;
     private LayoutInflater mInflater;
+    private boolean mFromDrawer;
 
     public DonateDialogFragment() { }
 
@@ -63,7 +64,7 @@ public class DonateDialogFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
-        boolean fromDrawer = getArguments().getBoolean(FROM_DRAWER);
+        mFromDrawer = getArguments().getBoolean(FROM_DRAWER);
 
         mPrefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
 
@@ -73,7 +74,7 @@ public class DonateDialogFragment extends DialogFragment {
 
         logEntries();
 
-        if (!fromDrawer) {
+        if (!mFromDrawer) {
             if (!displayDialog()) {
                 return null;
             }
@@ -118,19 +119,21 @@ public class DonateDialogFragment extends DialogFragment {
 
     private Dialog createDialog(View v) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
-                .setView(v)
-                .setPositiveButton(R.string.never_btn, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
+                .setView(v);
+        if (!mFromDrawer) {
+            builder.setPositiveButton(R.string.never_btn, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
                         // Never
                         resetNeverValues();
-                    }
-                })
-                .setNegativeButton(R.string.not_now_btn, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
+                }
+            })
+                    .setNegativeButton(R.string.not_now_btn, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
                         // Not Now
                         resetNotNowValues();
-                    }
-                });
+                        }
+                    });
+        }
         return (builder.create());
     }
 

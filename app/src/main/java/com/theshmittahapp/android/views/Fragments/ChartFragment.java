@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
+import com.theshmittahapp.android.HelperClasses.Advertisement;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.HelperClasses.TouchImageView;
 import com.theshmittahapp.android.views.MyApp;
@@ -47,19 +48,8 @@ public class ChartFragment extends Fragment {
 		// inflate view
 		View rootView = inflater.inflate(R.layout.fragment_chart, container, false);
 		ImageView ad = (ImageView) rootView.findViewById(R.id.ad);
-		
-		// no ad in landscape so check for null first
-		if (ad!=null) {
-			ad.setOnClickListener(new OnClickListener(){
-				@Override
-				public void onClick(View arg0) {
-					Uri webpage = Uri.parse(url);
-				    Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-				    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-				    startActivity(Intent.createChooser(intent, ""));				
-				}
-			});
-		}
+
+        Advertisement.setAd(getActivity(), ad, url);
 		TouchImageView img = (TouchImageView) rootView.findViewById(R.id.chart);
 		img.setImageResource(R.drawable.chart);
 		return rootView;
