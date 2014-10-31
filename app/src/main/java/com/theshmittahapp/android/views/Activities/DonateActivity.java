@@ -1,5 +1,3 @@
-//TODO: Thank you page after donations in onactivityresult
-
 package com.theshmittahapp.android.views.Activities;
 
 import android.app.Activity;
@@ -8,15 +6,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 
 import com.paypal.android.sdk.payments.PayPalConfiguration;
 import com.paypal.android.sdk.payments.PayPalPayment;
 import com.paypal.android.sdk.payments.PayPalService;
 import com.paypal.android.sdk.payments.PaymentActivity;
-import com.paypal.android.sdk.payments.PaymentConfirmation;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.Fragments.DonateDialogFragment;
 
@@ -38,7 +32,7 @@ public class DonateActivity extends Activity {
             .environment(CONFIG_ENVIRONMENT)
             .clientId(CONFIG_CLIENT_ID);
 
-    private String mPaypalCurrencyCode = "USD";
+    private static final String mPaypalCurrencyCode = "USD";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,20 +75,18 @@ public class DonateActivity extends Activity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         beforeDonate = true;
+        Intent intent = new Intent(this, MainActivity.class);
         if (requestCode == REQUEST_CODE_PAYMENT) {
             if (resultCode == Activity.RESULT_OK) {
                 SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(this).edit();
                 editor.putBoolean(DonateDialogFragment.USER_DONATED, true).commit();
-                // TODO: Send to new activity with thank you page
+                intent = new Intent(this, ThankYouActivity.class);
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 Log.i(TAG, "The user canceled.");
             } else if (resultCode == PaymentActivity.RESULT_EXTRAS_INVALID) {
-                Log.i(
-                        TAG,
-                        "An invalid Payment or PayPalConfiguration was submitted. Please see the docs.");
+                Log.i(TAG, "An invalid Payment or PayPalConfiguration was submitted. Please see the docs.");
             }
         }
-        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 

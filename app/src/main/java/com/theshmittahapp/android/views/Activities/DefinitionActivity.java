@@ -3,21 +3,18 @@ package com.theshmittahapp.android.views.Activities;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.ShareActionProvider;
 import android.widget.TextView;
 
 import com.google.android.gms.analytics.GoogleAnalytics;
-import com.google.android.gms.analytics.Tracker;
-import com.theshmittahapp.android.HelperClasses.Advertisement;
+import com.theshmittahapp.android.HelperClasses.AppUtils;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.MyApp;
 
@@ -106,7 +103,7 @@ public class DefinitionActivity extends Activity {
 					container, false);
 			ImageView ad = (ImageView) v.findViewById(R.id.ad);
 
-            Advertisement.setAd(getActivity(), ad, url);
+            AppUtils.setAd(getActivity(), ad, url);
 			Intent intent = getActivity().getIntent();
 			String term = intent.getStringExtra(TERM);
 			String def = intent.getStringExtra(DEF);

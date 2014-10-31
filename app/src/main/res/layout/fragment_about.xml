@@ -66,6 +66,5 @@
             android:text="@string/about_version"
             android:paddingTop="10dp"/>
 
-
-	</LinearLayout>
+    </LinearLayout>
 </ScrollView>

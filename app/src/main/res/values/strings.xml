@@ -341,6 +341,9 @@
     <string name="donation_paypal_item">Donation</string>
     <string name="donate_paypal_prompt">Donate With Paypal</string>
     <string name="donation_description">Donation to The Shmittah App</string>
-
+    <string name="title_activity_thank_you">ThankYouActivity</string>
+    <string name="thank_you">Thank you for your generous support. Rest assured that your donation \
+        is hard at work enabling me to update the app, add new features, and create new apps.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

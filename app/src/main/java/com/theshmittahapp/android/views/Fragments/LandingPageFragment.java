@@ -2,18 +2,15 @@ package com.theshmittahapp.android.views.Fragments;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
-import com.theshmittahapp.android.HelperClasses.Advertisement;
+import com.theshmittahapp.android.HelperClasses.AppUtils;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.MyApp;
 
@@ -49,7 +46,7 @@ public class LandingPageFragment extends Fragment {
 		View rootView = inflater.inflate(R.layout.fragment_landing_page, container, false);
 
 		ImageView ad = (ImageView) rootView.findViewById(R.id.ad);
-        Advertisement.setAd(getActivity(), ad, url);
+        AppUtils.setAd(getActivity(), ad, url);
 		return rootView;
     }
 }

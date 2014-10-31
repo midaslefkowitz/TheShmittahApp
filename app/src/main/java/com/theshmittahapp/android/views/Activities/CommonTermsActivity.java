@@ -4,11 +4,9 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
@@ -27,7 +25,6 @@ import com.theshmittahapp.android.views.Fragments.ChartFragment;
 import com.theshmittahapp.android.views.Fragments.CommonTermsFragment;
 import com.theshmittahapp.android.views.Fragments.DonateDialogFragment;
 import com.theshmittahapp.android.views.Fragments.FAQFragment;
-import com.theshmittahapp.android.views.Fragments.LandingPageFragment;
 import com.theshmittahapp.android.views.Fragments.PDFFragment;
 
 import java.util.ArrayList;
@@ -60,8 +57,6 @@ public class CommonTermsActivity extends Activity {
         createLayout();
 
         setDrawerToggle();
-
-        landingPageOnFirstRun();
 
         if (savedInstanceState == null) {
             // on first time display view for first nav item
@@ -136,19 +131,6 @@ public class CommonTermsActivity extends Activity {
         // enabling action bar app icon and behaving it as toggle button
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
-    }
-
-    private void landingPageOnFirstRun() {
-        // Only load landing page fragment the first time the app is run on a device
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (!prefs.getBoolean("firstTimeEver", false)) {
-            getFragmentManager().beginTransaction()
-                    .add(R.id.frame_container, new LandingPageFragment())
-                    .commit();
-            SharedPreferences.Editor editor = prefs.edit();
-            editor.putBoolean("firstTimeEver", true);
-            editor.commit();
-        }
     }
 	
 	@Override

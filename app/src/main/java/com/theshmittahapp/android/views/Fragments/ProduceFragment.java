@@ -7,14 +7,12 @@ import java.util.List;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -25,8 +23,7 @@ import android.widget.SearchView;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
-import com.theshmittahapp.android.HelperClasses.Advertisement;
-import com.theshmittahapp.android.HelperClasses.WordUtils;
+import com.theshmittahapp.android.HelperClasses.AppUtils;
 import com.theshmittahapp.android.models.Produce;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.Activities.NoResults;
@@ -120,7 +117,7 @@ public class ProduceFragment extends Fragment{
 		mRootView = inflater.inflate(R.layout.fragment_produce, container, false);
 		ImageView ad = (ImageView) mRootView.findViewById(R.id.ad);
 
-        Advertisement.setAd(getActivity(), ad, url);
+        AppUtils.setAd(getActivity(), ad, url);
 		// create list of Produce objects
 		List<Produce> allProduce = createProduceArrayList();
 		

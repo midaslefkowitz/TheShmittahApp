@@ -6,19 +6,16 @@ import java.util.List;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.View.OnClickListener;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
-import com.theshmittahapp.android.HelperClasses.Advertisement;
+import com.theshmittahapp.android.HelperClasses.AppUtils;
 import com.theshmittahapp.android.HelperClasses.ExpandableListAdapter;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.MyApp;
@@ -61,7 +58,7 @@ public class FAQFragment extends Fragment{
 		View mRootView = inflater.inflate(R.layout.fragment_faq, container, false);
 		ImageView ad = (ImageView) mRootView.findViewById(R.id.ad);
 
-        Advertisement.setAd(getActivity(), ad, url);
+        AppUtils.setAd(getActivity(), ad, url);
 		
 		// get the listview
         expListView = (ExpandableListView) mRootView.findViewById(R.id.faq_questions_lv);

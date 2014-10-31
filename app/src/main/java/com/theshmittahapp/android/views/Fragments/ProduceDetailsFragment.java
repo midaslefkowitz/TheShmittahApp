@@ -1,18 +1,16 @@
 package com.theshmittahapp.android.views.Fragments;
 
-import com.theshmittahapp.android.HelperClasses.Advertisement;
+import com.theshmittahapp.android.HelperClasses.AppUtils;
 import com.theshmittahapp.android.models.Produce;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.Activities.ProduceDetailsActivity;
 
 import android.app.Fragment;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,7 +27,7 @@ public class ProduceDetailsFragment extends Fragment {
 		View v = inflater.inflate(R.layout.fragment_produce_details, container, false);
 		ImageView ad = (ImageView) v.findViewById(R.id.ad);
 
-        Advertisement.setAd(getActivity(), ad, url);
+        AppUtils.setAd(getActivity(), ad, url);
 		
 		Intent intent = getActivity().getIntent();
 		Produce produce = (Produce) intent.getSerializableExtra(ProduceDetailsActivity.PRODUCE);

@@ -2,21 +2,18 @@ package com.theshmittahapp.android.views.Fragments;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
-import com.theshmittahapp.android.HelperClasses.Advertisement;
+import com.theshmittahapp.android.HelperClasses.AppUtils;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.MyApp;
 
@@ -48,9 +45,10 @@ public class AboutFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
 		// inflate view
-		View rootView = inflater.inflate(R.layout.fragment_about, container, false);	
-		ImageView ad = (ImageView) rootView.findViewById(R.id.ad);
-        Advertisement.setAd(getActivity(), ad, url);
+		View rootView = inflater.inflate(R.layout.fragment_about, container, false);
+
+        ImageView ad = (ImageView) rootView.findViewById(R.id.ad);
+        AppUtils.setAd(getActivity(), ad, url);
 
         String versionName = "";
         try {

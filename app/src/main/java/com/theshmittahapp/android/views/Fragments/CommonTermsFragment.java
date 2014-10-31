@@ -7,12 +7,10 @@ import java.util.List;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
@@ -21,7 +19,7 @@ import android.widget.ListView;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
-import com.theshmittahapp.android.HelperClasses.Advertisement;
+import com.theshmittahapp.android.HelperClasses.AppUtils;
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.Activities.DefinitionActivity;
 import com.theshmittahapp.android.views.MyApp;
@@ -62,7 +60,7 @@ public class CommonTermsFragment extends Fragment{
 		mRootView = inflater.inflate(R.layout.fragment_common_terms, container, false);
 		ImageView ad = (ImageView) mRootView.findViewById(R.id.ad);
 
-        Advertisement.setAd(getActivity(), ad, url);
+        AppUtils.setAd(getActivity(), ad, url);
 
 		// create arrays of terms and defs
 		mGlossary_terms = getResources().getStringArray(R.array.glossary_terms);
