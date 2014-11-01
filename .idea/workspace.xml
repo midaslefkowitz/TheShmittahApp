@@ -49,387 +49,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59e87224-c64b-45d4-b7b5-e38547821e2e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_action_save.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_action_save.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_action_save.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_action_save.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_action_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_action_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_action_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_action_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/ChartSave.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/DetailedPDFSave.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/OverviewPDFSave.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/SaveItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Activities/ThankYouActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/ThankYouFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_thank_you.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/chart_fragment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/detailed_pdf.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_thank_you.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/overview_pdf.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/save_action_menu_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/thank_you.xml" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\.idea\libraries\appcompat_v7_20_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\.idea\libraries\play_services_6_1_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\.idea\libraries\support_annotations_20_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\.idea\libraries\support_v4_20_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\generated\source\buildConfig\test\debug\com\theshmittahapp\android\test\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\R.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\proguard.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\color\common_signin_btn_text_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\color\common_signin_btn_text_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\color\wallet_primary_text_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\color\wallet_secondary_text_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_full_open_on_phone.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_ic_googleplayservices.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_icon_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_icon_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_icon_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_icon_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_icon_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_icon_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_text_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_text_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_text_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_text_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_text_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_text_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_text_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\common_signin_btn_text_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\powered_by_google_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-hdpi\powered_by_google_light.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_icon_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_icon_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_icon_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_icon_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_icon_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_icon_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_text_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_text_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_text_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_text_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_text_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_text_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_text_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\common_signin_btn_text_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\powered_by_google_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-mdpi\powered_by_google_light.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-tvdpi\ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-tvdpi\ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-tvdpi\ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-tvdpi\ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_icon_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_icon_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_icon_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_icon_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_icon_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_icon_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_text_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_text_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_text_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_text_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_text_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_text_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_text_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\common_signin_btn_text_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\powered_by_google_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xhdpi\powered_by_google_light.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_icon_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_icon_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_icon_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_icon_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_icon_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_icon_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_text_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_text_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_text_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_text_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_text_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_text_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_text_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\common_signin_btn_text_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\powered_by_google_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable-xxhdpi\powered_by_google_light.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable\common_signin_btn_icon_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable\common_signin_btn_icon_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable\common_signin_btn_text_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\drawable\common_signin_btn_text_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-af\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-am\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ar\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-be\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-bg\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-bn-rBD\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ca\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-cs\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-da\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-de\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-el\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-en-rGB\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-en-rIN\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-es-rUS\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-es\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-es\wallet_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-et-rEE\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-eu-rES\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-fa\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-fi\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-fr-rCA\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-fr\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-gl-rES\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-hi\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-hr\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-hu\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-hy-rAM\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-in\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-is-rIS\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-it\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-iw\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ja\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ka-rGE\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-kk-rKZ\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-km-rKH\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-kn-rIN\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ko\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ky-rKG\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-lo-rLA\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-lt\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-lv\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-mk-rMK\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ml-rIN\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-mn-rMN\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-mr-rIN\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ms-rMY\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-my-rMM\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-nb\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ne-rNP\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-nl\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-pl\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-pt-rBR\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-pt-rPT\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-pt\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ro\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ru\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-si-rLK\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-sk\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-sl\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-sr\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-sv\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-sw\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ta-rIN\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-te-rIN\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-th\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-tl\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-tr\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-uk\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-ur-rPK\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-uz-rUZ\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-vi\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-zh-rCN\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-zh-rHK\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-zh-rTW\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values-zu\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values\admob_ads_attrs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values\admob_iap_style.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values\admob_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values\common_colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values\common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values\maps_attrs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values\version.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values\wallet_attrs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values\wallet_colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values\wallet_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\res\values\wallet_styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.11\templates.zip" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\src\main\java\com\theshmittahapp\android\HelperClasses\Advertisement.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/HelperClasses/AppUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/AboutFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/AboutFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/ChartFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/ChartFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Activities/CommonTermsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Activities/CommonTermsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/CommonTermsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/CommonTermsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Activities/DefinitionActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Activities/DefinitionActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Activities/DonateActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Activities/DonateActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/FAQFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/FAQFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/aidl/android/support/v4/app/INotificationSideChannel.aidl" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/aidl/android/support/v4/app/INotificationSideChannel.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/LandingPageFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/LandingPageFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/PDFFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/PDFFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/ProduceDetailsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/ProduceDetailsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/ProduceFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/ProduceFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/theshmittahapp/android/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/theshmittahapp/android/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_decor.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_decor.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout-v11/abc_action_bar_decor.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout-v11/abc_action_bar_decor.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_decor_include.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_decor_include.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_decor_overlay.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_decor_overlay.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_home.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_home.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_tab.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_tab.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_tabbar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_tabbar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_title_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_title_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_view_list_nav_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_bar_view_list_nav_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_menu_item_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_menu_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_menu_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_mode_bar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_mode_bar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_mode_close_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_action_mode_close_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_activity_chooser_view.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_activity_chooser_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout-v14/abc_activity_chooser_view.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout-v14/abc_activity_chooser_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_activity_chooser_view_include.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_activity_chooser_view_include.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_activity_chooser_view_list_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_activity_chooser_view_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_expanded_menu_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_expanded_menu_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/anim/abc_fade_in.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/anim/abc_fade_in.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/anim/abc_fade_out.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/anim/abc_fade_out.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_ic_clear.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_ic_clear.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_ic_clear_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_ic_clear_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_item_background_holo_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_item_background_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_item_background_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_item_background_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_list_menu_item_checkbox.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_list_menu_item_checkbox.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_list_menu_item_icon.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_list_menu_item_icon.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_list_menu_item_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_list_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_list_menu_item_radio.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_list_menu_item_radio.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_list_selector_holo_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_list_selector_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_list_selector_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_list_selector_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_popup_menu_item_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_popup_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_search_dropdown_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_search_dropdown_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_search_dropdown_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_search_dropdown_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/color/abc_search_url_text_holo.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/color/abc_search_url_text_holo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_search_view.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_search_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_simple_decor.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/abc_simple_decor.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout-v11/abc_simple_decor.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout-v11/abc_simple_decor.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/anim/abc_slide_in_bottom.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/anim/abc_slide_in_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/anim/abc_slide_in_top.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/anim/abc_slide_in_top.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/anim/abc_slide_out_bottom.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/anim/abc_slide_out_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/anim/abc_slide_out_top.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/anim/abc_slide_out_top.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_spinner_ab_holo_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_spinner_ab_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_spinner_ab_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_spinner_ab_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_tab_indicator_ab_holo.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_tab_indicator_ab_holo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_textfield_searchview_holo_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_textfield_searchview_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_textfield_searchview_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_textfield_searchview_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_textfield_searchview_right_holo_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_textfield_searchview_right_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_textfield_searchview_right_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable/abc_textfield_searchview_right_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/produce_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/produce_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/support_simple_spinner_dropdown_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/layout/support_simple_spinner_dropdown_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-af/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-af/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-am/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-am/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ar/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ar/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-bg/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-bg/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ca/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ca/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-cs/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-cs/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-da/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-da/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-de/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-de/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-el/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-el/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-en-rGB/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-en-rGB/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-en-rIN/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-en-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-es/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-es/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-es-rUS/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-es-rUS/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-et-rEE/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-et-rEE/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-fa/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-fa/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-fi/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-fi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-fr/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-fr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-fr-rCA/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-fr-rCA/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-hi/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-hi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-hr/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-hr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-hu/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-hu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-hy-rAM/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-hy-rAM/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-in/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-in/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-it/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-it/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-iw/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-iw/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ja/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ja/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ka-rGE/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ka-rGE/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-km-rKH/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-km-rKH/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ko/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ko/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-land/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-land/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-large/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-large/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-large-v14/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-large-v14/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-lo-rLA/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-lo-rLA/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-lt/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-lt/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-lv/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-lv/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-mn-rMN/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-mn-rMN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ms-rMY/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ms-rMY/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-nb/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-nb/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-nl/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-nl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-pl/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-pl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-pt/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-pt/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-pt-rPT/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-pt-rPT/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ro/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ro/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ru/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-ru/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-sk/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-sk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-sl/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-sl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-sr/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-sr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-sv/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-sv/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-sw/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-sw/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-sw600dp/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-sw600dp/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-th/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-th/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-tl/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-tl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-tr/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-tr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-uk/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-uk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-v11/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-v11/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-v14/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-v14/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-vi/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-vi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-w360dp/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-w360dp/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-w480dp/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-w480dp/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-w500dp/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-w500dp/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-w600dp/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-w600dp/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-w720dp/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-w720dp/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-xlarge/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-xlarge/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-zh-rCN/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-zh-rCN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-zh-rHK/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-zh-rHK/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-zh-rTW/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-zh-rTW/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-zu/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-zu/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/OverviewPDFSave.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/OverviewPDFSave.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/chart_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/chart_fragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/detailed_pdf.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/detailed_pdf.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/overview_pdf.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/overview_pdf.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TheShmittahApp.iws" />
@@ -457,73 +81,7 @@
     <favorites_list name="TheShmittahApp" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SaveItem.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/SaveItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="796" max-vertical-offset="1343">
-              <caret line="71" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OverviewPDFSave.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/OverviewPDFSave.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="629">
-              <caret line="15" column="183" selection-start-line="15" selection-start-column="183" selection-end-line="15" selection-end-column="183" />
-              <folding>
-                <element signature="e#171#172#0" expanded="true" />
-                <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DetailedPDFSave.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/DetailedPDFSave.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2797075" vertical-offset="34" max-vertical-offset="612">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="e#173#174#0" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chart_fragment.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/chart_fragment.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="save_action_menu_layout.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/save_action_menu_layout.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.444445" vertical-offset="0" max-vertical-offset="374">
-              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -1693,8 +1251,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_faq.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/no_results.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Activities/NoResults.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/drawer_with_fragment_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/drawer_list_item.xml" />
@@ -1740,10 +1296,12 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/save_action_menu_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/SaveItem.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/ChartSave.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/chart_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/PDFFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/OverviewPDFSave.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/DetailedPDFSave.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/chart_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/detailed_pdf.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/overview_pdf.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/OverviewPDFSave.java" />
       </list>
     </option>
   </component>
@@ -1782,9 +1340,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1800,276 +1358,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fragments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Activities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheShmittahApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelperClasses" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2159,6 +1447,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -2184,19 +1485,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2389,7 +1677,11 @@
       <created>1414661103083</created>
       <updated>1414661103083</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Action item to save resources by emailing a link to the relevant resource">
+      <created>1414763917949</created>
+      <updated>1414763917949</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2414,12 +1706,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23373677" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40986395" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2436,12 +1727,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23373677" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30272108" sideWeight="0.50226927" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2486,7 +1778,8 @@
     <MESSAGE value="Donate button grabs editText and uses it for donation.&#10;If no donation amount then default donation is $5" />
     <MESSAGE value="Donation finished.&#10;Need to add thank you page" />
     <MESSAGE value="remove buttons from dialog when coming from drawer&#10;make static method for setting ad click listener" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove buttons from dialog when coming from drawer&#10;make static method for setting ad click listener" />
+    <MESSAGE value="Action item to save resources by emailing a link to the relevant resource" />
+    <option name="LAST_COMMIT_MESSAGE" value="Action item to save resources by emailing a link to the relevant resource" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2498,24 +1791,10 @@
           <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="56" />
+      <option name="time" value="57" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-20/android/app/DialogFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3322884" vertical-offset="5997" max-vertical-offset="8942">
-          <caret line="397" column="0" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.5/2bd5124dfb9198af70cad30eb9ccbfa9cd670163/joda-time-2.5-sources.jar!/org/joda/time/base/BaseDateTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="5270">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.5/2bd5124dfb9198af70cad30eb9ccbfa9cd670163/joda-time-2.5-sources.jar!/org/joda/time/DurationField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8244514" vertical-offset="3715" max-vertical-offset="5304">
@@ -2564,7 +1843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33214286" vertical-offset="15607" max-vertical-offset="30294">
           <caret line="1031" column="16" selection-start-line="1031" selection-start-column="16" selection-end-line="1031" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2572,7 +1850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5410714" vertical-offset="377" max-vertical-offset="1445">
           <caret line="64" column="52" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2601,7 +1878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5107143" vertical-offset="428" max-vertical-offset="1343">
           <caret line="63" column="52" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2653,25 +1929,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_definition.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="533">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/drawer_with_fragment_activity.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Activities/DefinitionActivity.java">
@@ -2749,21 +2023,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_thank_you.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52307695" vertical-offset="0" max-vertical-offset="520">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/com/theshmittahapp/android/R.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.348659" vertical-offset="25709" max-vertical-offset="75735">
           <caret line="1528" column="30" selection-start-line="1528" selection-start-column="30" selection-end-line="1528" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2775,26 +2047,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.73846155" vertical-offset="755" max-vertical-offset="1275">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="e#831#856#0" expanded="true" />
-            <element signature="e#2257#2280#0" expanded="true" />
-          </folding>
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/AboutFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3017857" vertical-offset="647" max-vertical-offset="1207">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2802,10 +2067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15178572" vertical-offset="0" max-vertical-offset="560">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="25" />
-          <folding>
-            <element signature="e#422#841#0" expanded="false" />
-            <element signature="e#826#827#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2813,14 +2074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.425" vertical-offset="170" max-vertical-offset="1105">
           <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="32" />
-          <folding>
-            <element signature="class#2548:3453" expanded="false" />
-            <element signature="method#onQueryTextSubmit#0;class#2548:3453" expanded="false" />
-            <element signature="method#queryInList#0;class#ProduceFragment#0" expanded="false" />
-            <element signature="method#onCreateView#0;class#ProduceFragment#0" expanded="false" />
-            <element signature="method#addListToAdapter#0;class#ProduceFragment#0" expanded="false" />
-            <element signature="method#createProduceArrayList#0;class#ProduceFragment#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2833,7 +2086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23571429" vertical-offset="2741" max-vertical-offset="5678">
           <caret line="201" column="9" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2845,35 +2097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/ChartFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37294334" vertical-offset="0" max-vertical-offset="1462">
-          <caret line="32" column="94" selection-start-line="27" selection-start-column="3" selection-end-line="32" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/save_action_menu_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.444445" vertical-offset="0" max-vertical-offset="374">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/SaveItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="796" max-vertical-offset="1343">
-          <caret line="71" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/produce_fragment.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24285714" vertical-offset="0" max-vertical-offset="560">
@@ -2882,61 +2105,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/PDFFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7605119" vertical-offset="859" max-vertical-offset="2176">
-          <caret line="97" column="57" selection-start-line="97" selection-start-column="57" selection-end-line="97" selection-end-column="57" />
-          <folding>
-            <element signature="e#2529#2572#0" expanded="true" />
-            <element signature="e#2648#2691#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/ChartSave.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12431444" vertical-offset="0" max-vertical-offset="629">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/SaveItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53382087" vertical-offset="796" max-vertical-offset="1343">
+          <caret line="71" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/chart_fragment.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.2125" vertical-offset="0" max-vertical-offset="560">
+          <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/save_action_menu_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.478424" vertical-offset="0" max-vertical-offset="533">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/detailed_pdf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21755028" vertical-offset="0" max-vertical-offset="547">
+          <caret line="7" column="86" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/overview_pdf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21755028" vertical-offset="0" max-vertical-offset="547">
+          <caret line="7" column="86" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/PDFFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8226691" vertical-offset="859" max-vertical-offset="2176">
+          <caret line="99" column="41" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/ChartFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.21937843" vertical-offset="239" max-vertical-offset="1462">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/OverviewPDFSave.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="629">
-          <caret line="15" column="183" selection-start-line="15" selection-start-column="183" selection-end-line="15" selection-end-column="183" />
+        <state vertical-scroll-proportion="0.3642857" vertical-offset="0" max-vertical-offset="560">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
           <folding>
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="method#getEmailBody#0;class#OverviewPDFSave#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/models/DetailedPDFSave.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2797075" vertical-offset="34" max-vertical-offset="612">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.7458867" vertical-offset="0" max-vertical-offset="547">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -5,6 +5,6 @@
         android:title="save"
         android:icon="@drawable/ic_action_save"
         android:showAsAction="withText|ifRoom"
-        android:actionProviderClass="com.theshmittahapp.android.models.ChartSave" />
+        android:actionProviderClass="com.theshmittahapp.android.models.OverviewPDFSave" />
 
 </menu>

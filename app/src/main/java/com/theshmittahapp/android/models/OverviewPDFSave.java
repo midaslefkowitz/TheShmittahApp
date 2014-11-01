@@ -24,7 +24,7 @@ public class OverviewPDFSave extends SaveItem {
 
     @Override
     public String getEmailSubject() {
-        return "Ebooks from The Shmittah App (PDF)";
+        return "Overview of the Halachos of Shmittah ebook (PDF)";
     }
 
 
