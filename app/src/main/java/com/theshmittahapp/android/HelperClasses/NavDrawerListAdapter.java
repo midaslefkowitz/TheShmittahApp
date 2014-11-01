@@ -11,7 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.theshmittahapp.android.R;
-import com.theshmittahapp.android.models.NavDrawerItem;
+import com.theshmittahapp.android.views.NavDrawerItem;
 
 public class NavDrawerListAdapter extends BaseAdapter {
 	

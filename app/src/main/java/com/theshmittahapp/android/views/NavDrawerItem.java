@@ -1,4 +1,4 @@
-package com.theshmittahapp.android.models;
+package com.theshmittahapp.android.views;
 
 public class NavDrawerItem {
 	

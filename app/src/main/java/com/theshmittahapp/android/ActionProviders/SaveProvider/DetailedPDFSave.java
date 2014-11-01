@@ -1,9 +1,9 @@
-package com.theshmittahapp.android.models;
+package com.theshmittahapp.android.ActionProviders.SaveProvider;
 
 
 import android.content.Context;
 
-public class DetailedPDFSave extends SaveItem  {
+public class DetailedPDFSave extends SaveItem {
 
     public DetailedPDFSave (Context context) {
         super(context);

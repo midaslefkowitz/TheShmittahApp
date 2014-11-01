@@ -19,7 +19,7 @@ import android.widget.ShareActionProvider;
 
 import com.theshmittahapp.android.HelperClasses.NavDrawerListAdapter;
 import com.theshmittahapp.android.R;
-import com.theshmittahapp.android.models.NavDrawerItem;
+import com.theshmittahapp.android.views.NavDrawerItem;
 import com.theshmittahapp.android.views.Fragments.AboutFragment;
 import com.theshmittahapp.android.views.Fragments.ChartFragment;
 import com.theshmittahapp.android.views.Fragments.CommonTermsFragment;
