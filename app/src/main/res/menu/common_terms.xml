@@ -1,4 +1,5 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.theshmittahapp.android.CommonTermsActivity" >
 
@@ -7,7 +8,7 @@
 		android:showAsAction="ifRoom"
 		android:title="@string/share"
 		android:actionProviderClass=
-		    "android.widget.ShareActionProvider"
+		    "com.theshmittahapp.android.ActionProviders.ShareProvider.ShmittahShare"
         android:orderInCategory="100"/>
 
 </menu>

@@ -44,16 +44,16 @@
         revision="20.0.0"
         sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da"/>
     <item
-        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-1933d681b22bd8785ca9a9f9b516fd6a31918f2b.jar"
-        jar="C:\Development tools\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
-    <item
         dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\android-agent-4.98.0-e360820d969ce9cb6d2ea15c518c748970fc3273.jar"
         jar="C:\Users\Lefkowitz\.gradle\caches\modules-2\files-2.1\com.newrelic.agent.android\android-agent\4.98.0\f776b8f6605a844495e9219ca78ec77dfaa2f249\android-agent-4.98.0.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="f776b8f6605a844495e9219ca78ec77dfaa2f249"/>
+    <item
+        dex="C:\Users\Lefkowitz\AndroidStudioProjects\TheShmittahApp\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-1933d681b22bd8785ca9a9f9b516fd6a31918f2b.jar"
+        jar="C:\Development tools\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
 
 </pre-dex-items>
