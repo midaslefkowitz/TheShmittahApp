@@ -49,13 +49,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59e87224-c64b-45d4-b7b5-e38547821e2e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/DonateDialogFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/DonateDialogFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/common_terms.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/common_terms.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/definition.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/definition.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/no_results.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/no_results.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/produce_details.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/produce_details.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/thank_you.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/thank_you.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TheShmittahApp.iws" />
@@ -84,34 +80,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="styles.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <file leaf-file-name="DonateDialogFragment.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/DonateDialogFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4132653" vertical-offset="862" max-vertical-offset="1411">
-              <caret line="69" column="82" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="82" />
+            <state vertical-scroll-proportion="3.0357144" vertical-offset="0" max-vertical-offset="2839">
+              <caret line="234" column="4" selection-start-line="234" selection-start-column="4" selection-end-line="238" selection-end-column="5" />
               <folding>
-                <element signature="tag#style#1;tag#resources#0" expanded="false" />
+                <element signature="method#newInstance#0;class#DonateDialogFragment#0" expanded="false" />
+                <element signature="method#firstEntranceInit#0;class#DonateDialogFragment#0" expanded="false" />
+                <element signature="method#logEntries#0;class#DonateDialogFragment#0" expanded="false" />
+                <element signature="method#displayDialog#0;class#DonateDialogFragment#0" expanded="false" />
+                <element signature="docComment;method#userDonated#0;class#DonateDialogFragment#0" expanded="false" />
+                <element signature="method#userDonated#0;class#DonateDialogFragment#0" expanded="false" />
+                <element signature="method#freeUsesRemaining#0;class#DonateDialogFragment#0" expanded="false" />
+                <element signature="docComment;method#neverClickedRecently#0;class#DonateDialogFragment#0" expanded="false" />
+                <element signature="method#neverClickedRecently#0;class#DonateDialogFragment#0" expanded="false" />
+                <element signature="docComment;method#notNowClickedRecently#0;class#DonateDialogFragment#0" expanded="false" />
+                <element signature="method#notNowClickedRecently#0;class#DonateDialogFragment#0" expanded="false" />
+                <element signature="e#8769#8787#0" expanded="true" />
+                <element signature="e#8789#9007#0" expanded="true" />
+                <element signature="e#8992#8993#0" expanded="true" />
+                <element signature="e#9048#9068#0" expanded="true" />
+                <element signature="e#9070#9315#0" expanded="true" />
+                <element signature="e#9292#9293#0" expanded="true" />
+                <element signature="e#10068#11005#0" expanded="true" />
+                <element signature="e#10535#10580#0" expanded="true" />
+                <element signature="e#10934#10979#0" expanded="true" />
+                <element signature="e#10994#10995#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/sdk/platforms/android-20/data/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="37281" max-vertical-offset="43180">
-              <caret line="2217" column="0" selection-start-line="2217" selection-start-column="0" selection-end-line="2217" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="themes.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/sdk/platforms/android-20/data/res/values/themes.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5" vertical-offset="19270" max-vertical-offset="31790">
-              <caret line="1136" column="35" selection-start-line="1136" selection-start-column="28" selection-end-line="1136" selection-end-column="35" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1296,7 +1292,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/string_arrays.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Activities/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/donate.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/DonateDialogFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/CommonTermsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/FAQFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/LandingPageFragment.java" />
@@ -1337,6 +1332,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/menu/produce_details.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/thank_you.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/DonateDialogFragment.java" />
       </list>
     </option>
   </component>
@@ -1376,7 +1372,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -1556,6 +1551,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheShmittahApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheShmittahApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Activities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1664,6 +1697,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1680,7 +1714,7 @@
     <property name="FullScreen" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="FA29PW400019" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVD_for_Nexus_10_user" />
-    <property name="last_opened_file_path" value="C:/Development tools/the shmittah app/v3" />
+    <property name="last_opened_file_path" value="C:/Development tools/the shmittah app/v4" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="options.lastSelected" value="preferences.sourceCode.Java" />
@@ -1751,19 +1785,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1789,6 +1810,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1993,7 +2027,11 @@
       <created>1414867201925</created>
       <updated>1414867201925</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Change shareactionprovider background color to white">
+      <created>1414878371379</created>
+      <updated>1414878371379</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2023,7 +2061,6 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23373677" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40986395" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2032,21 +2069,22 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3690476" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.61904764" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" x="0" y="62" width="1367" height="582" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.61904764" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" x="0" y="62" width="1367" height="582" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3546618" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18456884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5537721" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32829046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32541132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23373677" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30272108" sideWeight="0.50226927" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3690476" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2067,7 +2105,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Remove ad from PDFView landscape layout" />
     <MESSAGE value="Remove ad from PDFView landscape layout&#10;Add chart and ad images&#10;Change share icon color&#10;Add newRelic tracking" />
     <MESSAGE value="Fix title issue when go to ask the rabbi or shiurim" />
     <MESSAGE value="Google analytics" />
@@ -2092,18 +2129,11 @@
     <MESSAGE value="Action item to save resources by emailing a link to the relevant resource" />
     <MESSAGE value="Fix reference to wrong action providers in menu" />
     <MESSAGE value="CUSTOM SHARE ICON :) !!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="CUSTOM SHARE ICON :) !!!!" />
+    <MESSAGE value="Change shareactionprovider background color to white" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change shareactionprovider background color to white" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/DonateDialogFragment.java</url>
-          <line>235</line>
-          <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="57" />
     </breakpoint-manager>
   </component>
@@ -2152,25 +2182,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_definition.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="533">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/drawer_with_fragment_activity.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/drawer_with_fragment_activity.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Activities/DefinitionActivity.java">
@@ -2184,19 +2212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46785715" vertical-offset="350" max-vertical-offset="5440">
           <caret line="63" column="9" selection-start-line="60" selection-start-column="8" selection-end-line="63" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/DonateDialogFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7267857" vertical-offset="3486" max-vertical-offset="4046">
-          <caret line="277" column="51" selection-start-line="277" selection-start-column="51" selection-end-line="277" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#customizeButtons#0;class#DonateDialogFragment#0" expanded="false" />
-            <element signature="method#resetNotNowValues#0;class#DonateDialogFragment#0" expanded="false" />
-            <element signature="method#logEntries#0;class#DonateDialogFragment#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2233,7 +2248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.060714286" vertical-offset="0" max-vertical-offset="1054">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2243,28 +2257,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_thank_you.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52307695" vertical-offset="0" max-vertical-offset="520">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.73846155" vertical-offset="755" max-vertical-offset="1275">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="e#831#856#0" expanded="false" />
-            <element signature="e#2257#2280#0" expanded="false" />
-          </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/AboutFragment.java">
@@ -2297,7 +2306,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23571429" vertical-offset="2741" max-vertical-offset="5678">
           <caret line="201" column="9" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2313,7 +2321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12431444" vertical-offset="0" max-vertical-offset="629">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2321,9 +2328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53382087" vertical-offset="796" max-vertical-offset="1343">
           <caret line="71" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2331,19 +2335,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2125" vertical-offset="0" max-vertical-offset="560">
           <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/save_action_menu_layout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.478424" vertical-offset="0" max-vertical-offset="533">
           <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/PDFFragment.java">
@@ -2364,9 +2366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3642857" vertical-offset="0" max-vertical-offset="560">
           <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding>
-            <element signature="method#getEmailBody#0;class#OverviewPDFSave#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2374,7 +2373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7458867" vertical-offset="0" max-vertical-offset="547">
           <caret line="27" column="57" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2387,11 +2385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4998">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="304" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#11776#0" expanded="false" />
-            <element signature="e#5358#5359#0" expanded="false" />
-            <element signature="e#5385#5386#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2399,48 +2392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2067" max-vertical-offset="6545">
           <caret line="947" column="12" selection-start-line="947" selection-start-column="12" selection-end-line="947" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="class#IndexId#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#sendSMS#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#sendWhatsApp#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#flurryShareIntent#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#isAppInstalled#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#onStart#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#onActivityResult#0;class#DetailActivity#0" expanded="false" />
-            <element signature="e#7490#7491#0" expanded="false" />
-            <element signature="e#7534#7535#0" expanded="false" />
-            <element signature="method#openDataBase#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#selectBackGround#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#changeDetailFontColor#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#manageIds#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#setupIds#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#updateTitle#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#configureFlipper#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#fillView#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#fillDictionaries#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#setupTitle#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#addListListeners#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#fillContainer#0;class#DetailActivity#0" expanded="false" />
-            <element signature="e#23567#23677#0" expanded="false" />
-            <element signature="e#23671#23672#0" expanded="false" />
-            <element signature="e#23743#23848#0" expanded="false" />
-            <element signature="e#23842#23843#0" expanded="false" />
-            <element signature="method#checkTitle#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#getNextIndexId#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#getPreviousIndexId#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#getIdPosition#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#moveIndexToNext#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#moveIndexToPrevious#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#flipToPrevious#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#flipToNext#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#updateOffScreenViews#0;class#DetailActivity#0" expanded="false" />
-            <element signature="e#30517#30518#0" expanded="false" />
-            <element signature="e#30538#30539#0" expanded="false" />
-            <element signature="e#30607#30608#0" expanded="false" />
-            <element signature="e#30654#30655#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2448,9 +2399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="850">
           <caret line="31" column="68" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2458,7 +2406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="9" column="84" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2466,7 +2413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="7" column="86" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2474,7 +2420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="9" column="84" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2482,7 +2427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2490,7 +2434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44606414" vertical-offset="0" max-vertical-offset="343">
           <caret line="9" column="84" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2498,7 +2441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49562684" vertical-offset="0" max-vertical-offset="343">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2506,7 +2448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="343">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2514,7 +2455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36060607" vertical-offset="0" max-vertical-offset="330">
           <caret line="7" column="86" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2522,7 +2462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49562684" vertical-offset="0" max-vertical-offset="343">
           <caret line="10" column="84" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2530,7 +2469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49562684" vertical-offset="0" max-vertical-offset="343">
           <caret line="10" column="84" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2542,11 +2480,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/platforms/android-20/data/res/values/themes.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5" vertical-offset="19270" max-vertical-offset="31790">
-          <caret line="1136" column="35" selection-start-line="1136" selection-start-column="28" selection-end-line="1136" selection-end-column="35" />
-          <folding />
+        <state vertical-scroll-proportion="0.5667276" vertical-offset="829" max-vertical-offset="1411">
+          <caret line="69" column="82" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="82" />
+          <folding>
+            <element signature="tag#style#1;tag#resources#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2558,12 +2498,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/platforms/android-20/data/res/values/themes.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4132653" vertical-offset="862" max-vertical-offset="1411">
-          <caret line="69" column="82" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="82" />
+        <state vertical-scroll-proportion="0.07678245" vertical-offset="19270" max-vertical-offset="31790">
+          <caret line="1136" column="35" selection-start-line="1136" selection-start-column="28" selection-end-line="1136" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/theshmittahapp/android/views/Fragments/DonateDialogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.0357144" vertical-offset="0" max-vertical-offset="2839">
+          <caret line="234" column="4" selection-start-line="234" selection-start-column="4" selection-end-line="238" selection-end-column="5" />
           <folding>
-            <element signature="tag#style#1;tag#resources#0" expanded="false" />
+            <element signature="method#newInstance#0;class#DonateDialogFragment#0" expanded="false" />
+            <element signature="method#firstEntranceInit#0;class#DonateDialogFragment#0" expanded="false" />
+            <element signature="method#logEntries#0;class#DonateDialogFragment#0" expanded="false" />
+            <element signature="method#displayDialog#0;class#DonateDialogFragment#0" expanded="false" />
+            <element signature="docComment;method#userDonated#0;class#DonateDialogFragment#0" expanded="false" />
+            <element signature="method#userDonated#0;class#DonateDialogFragment#0" expanded="false" />
+            <element signature="method#freeUsesRemaining#0;class#DonateDialogFragment#0" expanded="false" />
+            <element signature="docComment;method#neverClickedRecently#0;class#DonateDialogFragment#0" expanded="false" />
+            <element signature="method#neverClickedRecently#0;class#DonateDialogFragment#0" expanded="false" />
+            <element signature="docComment;method#notNowClickedRecently#0;class#DonateDialogFragment#0" expanded="false" />
+            <element signature="method#notNowClickedRecently#0;class#DonateDialogFragment#0" expanded="false" />
+            <element signature="e#8769#8787#0" expanded="true" />
+            <element signature="e#8789#9007#0" expanded="true" />
+            <element signature="e#8992#8993#0" expanded="true" />
+            <element signature="e#9048#9068#0" expanded="true" />
+            <element signature="e#9070#9315#0" expanded="true" />
+            <element signature="e#9292#9293#0" expanded="true" />
+            <element signature="e#10068#11005#0" expanded="true" />
+            <element signature="e#10535#10580#0" expanded="true" />
+            <element signature="e#10934#10979#0" expanded="true" />
+            <element signature="e#10994#10995#0" expanded="true" />
           </folding>
         </state>
       </provider>

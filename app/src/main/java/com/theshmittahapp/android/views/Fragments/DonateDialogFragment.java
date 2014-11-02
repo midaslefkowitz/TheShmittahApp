@@ -72,9 +72,10 @@ public class DonateDialogFragment extends DialogFragment {
             firstEntranceInit();
         }
 
-        logEntries();
-
+        // If user clicked donate show dialog regardless
         if (!mFromDrawer) {
+            logEntries();
+
             if (!displayDialog()) {
                 return null;
             }
@@ -91,85 +92,11 @@ public class DonateDialogFragment extends DialogFragment {
         return alertDialog;
     }
 
-
     private void firstEntranceInit() {
         SharedPreferences.Editor editor = mPrefs.edit();
         editor.putBoolean("firstTimeDonate", true);
+        // User gets TOTAL_FREE_DAYS of time without seeing the donate dialog
         editor.putString(FREE_DATE, new DateTime().plusDays(TOTAL_FREE_DAYS).toString());
-        editor.commit();
-    }
-
-    private View getCustomView() {
-        mInflater = getActivity().getLayoutInflater();
-        View v = mInflater.inflate(R.layout.fragment_donate_dialog, null);
-        final EditText donationAmountET = (EditText) v.findViewById(R.id.donation_amount);
-        ImageView paypal = (ImageView) v.findViewById(R.id.btn_paypal);
-        paypal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String donationAmountStr = donationAmountET.getText().toString();
-                if (donationAmountStr == null || donationAmountStr.length() == 0) {
-                    donationAmountStr = DEFAULT_DONATION;
-                }
-                donatePayPalOnClick(donationAmountStr);
-            }
-        });
-        return v;
-    }
-
-    private Dialog createDialog(View v) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
-                .setView(v);
-        if (!mFromDrawer) {
-            builder.setPositiveButton(R.string.never_btn, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                        // Never
-                        resetNeverValues();
-                }
-            })
-                    .setNegativeButton(R.string.not_now_btn, new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                        // Not Now
-                        resetNotNowValues();
-                        }
-                    });
-        }
-        return (builder.create());
-    }
-
-    private Dialog customizeButtons(Dialog alertDialog) {
-
-        alertDialog.setOnShowListener(new DialogInterface.OnShowListener() {
-            @Override
-            public void onShow(DialogInterface dialog) {
-                Button positiveButton = ((AlertDialog) dialog)
-                        .getButton(AlertDialog.BUTTON_POSITIVE);
-                positiveButton.setBackgroundResource(R.drawable.button_custom);
-                positiveButton.setTextColor(getResources().getColor(R.color.custom_theme_color));
-                positiveButton.setTextSize(getResources().getDimension(R.dimen.textsize));
-
-
-                Button negativeButton = ((AlertDialog) dialog)
-                        .getButton(AlertDialog.BUTTON_NEGATIVE);
-                negativeButton.setBackgroundResource(R.drawable.button_custom);
-                negativeButton.setTextColor(getResources().getColor(R.color.custom_theme_color));
-                negativeButton.setTextSize(getResources().getDimension(R.dimen.textsize));
-            }
-        });
-        return alertDialog;
-    }
-
-    private void resetNeverValues() {
-        SharedPreferences.Editor editor = mPrefs.edit();
-        editor.putInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_ENTRIES);
-        editor.putString(NEVER_CLICKED_DATE, new DateTime().plusDays(TOTAL_NEVER_DAYS).toString());
-        editor.commit();
-    }
-
-    private void resetNotNowValues() {
-        SharedPreferences.Editor editor = mPrefs.edit();
-        editor.putInt(NOT_NOW_ENTRIES_REMAINING, TOTAL_NOT_NOW_ENTRIES);
-        editor.putString(NOT_NOW_CLICKED_DATE, new DateTime().plusDays(TOTAL_NOT_NOW_DAYS).toString());
         editor.commit();
     }
 
@@ -192,6 +119,7 @@ public class DonateDialogFragment extends DialogFragment {
     }
 
     private boolean displayDialog() {
+
         if (userDonated()) {
             return false;
         }
@@ -211,21 +139,23 @@ public class DonateDialogFragment extends DialogFragment {
         return true;
     }
 
-    private boolean freeUsesRemaining() {
-        DateTime today = new DateTime();
-        DateTime freeDate = DateTime.parse(mPrefs.getString(FREE_DATE,
-                today.plusDays(TOTAL_FREE_DAYS).toString()));
-
-        return (((Seconds.secondsBetween(freeDate, today)).getSeconds() < 0) &&
-                (mPrefs.getInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_DAYS) > 0));
-    }
-
     /**
      * @return true if the user has donated
      */
     private boolean userDonated() {
         boolean donated = mPrefs.getBoolean(USER_DONATED, false);
         return donated;
+    }
+
+    private boolean freeUsesRemaining() {
+        DateTime today = new DateTime();
+        DateTime freeDate = DateTime.parse(mPrefs.getString(FREE_DATE,
+                today.plusDays(TOTAL_FREE_DAYS).toString()));
+        // there are still uses remaining if not yet "freeDate"
+        if ((Seconds.secondsBetween(freeDate, today)).getSeconds() < 0) {
+            return true;
+        }
+        return (mPrefs.getInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_DAYS) > 0);
     }
 
     /**
@@ -242,11 +172,16 @@ public class DonateDialogFragment extends DialogFragment {
 
             // get entries remaining
             int entriesRemaining = mPrefs.getInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_DAYS);
+
+            // if there are entries remaining return true
+            if (entriesRemaining > 0) {
+                return true;
+            }
             // find the seconds between future - today
             double timeRemaining = Seconds.secondsBetween(today, neverClickedDate).getSeconds();
 
             // return if click was recent
-            return !(( timeRemaining > 0) || ( entriesRemaining > 0));
+            return (timeRemaining > 0);
         }
         return false;
     }
@@ -264,18 +199,98 @@ public class DonateDialogFragment extends DialogFragment {
                     today.plusDays(TOTAL_NOT_NOW_DAYS).toString()));
             // get entries remaining
             int entriesRemaining = mPrefs.getInt(NOT_NOW_ENTRIES_REMAINING, TOTAL_NOT_NOW_DAYS);
+
+            // if there are entries remaining return true
+            if (entriesRemaining > 0) {
+                return true;
+            }
+
             // find the seconds between future - today
             double timeRemaining = Seconds.secondsBetween(today, notNowClickedDate).getSeconds();
 
             // return if click was recent
-            return !(( timeRemaining > 0) || ( entriesRemaining > 0));
+            return (timeRemaining > 0);
         }
         return false;
+    }
+
+    private View getCustomView() {
+        mInflater = getActivity().getLayoutInflater();
+        View v = mInflater.inflate(R.layout.fragment_donate_dialog, null);
+        final EditText donationAmountET = (EditText) v.findViewById(R.id.donation_amount);
+        ImageView paypal = (ImageView) v.findViewById(R.id.btn_paypal);
+        paypal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String donationAmountStr = donationAmountET.getText().toString();
+                if (donationAmountStr == null || donationAmountStr.length() == 0) {
+                    donationAmountStr = DEFAULT_DONATION;
+                }
+                donatePayPalOnClick(donationAmountStr);
+            }
+        });
+        return v;
     }
 
     private void donatePayPalOnClick(String donationAmountStr) {
         Intent intent = new Intent(getActivity(), DonateActivity.class);
         intent.putExtra(DonateActivity.DONATE_AMOUNT, donationAmountStr);
         startActivity(intent);
+    }
+
+    private Dialog createDialog(View v) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
+                .setView(v);
+        if (!mFromDrawer) {
+            builder.setPositiveButton(R.string.never_btn, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                        // Never
+                        resetNeverValues();
+                }
+            })
+                    .setNegativeButton(R.string.not_now_btn, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                        // Not Now
+                        resetNotNowValues();
+                        }
+                    });
+        }
+        return (builder.create());
+    }
+
+    private void resetNeverValues() {
+        SharedPreferences.Editor editor = mPrefs.edit();
+        editor.putInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_ENTRIES);
+        editor.putString(NEVER_CLICKED_DATE, new DateTime().plusDays(TOTAL_NEVER_DAYS).toString());
+        editor.commit();
+    }
+
+    private void resetNotNowValues() {
+        SharedPreferences.Editor editor = mPrefs.edit();
+        editor.putInt(NOT_NOW_ENTRIES_REMAINING, TOTAL_NOT_NOW_ENTRIES);
+        editor.putString(NOT_NOW_CLICKED_DATE, new DateTime().plusDays(TOTAL_NOT_NOW_DAYS).toString());
+        editor.commit();
+    }
+
+    private Dialog customizeButtons(Dialog alertDialog) {
+
+        alertDialog.setOnShowListener(new DialogInterface.OnShowListener() {
+            @Override
+            public void onShow(DialogInterface dialog) {
+                Button positiveButton = ((AlertDialog) dialog)
+                        .getButton(AlertDialog.BUTTON_POSITIVE);
+                positiveButton.setBackgroundResource(R.drawable.button_custom);
+                positiveButton.setTextColor(getResources().getColor(R.color.custom_theme_color));
+                positiveButton.setTextSize(getResources().getDimension(R.dimen.textsize));
+
+
+                Button negativeButton = ((AlertDialog) dialog)
+                        .getButton(AlertDialog.BUTTON_NEGATIVE);
+                negativeButton.setBackgroundResource(R.drawable.button_custom);
+                negativeButton.setTextColor(getResources().getColor(R.color.custom_theme_color));
+                negativeButton.setTextSize(getResources().getDimension(R.dimen.textsize));
+            }
+        });
+        return alertDialog;
     }
 }
