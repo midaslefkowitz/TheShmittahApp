@@ -23,10 +23,10 @@ public class DonateActivity extends Activity {
     public static final String BEFORE_DONATE = "before donate";
 
     /* Paypal constants */
-    private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_SANDBOX;
+    private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_PRODUCTION;
     private static final String LIVE_ID = "AUZQMRAYcAGeLPQDw0WBp-SQFP1tO0e7jyJFXGb4oBA196hMeF5U-To5dLvz";
     private static final String SANDBOX_ID = "AQjvuBDUyBRHOUYUIzLOYxtXc_Mc6iHTa8vit70lzUp2F1PPZRsAXncV3IYG";
-    private static final String CONFIG_CLIENT_ID = SANDBOX_ID;
+    private static final String CONFIG_CLIENT_ID = LIVE_ID;
     public static final int REQUEST_CODE_PAYMENT = 1;
     private static PayPalConfiguration config = new PayPalConfiguration()
             .environment(CONFIG_ENVIRONMENT)
@@ -57,8 +57,6 @@ public class DonateActivity extends Activity {
             donate(donateAmountStr);
         } else {
             mPrefs.edit().putBoolean(BEFORE_DONATE, false).commit();
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
         }
     }
 
@@ -95,11 +93,13 @@ public class DonateActivity extends Activity {
         String result = (resultCode==-1) ? "RESULT_OK" : "RESULT_CANCELED";
         Log.d(TAG, "onActivityResult: result = " + result);
         Intent intent = new Intent(this, MainActivity.class);
+        Log.d(TAG, "onActivityResult: setting the intent to the main activity");
         if (requestCode == REQUEST_CODE_PAYMENT) {
             if (resultCode == Activity.RESULT_OK) {
                 Log.d(TAG, "onActivityResult: going to Thank You Activity");
                 SharedPreferences mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
                 mPrefs.edit().putBoolean(DonateDialogFragment.USER_DONATED, true).commit();
+                Log.d(TAG, "onActivityResult: changing the intent to the thankyou page");
                 intent = new Intent(this, ThankYouActivity.class);
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 Log.i(TAG, "The user canceled.");
@@ -107,6 +107,7 @@ public class DonateActivity extends Activity {
                 Log.i(TAG, "An invalid Payment or PayPalConfiguration was submitted. Please see the docs.");
             }
         }
+        Log.d(TAG, "onActivityResult: starting activity");
         startActivity(intent);
     }
 

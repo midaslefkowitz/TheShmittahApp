@@ -249,12 +249,18 @@ public class DonateDialogFragment extends DialogFragment {
                         resetNeverValues();
                 }
             })
-                    .setNegativeButton(R.string.not_now_btn, new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                        // Not Now
-                        resetNotNowValues();
-                        }
-                    });
+            .setNegativeButton(R.string.not_now_btn, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    // Not Now
+                    resetNotNowValues();
+                }
+            });
+        } else {
+            builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    return;
+                }
+            });
         }
         return (builder.create());
     }
