@@ -233,6 +233,7 @@ public class DonateDialogFragment extends DialogFragment {
     }
 
     private void donatePayPalOnClick(String donationAmountStr) {
+        mPrefs.edit().putBoolean(DonateActivity.BEFORE_DONATE, true).commit();
         Intent intent = new Intent(getActivity(), DonateActivity.class);
         intent.putExtra(DonateActivity.DONATE_AMOUNT, donationAmountStr);
         startActivity(intent);

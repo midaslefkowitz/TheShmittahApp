@@ -20,13 +20,13 @@ public class DonateActivity extends Activity {
 
     public static final String DONATE_AMOUNT = "donate amount";
     private static final String TAG = "Donate Activity";
-    private boolean beforeDonate = true;
+    public static final String BEFORE_DONATE = "before donate";
 
     /* Paypal constants */
-    private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_PRODUCTION;
+    private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_SANDBOX;
     private static final String LIVE_ID = "AUZQMRAYcAGeLPQDw0WBp-SQFP1tO0e7jyJFXGb4oBA196hMeF5U-To5dLvz";
     private static final String SANDBOX_ID = "AQjvuBDUyBRHOUYUIzLOYxtXc_Mc6iHTa8vit70lzUp2F1PPZRsAXncV3IYG";
-    private static final String CONFIG_CLIENT_ID = LIVE_ID;
+    private static final String CONFIG_CLIENT_ID = SANDBOX_ID;
     public static final int REQUEST_CODE_PAYMENT = 1;
     private static PayPalConfiguration config = new PayPalConfiguration()
             .environment(CONFIG_ENVIRONMENT)
@@ -34,20 +34,37 @@ public class DonateActivity extends Activity {
 
     private static final String mPaypalCurrencyCode = "USD";
 
+    private SharedPreferences mPrefs;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donate);
         startPaypalService();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d(TAG, "onResume");
+        super.onResume();
+        mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+        boolean beforeDonate = mPrefs.getBoolean(BEFORE_DONATE, true);
+        Log.d(TAG, "onResume beforeDonate = " + beforeDonate);
         if (beforeDonate) {
-            String donateAmountStr = getIntent().getStringExtra(DONATE_AMOUNT);
-            beforeDonate = false;
+            mPrefs.edit().putBoolean(BEFORE_DONATE, false).commit();
+            final String donateAmountStr = getIntent().getStringExtra(DONATE_AMOUNT);
             donate(donateAmountStr);
+        } else {
+            mPrefs.edit().putBoolean(BEFORE_DONATE, false).commit();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         }
     }
 
     private void startPaypalService() {
         try {
+            Log.d(TAG, "starting paypal service");
             Intent intent = new Intent(this, PayPalService.class);
             intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
             startService(intent);
@@ -57,7 +74,7 @@ public class DonateActivity extends Activity {
     }
 
     public void donate(String donationAmount) {
-
+        Log.d(TAG, "starting paypal activity");
         PayPalPayment donation = getThingToBuy(PayPalPayment.PAYMENT_INTENT_SALE, donationAmount);
         Intent intent = new Intent(this, PaymentActivity.class);
         intent.putExtra(PaymentActivity.EXTRA_PAYMENT, donation);
@@ -74,12 +91,15 @@ public class DonateActivity extends Activity {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        beforeDonate = true;
+        Log.d(TAG, "onActivityResult");
+        String result = (resultCode==-1) ? "RESULT_OK" : "RESULT_CANCELED";
+        Log.d(TAG, "onActivityResult: result = " + result);
         Intent intent = new Intent(this, MainActivity.class);
         if (requestCode == REQUEST_CODE_PAYMENT) {
             if (resultCode == Activity.RESULT_OK) {
-                SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(this).edit();
-                editor.putBoolean(DonateDialogFragment.USER_DONATED, true).commit();
+                Log.d(TAG, "onActivityResult: going to Thank You Activity");
+                SharedPreferences mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+                mPrefs.edit().putBoolean(DonateDialogFragment.USER_DONATED, true).commit();
                 intent = new Intent(this, ThankYouActivity.class);
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 Log.i(TAG, "The user canceled.");
@@ -93,6 +113,8 @@ public class DonateActivity extends Activity {
 
     @Override
     public void onDestroy() {
+        Log.d(TAG, "onDestroy");
+        Log.d(TAG, "Stopping paypal service");
         try {
             stopService(new Intent(this, PayPalService.class));
         } catch (Exception e) {
