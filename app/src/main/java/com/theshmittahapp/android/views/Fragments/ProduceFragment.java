@@ -49,6 +49,7 @@ public class ProduceFragment extends Fragment{
         Activity activity = getActivity();
         // google analytics tracker
         mTracker = ((MyApp) getActivity().getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+        mTracker.enableAdvertisingIdCollection(true);
 
         setHasOptionsMenu(true);
     }

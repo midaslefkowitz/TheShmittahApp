@@ -1,6 +1,5 @@
 package com.theshmittahapp.android.views.Fragments;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -25,8 +24,8 @@ public class LandingPageFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Activity activity = getActivity();
         mTracker = ((MyApp) getActivity().getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+        mTracker.enableAdvertisingIdCollection(true);
     }
 
     @Override

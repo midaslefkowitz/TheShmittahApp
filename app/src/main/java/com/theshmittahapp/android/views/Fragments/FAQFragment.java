@@ -36,8 +36,8 @@ public class FAQFragment extends Fragment{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Activity activity = getActivity();
         mTracker = ((MyApp) getActivity().getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+        mTracker.enableAdvertisingIdCollection(true);
     }
 
     @Override

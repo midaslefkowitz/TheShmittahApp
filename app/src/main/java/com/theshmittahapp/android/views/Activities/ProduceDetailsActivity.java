@@ -24,8 +24,9 @@ public class ProduceDetailsActivity extends Activity {
 		super.onCreate(savedInstanceState);
 
         //Get a Tracker (should auto-report)
-        ((MyApp) getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
-		setContentView(R.layout.activity_produce_details);
+        Tracker t = ((MyApp) getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+        t.enableAdvertisingIdCollection(true);
+        setContentView(R.layout.activity_produce_details);
 		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		

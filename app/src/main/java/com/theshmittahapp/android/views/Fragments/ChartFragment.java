@@ -40,6 +40,7 @@ public class ChartFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mTracker = ((MyApp) getActivity().getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+        mTracker.enableAdvertisingIdCollection(true);
         setHasOptionsMenu(true);
     }
 

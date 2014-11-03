@@ -17,8 +17,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ShareActionProvider;
 
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.Tracker;
 import com.theshmittahapp.android.HelperClasses.NavDrawerListAdapter;
 import com.theshmittahapp.android.R;
+import com.theshmittahapp.android.views.MyApp;
 import com.theshmittahapp.android.views.NavDrawerItem;
 import com.theshmittahapp.android.views.Fragments.AboutFragment;
 import com.theshmittahapp.android.views.Fragments.ChartFragment;
@@ -54,6 +57,10 @@ public class ThankYouActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Get a Tracker (should auto-report)
+        Tracker t = ((MyApp) getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+        t.enableAdvertisingIdCollection(true);
+
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
         createLayout();
@@ -65,6 +72,18 @@ public class ThankYouActivity extends Activity {
                     .add(R.id.frame_container, new ThankYouFragment())
                     .commit();
         }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        GoogleAnalytics.getInstance(this).reportActivityStart(this);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        GoogleAnalytics.getInstance(this).reportActivityStop(this);
     }
 
     private void createLayout() {

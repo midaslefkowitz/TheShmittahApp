@@ -41,6 +41,7 @@ public class CommonTermsFragment extends Fragment{
         super.onCreate(savedInstanceState);
         Activity activity = getActivity();
         mTracker = ((MyApp) getActivity().getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+        mTracker.enableAdvertisingIdCollection(true);
     }
 
     @Override

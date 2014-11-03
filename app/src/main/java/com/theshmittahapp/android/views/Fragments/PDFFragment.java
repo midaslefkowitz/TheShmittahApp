@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -26,14 +27,10 @@ import static java.lang.String.format;
 
 public class PDFFragment extends Fragment implements OnPageChangeListener {
 
+    private static final String TAG = "PDFFragment";
     public static final String PDF = "pdf";
     private String url = "http://www.mymakolet.com";
-    private String overviewPDFurl = "https://s3.eu-central-1.amazonaws.com/shmittahappfiles/Brief+Overview+of+Halachos+of+Shmittah.pdf";
-    private String detailedPDFurl = "https://s3.eu-central-1.amazonaws.com/shmittahappfiles/Detailed+Halachos+of+Shmittah.pdf";
 
-    private String mSubject;
-    private String mBody;
-    private String mLink;
     private String mPdfName;
     private Integer mPageNumber = 1;
     private String mTitle;
@@ -45,6 +42,7 @@ public class PDFFragment extends Fragment implements OnPageChangeListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mTracker = ((MyApp) getActivity().getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
+        mTracker.enableAdvertisingIdCollection(true);
         setHasOptionsMenu(true);
     }
 
@@ -71,13 +69,9 @@ public class PDFFragment extends Fragment implements OnPageChangeListener {
         mPdfName = getArguments().getString(PDF);
         if (mPdfName.equals("detailed.pdf")) {
             mTitle = getResources().getString(R.string.detailed);
-            mLink = detailedPDFurl;
         } else {
             mTitle = getResources().getString(R.string.overview);
-            mLink = overviewPDFurl;
         }
-
-        setupEmail();
 
         PDFView pdfView = (PDFView) v.findViewById(R.id.pdfview);
 
@@ -110,7 +104,7 @@ public class PDFFragment extends Fragment implements OnPageChangeListener {
         int id = item.getItemId();
         switch (id) {
             case R.id.save_button:
-                sendFile();
+                Log.i(TAG, "User clicked save button");
                 break;
         }
         return false;
@@ -122,23 +116,4 @@ public class PDFFragment extends Fragment implements OnPageChangeListener {
         getActivity().getActionBar().setTitle(format("%s %s / %s", mTitle, page, pageCount));
     }
 
-    private void sendFile() {
-        Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setType("text/html");
-        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_SUBJECT, mSubject);
-        intent.putExtra(Intent.EXTRA_TEXT, Html.fromHtml(mBody));
-        if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
-            getActivity().startActivity(Intent.createChooser(intent, ""));
-        }
-    }
-
-    private void setupEmail() {
-        mSubject = mTitle + " (PDF) " + "from The Shmittah App";
-        mBody = "Here's a link to the " + mTitle + " (PDF) " + "from The Shmittah App." +
-            " Just click to open or right-click and \"Save link as...\" to download.</br>" +
-            "<a href=\"" + mLink + "\">" + mTitle + " (PDF)</a>" +
-            "</br></br>" +
-            "Thanks for using <a href=\"http://www.TheShmittahApp.com\">The Shmittah App</a>";
-    }
 }
