@@ -72,15 +72,6 @@ public class DonateDialogFragment extends DialogFragment {
             firstEntranceInit();
         }
 
-        // If user clicked donate show dialog regardless
-        if (!mFromDrawer) {
-            logEntries();
-
-            if (!displayDialog()) {
-                return null;
-            }
-        }
-
         View v = getCustomView();
 
         Dialog alertDialog = createDialog(v);
@@ -100,39 +91,44 @@ public class DonateDialogFragment extends DialogFragment {
         editor.commit();
     }
 
-    private void logEntries() {
-        SharedPreferences.Editor editor = mPrefs.edit();
+    public void logEntries(SharedPreferences prefs) {
+
+        SharedPreferences.Editor editor = prefs.edit();
 
         // Log free entries
-        mFreeRemaining = (mPrefs.getInt(FREE_ENTRIES_REMAINING, TOTAL_FREE_ENTRIES)) - 1;
+        mFreeRemaining = (prefs.getInt(FREE_ENTRIES_REMAINING, TOTAL_FREE_ENTRIES)) - 1;
         editor.putInt(FREE_ENTRIES_REMAINING, mFreeRemaining);
 
         // Log never entries
-        mNeverRemaining = (mPrefs.getInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_ENTRIES)) - 1;
+        mNeverRemaining = (prefs.getInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_ENTRIES)) - 1;
         editor.putInt(NEVER_ENTRIES_REMAINING, mNeverRemaining);
 
         // Log not now entries
-        mNotNowRemaining = (mPrefs.getInt(NOT_NOW_ENTRIES_REMAINING, TOTAL_NOT_NOW_ENTRIES)) - 1;
+        mNotNowRemaining = (prefs.getInt(NOT_NOW_ENTRIES_REMAINING, TOTAL_NOT_NOW_ENTRIES)) - 1;
         editor.putInt(NOT_NOW_ENTRIES_REMAINING, mNotNowRemaining);
 
         editor.commit();
     }
 
-    private boolean displayDialog() {
+    public boolean doDisplayDialog(SharedPreferences prefs, boolean fromDrawer) {
 
-        if (userDonated()) {
+        if (fromDrawer) {
+            return true;
+        }
+
+        if (userDonated(prefs)) {
             return false;
         }
 
-        if (freeUsesRemaining()) {
+        if (freeUsesRemaining(prefs)) {
             return false;
         }
 
-        if (neverClickedRecently()) {
+        if (neverClickedRecently(prefs)) {
             return false;
         }
 
-        if (notNowClickedRecently()) {
+        if (notNowClickedRecently(prefs)) {
             return false;
         }
 
@@ -142,36 +138,36 @@ public class DonateDialogFragment extends DialogFragment {
     /**
      * @return true if the user has donated
      */
-    private boolean userDonated() {
-        boolean donated = mPrefs.getBoolean(USER_DONATED, false);
+    private boolean userDonated(SharedPreferences prefs) {
+        boolean donated = prefs.getBoolean(USER_DONATED, false);
         return donated;
     }
 
-    private boolean freeUsesRemaining() {
+    private boolean freeUsesRemaining(SharedPreferences prefs) {
         DateTime today = new DateTime();
-        DateTime freeDate = DateTime.parse(mPrefs.getString(FREE_DATE,
+        DateTime freeDate = DateTime.parse(prefs.getString(FREE_DATE,
                 today.plusDays(TOTAL_FREE_DAYS).toString()));
         // there are still uses remaining if not yet "freeDate"
         if ((Seconds.secondsBetween(freeDate, today)).getSeconds() < 0) {
             return true;
         }
-        return (mPrefs.getInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_DAYS) > 0);
+        return (prefs.getInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_DAYS) > 0);
     }
 
     /**
      * @return true if "never" has been clicked recently
      */
-    private boolean neverClickedRecently() {
+    private boolean neverClickedRecently(SharedPreferences prefs) {
         // only need to check if recent if never was clicked
-        if (mPrefs.getBoolean(CLICKED_NEVER, false)) {
+        if (prefs.getBoolean(CLICKED_NEVER, false)) {
             DateTime today = new DateTime();
             // if have a saved date to show popup use that
             // by default set date to show popup for total days from now
-            DateTime neverClickedDate = DateTime.parse(mPrefs.getString(NEVER_CLICKED_DATE,
+            DateTime neverClickedDate = DateTime.parse(prefs.getString(NEVER_CLICKED_DATE,
                     today.plusDays(TOTAL_NEVER_DAYS).toString()));
 
             // get entries remaining
-            int entriesRemaining = mPrefs.getInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_DAYS);
+            int entriesRemaining = prefs.getInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_DAYS);
 
             // if there are entries remaining return true
             if (entriesRemaining > 0) {
@@ -189,16 +185,16 @@ public class DonateDialogFragment extends DialogFragment {
     /**
      * @return true if "not now" has been clicked recently
      */
-    private boolean notNowClickedRecently() {
+    private boolean notNowClickedRecently(SharedPreferences prefs) {
         // check if "not now" has been clicked at all
-        if (mPrefs.getBoolean(CLICKED_NOT_NOW, false)) {
+        if (prefs.getBoolean(CLICKED_NOT_NOW, false)) {
             DateTime today = new DateTime();
             // if have a saved date to show popup use that
             // by default set date to show popup for total days from now
-            DateTime notNowClickedDate = DateTime.parse(mPrefs.getString(NOT_NOW_CLICKED_DATE,
+            DateTime notNowClickedDate = DateTime.parse(prefs.getString(NOT_NOW_CLICKED_DATE,
                     today.plusDays(TOTAL_NOT_NOW_DAYS).toString()));
             // get entries remaining
-            int entriesRemaining = mPrefs.getInt(NOT_NOW_ENTRIES_REMAINING, TOTAL_NOT_NOW_DAYS);
+            int entriesRemaining = prefs.getInt(NOT_NOW_ENTRIES_REMAINING, TOTAL_NOT_NOW_DAYS);
 
             // if there are entries remaining return true
             if (entriesRemaining > 0) {
@@ -288,14 +284,11 @@ public class DonateDialogFragment extends DialogFragment {
                         .getButton(AlertDialog.BUTTON_POSITIVE);
                 positiveButton.setBackgroundResource(R.drawable.button_custom);
                 positiveButton.setTextColor(getResources().getColor(R.color.custom_theme_color));
-                positiveButton.setTextSize(getResources().getDimension(R.dimen.textsize));
-
 
                 Button negativeButton = ((AlertDialog) dialog)
                         .getButton(AlertDialog.BUTTON_NEGATIVE);
                 negativeButton.setBackgroundResource(R.drawable.button_custom);
                 negativeButton.setTextColor(getResources().getColor(R.color.custom_theme_color));
-                negativeButton.setTextSize(getResources().getDimension(R.dimen.textsize));
             }
         });
         return alertDialog;

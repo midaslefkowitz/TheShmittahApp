@@ -1,5 +1,3 @@
-//TODO: create custom action provider
-//TODO: add download link to pdfs and chart
 
 package com.theshmittahapp.android.views.Activities;
 
@@ -50,6 +48,7 @@ public class MainActivity extends Activity {
     private ArrayList<NavDrawerItem> navDrawerItems;
     private NavDrawerListAdapter adapter;
     private ShareActionProvider mShareActionProvider;
+    private SharedPreferences mPrefs;
 
     private String mDetailedName = "detailed.pdf";
     private String mOverviewName = "overview.pdf";
@@ -147,11 +146,9 @@ public class MainActivity extends Activity {
 
     private void displayPage(Bundle savedInstanceState) {
         // Only load landing page fragment the first time the app is run on a device
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (!prefs.getBoolean("firstTimeEver", false)) {
-            SharedPreferences.Editor editor = prefs.edit();
-            editor.putBoolean("firstTimeEver", true);
-            editor.commit();
+        mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (!mPrefs.getBoolean("firstTimeEver", false)) {
+            mPrefs.edit().putBoolean("firstTimeEver", true).commit();
             getFragmentManager().beginTransaction()
                     .add(R.id.frame_container, new LandingPageFragment())
                     .commit();
@@ -164,7 +161,10 @@ public class MainActivity extends Activity {
 
     private void createDonateDialog(boolean fromDrawer) {
         DonateDialogFragment mDonateDialog = DonateDialogFragment.newInstance(fromDrawer);
-        mDonateDialog.show(getFragmentManager(), DONATE_DIALOG_TAG);
+        mDonateDialog.logEntries(mPrefs);
+        if (mDonateDialog.doDisplayDialog(mPrefs, fromDrawer)) {
+            mDonateDialog.show(getFragmentManager(), DONATE_DIALOG_TAG);
+        }
     }
 
 	@Override
