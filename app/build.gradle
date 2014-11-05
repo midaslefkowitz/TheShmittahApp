@@ -16,8 +16,8 @@ android {
         applicationId "com.theshmittahapp.android"
         minSdkVersion 14
         targetSdkVersion 20
-        versionCode 7
-        versionName "1.2.3"
+        versionCode 8
+        versionName "1.2.4"
     }
     buildTypes {
         release {

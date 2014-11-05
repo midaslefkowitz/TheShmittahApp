@@ -1,11 +1,7 @@
 package com.theshmittahapp.android.views.Fragments;
 
-import android.app.Activity;
 import android.app.Fragment;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -31,7 +27,7 @@ public class PDFFragment extends Fragment implements OnPageChangeListener {
     public static final String PDF = "pdf";
     private String url = "http://www.mymakolet.com";
 
-    private String mPdfName;
+    private String mPdfName = null;
     private Integer mPageNumber = 1;
     private String mTitle;
     private Tracker mTracker;
@@ -43,7 +39,9 @@ public class PDFFragment extends Fragment implements OnPageChangeListener {
         super.onCreate(savedInstanceState);
         mTracker = ((MyApp) getActivity().getApplication()).getTracker(MyApp.TrackerName.APP_TRACKER);
         mTracker.enableAdvertisingIdCollection(true);
+        mPdfName = getmPdfName();
         setHasOptionsMenu(true);
+        Log.d(TAG, "onCreate");
     }
 
 
@@ -66,7 +64,9 @@ public class PDFFragment extends Fragment implements OnPageChangeListener {
         ImageView ad = (ImageView) v.findViewById(R.id.ad);
         AppUtils.setAd(getActivity(), ad, url);
 
-        mPdfName = getArguments().getString(PDF);
+        Log.d(TAG, "onCreateView");
+
+        mPdfName = getmPdfName();
         if (mPdfName.equals("detailed.pdf")) {
             mTitle = getResources().getString(R.string.detailed);
         } else {
@@ -88,6 +88,8 @@ public class PDFFragment extends Fragment implements OnPageChangeListener {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        Log.d(TAG, "onCreateOptionsMenu");
+        mPdfName = getmPdfName();
          if (mPdfName.equals("detailed.pdf")) {
              inflater.inflate(R.menu.detailed_pdf, menu);
          } else {
@@ -116,4 +118,9 @@ public class PDFFragment extends Fragment implements OnPageChangeListener {
         getActivity().getActionBar().setTitle(format("%s %s / %s", mTitle, page, pageCount));
     }
 
+    private String getmPdfName() {
+        String pdfName = getArguments().getString(PDF);
+        pdfName = (mPdfName!=null) ? mPdfName : pdfName;
+        return pdfName;
+    }
 }

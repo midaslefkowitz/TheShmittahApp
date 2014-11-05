@@ -28,6 +28,8 @@ import com.theshmittahapp.android.views.Fragments.FAQFragment;
 import com.theshmittahapp.android.views.Fragments.PDFFragment;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class CommonTermsActivity extends Activity {
 
@@ -37,9 +39,9 @@ public class CommonTermsActivity extends Activity {
 	private ListView mDrawerList;
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
-    private String[] navMenuTitles;
-    private ArrayList<NavDrawerItem> navDrawerItems;
-    private NavDrawerListAdapter adapter;
+    private List<String> mNavMenuTitles;
+
+
     private ShareActionProvider mShareActionProvider;
 
 	private ActionBarDrawerToggle mDrawerToggle;
@@ -59,8 +61,12 @@ public class CommonTermsActivity extends Activity {
         setDrawerToggle();
 
         if (savedInstanceState == null) {
-            // on first time display view for first nav item
-            displayView(2);
+            // on first time display view for common terms
+            FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.frame_container, new CommonTermsFragment())
+//                    .addToBackStack(CommonTermsFragment.class.getSimpleName())
+                    .commit();
         }
     }
 
@@ -73,15 +79,15 @@ public class CommonTermsActivity extends Activity {
 
     private void createDrawer() {
         // load slide menu items
-        navMenuTitles = getResources().getStringArray(R.array.drawer_items);
+        mNavMenuTitles = Arrays.asList(getResources().getStringArray(R.array.drawer_items));
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
 
-        navDrawerItems = new ArrayList<NavDrawerItem>();
+        ArrayList<NavDrawerItem> navDrawerItems = new ArrayList<NavDrawerItem>();
 
         // adding nav drawer items to array
-        for (String title : navMenuTitles) {
+        for (String title : mNavMenuTitles) {
             navDrawerItems.add(new NavDrawerItem(title));
         }
 
@@ -89,7 +95,7 @@ public class CommonTermsActivity extends Activity {
         mDrawerList.setOnItemClickListener(new SlideMenuClickListener());
 
         // setting the nav drawer list adapter
-        adapter = new NavDrawerListAdapter(this, navDrawerItems);
+        NavDrawerListAdapter adapter = new NavDrawerListAdapter(this, navDrawerItems);
         mDrawerList.setAdapter(adapter);
     }
 
@@ -264,15 +270,19 @@ public class CommonTermsActivity extends Activity {
 		if (fragment != null) {
 			FragmentManager fragmentManager = getFragmentManager();
 			fragmentManager.beginTransaction()
-					.replace(R.id.frame_container, fragment).commit();
+					.replace(R.id.frame_container, fragment)
+                    .addToBackStack(fragment.getClass().getSimpleName())
+                    .commit();
 
 			// update selected item and title, then close the drawer
 			mDrawerList.setItemChecked(position, true);
 			mDrawerList.setSelection(position);
-            if (position == 7 || position == 8 || position == 0) {
-                setTitle(navMenuTitles[2]);
+            if (position == mNavMenuTitles.indexOf(getResources().getString(R.string.donate_drawer)) ||
+                    position == mNavMenuTitles.indexOf(getResources().getString(R.string.shiurim)) ||
+                    position == mNavMenuTitles.indexOf(getResources().getString(R.string.rabbi)) ) {
+                setTitle(mNavMenuTitles.get(mNavMenuTitles.indexOf(getResources().getString(R.string.terms))));
             } else {
-                setTitle(navMenuTitles[position]);
+                setTitle(mNavMenuTitles.get(position));
             }
 			mDrawerLayout.closeDrawer(mDrawerList);
 		} else {

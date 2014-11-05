@@ -3,17 +3,24 @@ package com.theshmittahapp.android.views.Fragments;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
+
 import com.theshmittahapp.android.R;
 import com.theshmittahapp.android.views.Activities.DonateActivity;
 
@@ -214,18 +221,36 @@ public class DonateDialogFragment extends DialogFragment {
         mInflater = getActivity().getLayoutInflater();
         View v = mInflater.inflate(R.layout.fragment_donate_dialog, null);
         final EditText donationAmountET = (EditText) v.findViewById(R.id.donation_amount);
+
+        donationAmountET.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                boolean handled = false;
+                if (actionId == EditorInfo.IME_ACTION_SEND) {
+                    donate(donationAmountET);
+                    handled = true;
+                }
+                return handled;
+            }
+        });
+
+        // add click listener to the paypal donate button
         ImageView paypal = (ImageView) v.findViewById(R.id.btn_paypal);
         paypal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String donationAmountStr = donationAmountET.getText().toString();
-                if (donationAmountStr == null || donationAmountStr.length() == 0) {
-                    donationAmountStr = DEFAULT_DONATION;
-                }
-                donatePayPalOnClick(donationAmountStr);
+                donate(donationAmountET);
             }
         });
         return v;
+    }
+
+    private void donate(EditText donationAmountET) {
+        String donationAmountStr = donationAmountET.getText().toString();
+        if (donationAmountStr == null || donationAmountStr.length() == 0) {
+            donationAmountStr = DEFAULT_DONATION;
+        }
+        donatePayPalOnClick(donationAmountStr);
     }
 
     private void donatePayPalOnClick(String donationAmountStr) {
@@ -261,7 +286,7 @@ public class DonateDialogFragment extends DialogFragment {
         return (builder.create());
     }
 
-    private void resetNeverValues() {
+     private void resetNeverValues() {
         SharedPreferences.Editor editor = mPrefs.edit();
         editor.putInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_ENTRIES);
         editor.putString(NEVER_CLICKED_DATE, new DateTime().plusDays(TOTAL_NEVER_DAYS).toString());

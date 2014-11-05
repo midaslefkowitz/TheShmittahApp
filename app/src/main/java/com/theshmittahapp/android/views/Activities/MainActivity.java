@@ -33,6 +33,8 @@ import com.theshmittahapp.android.views.Fragments.PDFFragment;
 import com.theshmittahapp.android.views.Fragments.ProduceFragment;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class MainActivity extends Activity {
 
@@ -44,9 +46,7 @@ public class MainActivity extends Activity {
 	private ActionBarDrawerToggle mDrawerToggle;
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
-    private String[] navMenuTitles;
-    private ArrayList<NavDrawerItem> navDrawerItems;
-    private NavDrawerListAdapter adapter;
+    private List<String> mNavMenuTitles;
     private ShareActionProvider mShareActionProvider;
     private SharedPreferences mPrefs;
 
@@ -84,15 +84,15 @@ public class MainActivity extends Activity {
 
     private void createDrawer() {
         // load slide menu items
-        navMenuTitles = getResources().getStringArray(R.array.drawer_items);
+        mNavMenuTitles = Arrays.asList(getResources().getStringArray(R.array.drawer_items));
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
 
-        navDrawerItems = new ArrayList<NavDrawerItem>();
+        ArrayList<NavDrawerItem> navDrawerItems = new ArrayList<NavDrawerItem>();
 
         // adding nav drawer items to array
-        for (String title : navMenuTitles) {
+        for (String title : mNavMenuTitles) {
             navDrawerItems.add(new NavDrawerItem(title));
         }
 
@@ -100,7 +100,7 @@ public class MainActivity extends Activity {
         mDrawerList.setOnItemClickListener(new SlideMenuClickListener());
 
         // setting the nav drawer list adapter
-        adapter = new NavDrawerListAdapter(this, navDrawerItems);
+        NavDrawerListAdapter adapter = new NavDrawerListAdapter(this, navDrawerItems);
         mDrawerList.setAdapter(adapter);
     }
 
@@ -153,8 +153,11 @@ public class MainActivity extends Activity {
                     .add(R.id.frame_container, new LandingPageFragment())
                     .commit();
         } else if (savedInstanceState == null) {
-            // on first time display view for first nav item
-            displayView(1);
+            // on first time (after landing page) display produce list
+            FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.frame_container, new ProduceFragment())
+                    .commit();
             createDonateDialog(false);
         }
     }
@@ -280,15 +283,19 @@ public class MainActivity extends Activity {
 		if (fragment != null) {
 			FragmentManager fragmentManager = getFragmentManager();
 			fragmentManager.beginTransaction()
-					.replace(R.id.frame_container, fragment).commit();
+					.replace(R.id.frame_container, fragment)
+                    .addToBackStack(fragment.getClass().getSimpleName())
+                    .commit();
 
 			// update selected item and title, then close the drawer
 			mDrawerList.setItemChecked(position, true);
 			mDrawerList.setSelection(position);
-            if (position == 7 || position == 8 || position == 0) {
-                setTitle(navMenuTitles[1]);
+            if (position == mNavMenuTitles.indexOf(getResources().getString(R.string.donate_drawer)) ||
+                position == mNavMenuTitles.indexOf(getResources().getString(R.string.shiurim)) ||
+                position == mNavMenuTitles.indexOf(getResources().getString(R.string.rabbi)) ) {
+                setTitle(mNavMenuTitles.get(mNavMenuTitles.indexOf(getResources().getString(R.string.produce_list))));
             } else {
-                setTitle(navMenuTitles[position]);
+                setTitle(mNavMenuTitles.get(position));
             }
 
 			mDrawerLayout.closeDrawer(mDrawerList);
@@ -355,7 +362,7 @@ public class MainActivity extends Activity {
 	@Override
 	public void onConfigurationChanged(Configuration newConfig) {
 		super.onConfigurationChanged(newConfig);
-		// Pass any configuration change to the drawer toggls
+		// Pass any configuration change to the drawer toggle
 		mDrawerToggle.onConfigurationChanged(newConfig);
 	}
 }
