@@ -114,15 +114,14 @@ public class ProduceFragment extends Fragment{
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-		// inflate view
-		mRootView = inflater.inflate(R.layout.fragment_produce, container, false);
-		ImageView ad = (ImageView) mRootView.findViewById(R.id.ad);
 
+		mRootView = inflater.inflate(R.layout.fragment_produce, container, false);
+
+		ImageView ad = (ImageView) mRootView.findViewById(R.id.ad);
         AppUtils.setAd(getActivity(), ad, url);
-		// create list of Produce objects
-		List<Produce> allProduce = createProduceArrayList();
+
+    	List<Produce> allProduce = createProduceArrayList();
 		
-		// add list to the listview adapter
 		addListToAdapter(allProduce);
 
 		return mRootView;
@@ -137,7 +136,7 @@ public class ProduceFragment extends Fragment{
 		ArrayAdapter<String> produceAdapter =
                 new ArrayAdapter<String>(
                     getActivity(), // The current context (this activity)
-                    R.layout.produce_list_item, // The name of the layout ID.
+                    R.layout.produce_list_item, // The layout ID.
                     R.id.list_item_produce_textview, // The ID of the textview to populate.
                     allProduceNamesList);
 		

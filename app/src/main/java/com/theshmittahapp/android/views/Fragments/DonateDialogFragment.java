@@ -117,6 +117,12 @@ public class DonateDialogFragment extends DialogFragment {
         editor.commit();
     }
 
+    /**
+     *
+     * @param prefs hosting activities shared preferences manager
+     * @param fromDrawer boolean true only if user manually pressed donate button
+     * @return boolean representing whether dialog should be displayed
+     */
     public boolean doDisplayDialog(SharedPreferences prefs, boolean fromDrawer) {
 
         if (fromDrawer) {
@@ -165,25 +171,21 @@ public class DonateDialogFragment extends DialogFragment {
      * @return true if "never" has been clicked recently
      */
     private boolean neverClickedRecently(SharedPreferences prefs) {
-        // only need to check if recent if never was clicked
+        // only need to check further if recent if "never" was clicked
         if (prefs.getBoolean(CLICKED_NEVER, false)) {
             DateTime today = new DateTime();
             // if have a saved date to show popup use that
-            // by default set date to show popup for total days from now
+            // by default set date to show popup for TOTAL DAYS from now
             DateTime neverClickedDate = DateTime.parse(prefs.getString(NEVER_CLICKED_DATE,
                     today.plusDays(TOTAL_NEVER_DAYS).toString()));
 
-            // get entries remaining
+            // Check if entries remaining
             int entriesRemaining = prefs.getInt(NEVER_ENTRIES_REMAINING, TOTAL_NEVER_DAYS);
-
-            // if there are entries remaining return true
             if (entriesRemaining > 0) {
                 return true;
             }
-            // find the seconds between future - today
+            // Check if click was recent
             double timeRemaining = Seconds.secondsBetween(today, neverClickedDate).getSeconds();
-
-            // return if click was recent
             return (timeRemaining > 0);
         }
         return false;
@@ -193,25 +195,22 @@ public class DonateDialogFragment extends DialogFragment {
      * @return true if "not now" has been clicked recently
      */
     private boolean notNowClickedRecently(SharedPreferences prefs) {
-        // check if "not now" has been clicked at all
+        // only need to check further if recent if "not now" was clicked
         if (prefs.getBoolean(CLICKED_NOT_NOW, false)) {
             DateTime today = new DateTime();
             // if have a saved date to show popup use that
             // by default set date to show popup for total days from now
             DateTime notNowClickedDate = DateTime.parse(prefs.getString(NOT_NOW_CLICKED_DATE,
                     today.plusDays(TOTAL_NOT_NOW_DAYS).toString()));
-            // get entries remaining
-            int entriesRemaining = prefs.getInt(NOT_NOW_ENTRIES_REMAINING, TOTAL_NOT_NOW_DAYS);
 
-            // if there are entries remaining return true
+            // Check if entries remaining
+            int entriesRemaining = prefs.getInt(NOT_NOW_ENTRIES_REMAINING, TOTAL_NOT_NOW_DAYS);
             if (entriesRemaining > 0) {
                 return true;
             }
 
-            // find the seconds between future - today
+            // Check if click was recent
             double timeRemaining = Seconds.secondsBetween(today, notNowClickedDate).getSeconds();
-
-            // return if click was recent
             return (timeRemaining > 0);
         }
         return false;
