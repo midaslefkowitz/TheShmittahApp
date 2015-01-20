@@ -193,7 +193,7 @@
 
     <!-- Share Strings -->
     <string name="share_subject">Thought that this might make Shmittah easier for you</string>
-    <string name="share_body">Check out The Shmittah App for Android (iPhone coming soon!). I can\'t believe how much it\'s already helped me. Just go to <a ref="http://TheShmittahApp.com/">TheShmittahApp.com.</a></string>
+    <string name="share_body">Check out The Shmittah App. I can\'t believe how much it\'s already helped me. Just go to <a ref="http://TheShmittahApp.com/">TheShmittahApp.com.</a></string>
 
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
